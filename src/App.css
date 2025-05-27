@@ -1,0 +1,11 @@
+.hero-bg {
+  background-image: url("./assets/images/hero/hero-background-351314-1.avif");
+  /* adjust your filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 67vh;
+  color: #000;
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui,
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}

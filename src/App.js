@@ -1,14 +1,18 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container border">
-        <h1>Microsoft PowerPoint</h1>
-
-        <button className="btn btn-primary">Button</button>
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
