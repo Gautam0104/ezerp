@@ -1,11 +1,12 @@
 import React from "react";
-import Overview from "../layouts/home/Overview.jsx";
-import FeatureCard from "../layouts/home/FeatureCard.jsx";
+import Hero from "../layouts/home/Hero";
+
 const Home = () => {
-  return <div>
-    <Overview />
-    <FeatureCard />
-  </div>;
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 
 export default Home;
