@@ -6,6 +6,5 @@
   background-repeat: no-repeat;
   min-height: 67vh;
   color: #000;
-  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui,
-    -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI Variable Text", "Segoe UI", segoeui, "Helvetica Neue", helvetica, arial, sans-serif;
 }
