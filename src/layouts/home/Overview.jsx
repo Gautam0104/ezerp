@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import LayoutNavbar from "./Layoutnav.jsx";
+import verticalAccordian1 from "../../assets/images/overview/vertical-accordian-1.avif";
+import verticalAccordian2 from "../../assets/images/overview/vertical-accordian-2.avif";
+import verticalAccordian3 from "../../assets/images/overview/vertical-accordian-3.avif";  
+import verticalAccordian4 from "../../assets/images/overview/vertical-accordian-4.avif";
 
 const tabContents = [
   {
     label: "Generate ideas",
-    image: "https://via.placeholder.com/400x280/ffb3b3/fff?text=Generate+ideas", // Replace with your actual image
+    image: verticalAccordian1, 
     content: (
       <CollapsibleSections
         sections={[
@@ -38,7 +42,7 @@ const tabContents = [
   },
   {
     label: "Create with confidence",
-    image: "https://via.placeholder.com/400x280/ffd6a5/fff?text=Create+with+confidence",
+    image: verticalAccordian2,
     content: (
       <CollapsibleSections
         sections={[
@@ -64,7 +68,7 @@ const tabContents = [
   },
   {
     label: "Evoke engagement",
-    image: "https://via.placeholder.com/400x280/b5ead7/fff?text=Evoke+engagement",
+    image: verticalAccordian3,
     content: (
       <CollapsibleSections
         sections={[
@@ -98,7 +102,7 @@ const tabContents = [
   },
   {
     label: "Share and collaborate",
-    image: "https://via.placeholder.com/400x280/a0c4ff/fff?text=Share+and+collaborate",
+    image: verticalAccordian4,
     content: (
       <CollapsibleSections
         sections={[
@@ -131,18 +135,18 @@ const Overview = () => {
     <>
       <LayoutNavbar />
 
-      <div className="container-fluid bg-light min-vh-100 py-5 px-5">
+      <div className="container  min-vh-100 py-5 px-5">
         <div className="row">
           {/* Left Panel */}
           <div className="col-md-6 d-flex flex-column justify-content-center">
-            <small className="text-uppercase fw-semibold text-secondary mb-2">Overview</small>
+            <small className="text-uppercase fw-semibold text-primary mb-2">Overview</small>
             <h2 className="display-5 fw-bold mb-4">Pump up your presentations</h2>
             <div className="d-flex gap-3 mb-4 flex-wrap">
               {tabContents.map((tab, idx) => (
                 <button
                   key={tab.label}
                   className={`btn rounded-pill px-4 py-2 ${
-                    activeTab === idx ? "btn-dark" : "btn-outline-secondary"
+                    activeTab === idx ? "btn-dark" : "btn-outline-primary"
                   }`}
                   onClick={() => setActiveTab(idx)}
                 >
@@ -162,7 +166,6 @@ const Overview = () => {
                 height: "380px",
                 top: "10%",
                 zIndex: 1,
-                background: "#eee",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
