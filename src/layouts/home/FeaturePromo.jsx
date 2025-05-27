@@ -18,21 +18,21 @@ const FeaturePromo = () => {
           <div className="col-lg-12 text-center ">
             <div className="pe-lg-5">
               <span
-                className="badge bg-primary bg-opacity-10 text-primary mb-3 px-3 py-2 rounded-pill fw-semibold"
+                className="text-uppercase fw-semibold text-primary mb-2"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
                 WALK'S NEW
               </span>
-              <h1
-                className="display-5 fw-semibold mb-4 text-dark"
+              <h2
+                className=" text-primary  mb-3"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
                 Boost your creativity in PowerPoint
-              </h1>
+              </h2>
               <p
-                className="lead text-muted mb-4 "
+                className=" mb-3 text-primary "
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
