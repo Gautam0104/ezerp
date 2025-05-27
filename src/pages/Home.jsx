@@ -3,6 +3,7 @@ import Hero from "../layouts/home/Hero";
 import Overview from "../layouts/home/Overview";
 import KeyFeatures from "../layouts/home/FeatureCard";
 import FeaturePromo from "../layouts/home/FeaturePromo";
+import MobileDownload from "../layouts/home/MobilDownload";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Overview />
       <KeyFeatures />
       <FeaturePromo />
+      < MobileDownload />
     </div>
   );
 };
