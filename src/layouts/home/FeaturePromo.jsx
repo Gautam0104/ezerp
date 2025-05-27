@@ -17,17 +17,33 @@ const FeaturePromo = () => {
         <div className="row align-items-center g-5">
           <div className="col-lg-12 text-center ">
             <div className="pe-lg-5">
-              <span className="badge bg-primary bg-opacity-10 text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">
+              <span
+                className="text-uppercase fw-semibold text-primary mb-2"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 WALK'S NEW
               </span>
-              <h1 className="display-5 fw-semibold mb-4 text-dark">
+              <h2
+                className=" text-primary  mb-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 Boost your creativity in PowerPoint
-              </h1>
-              <p className="lead text-muted mb-4 ">
+              </h2>
+              <p
+                className=" mb-3 text-primary "
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 Use the latest AI-powered features in PowerPoint and select
                 Microsoft 365 apps with a Microsoft 365 subscription
               </p>
-              <div className=" p-4 rounded-3 mb-4">
+              <div
+                className=" p-4 rounded-3 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <h4 className="text-primary mb-3">
                   <i className="bi bi-stars me-2"></i>
                   Introducing Copilot for PowerPoint
