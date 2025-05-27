@@ -8,13 +8,23 @@ const Hero = () => {
       <div className="container py-5">
         <div className="row">
           <div className="col-lg-6 text-center text-lg-start">
-            <h1 className="display-4 fw-semibold mb-3">Microsoft PowerPoint</h1>
-            <p className=" mb-4 ">
+            <h1
+              className="display-4 fw-semibold mb-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              Microsoft PowerPoint
+            </h1>
+            <p className=" mb-4 " data-aos="fade-up" data-aos-delay="300">
               Design captivating presentations and collaborate in real-time from
               any device.
             </p>
 
-            <div className="d-flex gap-3 flex-wrap mb-3">
+            <div
+              className="d-flex gap-3 flex-wrap mb-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <Link to="/signup" className="btn btn-primary btn-lg px-4">
                 Sign up for free
               </Link>
@@ -26,15 +36,21 @@ const Hero = () => {
               </Link>
             </div>
 
-            <Link
-              to="/plans"
-              className="btn  btn-sm rounded-pill d-inline-flex align-items-center gap-2"
+            <div
+              className="d-flex gap-3 flex-wrap mb-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
-              <span className="d-flex justify-content-center align-item-center bg-primary rounded p-2 text-white">
-                <i className="bi bi-chevron-right"></i>
-              </span>{" "}
-              See plans and pricing
-            </Link>
+              <Link
+                to="/plans"
+                className="btn  btn-sm rounded-pill d-inline-flex align-items-center gap-2"
+              >
+                <span className="d-flex justify-content-center align-item-center bg-primary rounded p-2 text-white">
+                  <i className="bi bi-chevron-right"></i>
+                </span>{" "}
+                See plans and pricing
+              </Link>
+            </div>
           </div>
         </div>
       </div>
