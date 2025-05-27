@@ -1,4 +1,7 @@
 import React from 'react';
+import KeyFeaturesImage1 from "../../assets/images/keyfeature/key-features-1-351314.avif";
+import KeyFeaturesImage2 from "../../assets/images/keyfeature/key-features-2-351314.avif";
+import KeyFeaturesImage3 from "../../assets/images/keyfeature/key-features-3-351314.avif";
 
 const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
     return (
@@ -20,7 +23,7 @@ const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
                 />
                 <div className="card-body d-flex flex-column align-items-start">
                     <h5 className="card-title fw-semibold">{title}</h5>
-                    <p className="card-text text-secondary mb-4">{description}</p>
+                    <p className="card-text text-primary mb-4">{description}</p>
                     <a
                         href="#"
                         className="btn"
@@ -63,28 +66,28 @@ const KeyFeatures = () => {
     const features = [
         {
             title: 'Copilot in PowerPoint',
-            description: 'Enjoy faster Copilot performance, enhanced creative tools, and improved features designed to boost productivity.',
+            description: 'Enjoy faster Copilot performance, enhanced creative tools, and improved features designed to boost .',
             buttonLabel: 'Learn more',
-            imageUrl: 'path/to/your/image1.jpg', // Replace with your image path
+            imageUrl: KeyFeaturesImage1, // Replace with your image path
         },
         {
             title: 'Rehearse with Speaker Coach',
             description: 'Improve your pacing and pitch to speak more confidently with help from an AI-driven coach.',
             buttonLabel: 'Learn more',
-            imageUrl: 'path/to/your/image2.jpg', // Replace with your image path
+            imageUrl: KeyFeaturesImage2, // Replace with your image path
         },
         {
             title: 'Get more Microsoft 365',
             description: 'Get the apps, security, and storage you need to accomplish your goals with Microsoft 365.',
             buttonLabel: 'Learn more',
-            imageUrl: 'path/to/your/image3.jpg', // Replace with your image path
+            imageUrl: KeyFeaturesImage3, // Replace with your image path
         },
     ];
 
 
     return (
         <div className="container text-center my-5">
-            <small className="text-uppercase fw-semibold text-secondary mb-2">Key Features</small>
+            <small className="text-uppercase fw-semibold text-primary mb-2">Key Features</small>
             <h2 className="mb-4">Supercharge your presentations</h2>
             <div className="row">
                 {features.map((feature, index) => (
