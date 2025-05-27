@@ -1,0 +1,17 @@
+// STEP 1: Override Bootstrap theme variables BEFORE importing Bootstrap
+
+$primary: #091f2c; // Deep navy
+$secondary: #ff6f61; // Custom pink
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #f8f9fa;
+$dark: #343a40;
+
+// Microsoft-like font family
+$font-family-sans-serif: "Segoe UI Variable Text", "Segoe UI", system-ui,
+  -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+// STEP 2: Import Bootstrap (after variable overrides)
+@import "bootstrap/scss/bootstrap";
