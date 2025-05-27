@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ezerp/static/css/main.f45a9385.css",
-    "main.js": "/ezerp/static/js/main.be0f25da.js",
+    "main.js": "/ezerp/static/js/main.49377b6f.js",
     "static/js/453.35617392.chunk.js": "/ezerp/static/js/453.35617392.chunk.js",
     "static/media/hero-background-351314-1.avif": "/ezerp/static/media/hero-background-351314-1.c63980c134fe35aa8b60.avif",
     "static/media/interactive-demo-351314.avif": "/ezerp/static/media/interactive-demo-351314.b424d08cbc0b709e4c85.avif",
@@ -17,11 +17,11 @@
     "static/media/mediademo-background-351314.avif": "/ezerp/static/media/mediademo-background-351314.57dc475ffeffdf15830d.avif",
     "index.html": "/ezerp/index.html",
     "main.f45a9385.css.map": "/ezerp/static/css/main.f45a9385.css.map",
-    "main.be0f25da.js.map": "/ezerp/static/js/main.be0f25da.js.map",
+    "main.49377b6f.js.map": "/ezerp/static/js/main.49377b6f.js.map",
     "453.35617392.chunk.js.map": "/ezerp/static/js/453.35617392.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f45a9385.css",
-    "static/js/main.be0f25da.js"
+    "static/js/main.49377b6f.js"
   ]
 }
