@@ -65,152 +65,155 @@ const Faq = () => {
   return (
     <>
       <ScrollToHashElement />
-      <div
-        style={{
-          margin: " 0px 150px",
-          padding: "0 24px",
-          fontFamily: "Segoe UI, Arial, sans-serif",
-          background: "#fdfcf9",
-          minHeight: "100vh"
-        }}
-        id="faq"
-      >
-        <h1
-          style={{
-            fontSize: 44,
-            fontWeight: 400,
-            marginBottom: 32
-          }}
-        >
-          Frequently asked questions
-        </h1>
+      <section className="py-5" style={{ backgroundColor: "#fdfcf9" }}>
         <div
+          className="container"
           style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            gap: 12,
-            marginBottom: 24
+            fontFamily: "Segoe UI, Arial, sans-serif",
+
+            maxHeight: "100vh"
           }}
+          id="faq"
         >
-          <button
-            onClick={handleExpandAll}
+          <h1
             style={{
-              padding: "8px 20px",
-              border:
-                openIndexes.length === faqData.length
-                  ? "2px solid #111820" // selected
-                  : "2px dashed #ccc", // not selected
-              borderRadius: 6,
-              background: "#fdfcf9",
-              color: "#888",
-              fontWeight: 500,
-              cursor: "pointer"
+              fontSize: 44,
+              fontWeight: 400,
+              marginBottom: 32
             }}
-            disabled={openIndexes.length === faqData.length}
           >
-            Expand all
-          </button>
-          <button
-            onClick={handleCollapseAll}
+            Frequently asked questions
+          </h1>
+          <div
             style={{
-              padding: "8px 20px",
-              border:
-                openIndexes.length === 0
-                  ? "2px solid #111820" // selected
-                  : "2px dashed #ccc", // not selected
-              borderRadius: 6,
-              background: "#fdfcf9",
-              color: "#888",
-              fontWeight: 500,
-              cursor: "pointer"
+              display: "flex",
+              justifyContent: "flex-end",
+              gap: 12,
+              marginBottom: 24
             }}
-            disabled={openIndexes.length === 0}
           >
-            Collapse all
-          </button>
-        </div>
-        <div>
-          {faqData.map((item, idx) => (
-            <div key={idx}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  justifyContent: "space-between",
-                  padding: "24px 0 8px 0",
-                  borderTop: idx === 0 ? "none" : "1px solid #e5e5e5"
-                }}
-              >
+            <button
+              onClick={handleExpandAll}
+              style={{
+                padding: "8px 20px",
+                border:
+                  openIndexes.length === faqData.length
+                    ? "2px solid #111820" // selected
+                    : "2px dashed #ccc", // not selected
+                borderRadius: 6,
+                background: "#fdfcf9",
+                color: "#888",
+                fontWeight: 500,
+                cursor: "pointer"
+              }}
+              disabled={openIndexes.length === faqData.length}
+            >
+              Expand all
+            </button>
+            <button
+              onClick={handleCollapseAll}
+              style={{
+                padding: "8px 20px",
+                border:
+                  openIndexes.length === 0
+                    ? "2px solid #111820" // selected
+                    : "2px dashed #ccc", // not selected
+                borderRadius: 6,
+                background: "#fdfcf9",
+                color: "#888",
+                fontWeight: 500,
+                cursor: "pointer"
+              }}
+              disabled={openIndexes.length === 0}
+            >
+              Collapse all
+            </button>
+          </div>
+          <div>
+            {faqData.map((item, idx) => (
+              <div key={idx}>
                 <div
                   style={{
                     display: "flex",
                     alignItems: "flex-start",
-                    gap: 24
+                    justifyContent: "space-between",
+                    padding: "24px 0 8px 0",
+                    borderTop: idx === 0 ? "none" : "1px solid #e5e5e5"
                   }}
                 >
-                  <span
+                  <div
                     style={{
-                      color: "#b2b2b2",
-                      fontWeight: 500,
-                      fontSize: 18,
-                      minWidth: 40
+                      display: "flex",
+                      alignItems: "flex-start",
+                      gap: 24
                     }}
                   >
-                    {String(idx + 1).padStart(2, "0")}/
-                  </span>
-                  <div>
-                    <div
+                    <span
                       style={{
-                        fontWeight: 600,
-                        fontSize: 20,
-                        marginBottom: 6
+                        color: "#b2b2b2",
+                        fontWeight: 500,
+                        fontSize: 18,
+                        minWidth: 40
                       }}
                     >
-                      {item.question}
-                    </div>
-                    {openIndexes.includes(idx) && (
+                      {String(idx + 1).padStart(2, "0")}/
+                    </span>
+                    <div>
                       <div
                         style={{
-                          color: "#222",
-                          fontSize: 17,
-                          marginTop: 2
+                          fontWeight: 600,
+                          fontSize: 20,
+                          marginBottom: 6
                         }}
                       >
-                        {item.answer}
+                        {item.question}
                       </div>
-                    )}
+                      {openIndexes.includes(idx) && (
+                        <div
+                          style={{
+                            color: "#222",
+                            fontSize: 17,
+                            marginTop: 2
+                          }}
+                        >
+                          {item.answer}
+                        </div>
+                      )}
+                    </div>
                   </div>
+                  <button
+                    onClick={() => handleToggle(idx)}
+                    style={{
+                      width: 38,
+                      height: 38,
+                      background: "#111820",
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: 8,
+                      fontSize: 28,
+                      fontWeight: 400,
+                      cursor: "pointer",
+                      marginTop: 6,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      transition: "background 0.2s"
+                    }}
+                    aria-label={
+                      openIndexes.includes(idx) ? "Collapse" : "Expand"
+                    }
+                  >
+                    {openIndexes.includes(idx) ? "−" : "+"}
+                  </button>
                 </div>
-                <button
-                  onClick={() => handleToggle(idx)}
-                  style={{
-                    width: 38,
-                    height: 38,
-                    background: "#111820",
-                    color: "#fff",
-                    border: "none",
-                    borderRadius: 8,
-                    fontSize: 28,
-                    fontWeight: 400,
-                    cursor: "pointer",
-                    marginTop: 6,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    transition: "background 0.2s"
-                  }}
-                  aria-label={openIndexes.includes(idx) ? "Collapse" : "Expand"}
-                >
-                  {openIndexes.includes(idx) ? "−" : "+"}
-                </button>
+                {idx < faqData.length - 1 && (
+                  <div style={{ borderBottom: "1px solid #e5e5e5" }} />
+                )}
               </div>
-              {idx < faqData.length - 1 && (
-                <div style={{ borderBottom: "1px solid #e5e5e5" }} />
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
