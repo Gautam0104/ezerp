@@ -4,6 +4,7 @@ import Overview from "../layouts/home/Overview";
 import KeyFeatures from "../layouts/home/FeatureCard";
 import FeaturePromo from "../layouts/home/FeaturePromo";
 import MobileDownload from "../layouts/home/MobilDownload";
+import Resouces from "../layouts/home/Resouces";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <KeyFeatures />
       <FeaturePromo />
       < MobileDownload />
+      <Resouces />
     </div>
   );
 };
