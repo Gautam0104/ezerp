@@ -4,7 +4,7 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-white border-bottom py-3 px-3">
+    <nav className="navbar navbar-expand-lg bg-white border-bottom py-3 px-3 ">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Left: Logo */}
         <div className="d-flex align-items-center gap-3">

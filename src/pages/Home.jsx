@@ -4,6 +4,11 @@ import Overview from "../layouts/home/Overview";
 import KeyFeatures from "../layouts/home/FeatureCard";
 import FeaturePromo from "../layouts/home/FeaturePromo";
 import MobileDownload from "../layouts/home/MobilDownload";
+import PlansPricing from "../layouts/home/PlansPricing";
+import AppDownload from "../layouts/home/AppDownload";
+import NextStep from "../layouts/home/NextStep";
+import Details from "../layouts/home/Details";
+import Follow from "../layouts/home/Follow";
 import Resouces from "../layouts/home/Resouces";
 import Faq from "../layouts/home/Faq";  
 
@@ -14,9 +19,16 @@ const Home = () => {
       <Overview />
       <KeyFeatures />
       <FeaturePromo />
-      < MobileDownload />
+      <AppDownload />
+      <PlansPricing />
+
+      <MobileDownload />
+
       <Resouces />
       <Faq />
+      <NextStep />
+      <Details />
+      <Follow />
     </div>
   );
 };
