@@ -8,3 +8,21 @@
   color: #000;
   font-family: "Segoe UI Variable Text", "Segoe UI", segoeui, "Helvetica Neue", helvetica, arial, sans-serif;
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.resource-img {
+  opacity: 0.85;
+  transition: 0.5s ease-in-out;
+}
+.resource-img:hover {
+  opacity: 1;
+  filter: brightness(1.08);
+  scale:1.2
+}

@@ -9,6 +9,7 @@ import AppDownload from "../layouts/home/AppDownload";
 import NextStep from "../layouts/home/NextStep";
 import Details from "../layouts/home/Details";
 import Follow from "../layouts/home/Follow";
+import Resouces from "../layouts/home/Resouces";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
       <NextStep />
       <Details />
       <Follow />
+      <MobileDownload />
+      <Resouces />
     </div>
   );
 };
