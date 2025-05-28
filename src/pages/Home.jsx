@@ -10,7 +10,7 @@ import NextStep from "../layouts/home/NextStep";
 import Details from "../layouts/home/Details";
 import Follow from "../layouts/home/Follow";
 import Resouces from "../layouts/home/Resouces";
-import Faq from "../layouts/home/Faq";  
+import Faq from "../layouts/home/Faq";
 
 const Home = () => {
   return (
