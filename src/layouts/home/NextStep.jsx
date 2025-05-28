@@ -47,7 +47,7 @@ const NextStep = () => {
                       </span>
                     </div>
                     <div className="mb-3 p-2">
-                      <h2 className="text-primary">Microsoft Copilot Pro</h2>
+                      <h2 className="text-primary">Thunderbees Copilot Pro</h2>
                       <p>Supercharge your creativity and productivity.</p>
                     </div>
                     <div className="mb-3 p-2">
@@ -59,7 +59,7 @@ const NextStep = () => {
                   <div className="col-md-6">
                     <img
                       src={Image01}
-                      alt="Microsoft Copilot Pro"
+                      alt="Thunderbees Copilot Pro"
                       className="img-fluid w-100 rounded"
                     />
                   </div>
@@ -123,7 +123,7 @@ const NextStep = () => {
                         data-aos="fade-up"
                         data-aos-delay="200"
                       >
-                        Microsoft 365
+                        Thunderbees 365
                       </h2>
                       <p>
                         Maximize your potential with apps to optimize the

@@ -24,65 +24,65 @@ const resources = [
   {
     img: resourceImg3,
     tag: "Design tips",
-    title: "Design your own posters with PowerPoint.",
+    title: "Design your own posters with PharmaScan.",
     link: "#"
   },
   {
     img: resourceImg4,
     tag: "Design tips",
     title: "Perfect your presentation layout with the 10-20-30 rule.",
-    link: "#",
+    link: "#"
   },
   {
     img: resourceImg5,
     tag: "Presentation tips",
     title: "Make slides pop with complementary colors.",
-    link: "#",
-  },
+    link: "#"
+  }
 ];
 
 const moreResources = [
   {
     img: imageIcon,
-    tag: "Microsoft Word",
+    tag: "Thunderbees Word",
     title:
       "Elevate your writing and create beautiful documents—anywhere, anytime.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Microsoft Excel",
+    tag: "Thunderbees Excel",
     title: "Turn data into insights with free and premium spreadsheets.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Microsoft OneNote",
+    tag: "Thunderbees OneNote",
     title: "Keep your thoughts, content, and lists handy in one place.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Microsoft Outlook",
+    tag: "Thunderbees Outlook",
     title: "Manage your email, calendar, tasks, and contacts in one location.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Microsoft Defender",
+    tag: "Thunderbees Defender",
     title: "Simplify your online security.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Microsoft OneDrive",
+    tag: "Thunderbees OneDrive",
     title:
       "Keep your files and memories protected, up to date, and easily accessible across all your devices.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Microsoft Designer",
+    tag: "Thunderbees Designer",
     title: "Create designs and edit photos in seconds with the power of AI.",
     link: "#"
   },
@@ -101,7 +101,7 @@ const Resouces = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const { scrollLeft} = scrollRef.current;
+      const { scrollLeft } = scrollRef.current;
       const scrollAmount = 400; // width of card + gap
       scrollRef.current.scrollTo({
         left:

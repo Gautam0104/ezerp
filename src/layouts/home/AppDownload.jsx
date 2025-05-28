@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import windowLogo from "../../assets/images/download/output-pngtools.png";
 const AppDownload = () => {
   return (
-    <section>
+    <section style={{ backgroundColor: "#fdfcf9" }}>
       <div className="container py-5" data-aos="fade-up" data-aos-delay="300">
         <div className="row justify-content-center text-center">
           <div className="col-lg-8 col-md-8 col-sm-12">
@@ -20,14 +20,14 @@ const AppDownload = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                Get started with free Microsoft PowerPoint
+                Get started with free Thunderbees PharmaScan
               </h2>
               <p
                 className=" mb-3 text-primary "
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Use the free versions of Word, Excel, and PowerPoint directly
+                Use the free versions of Word, Excel, and PharmaScan directly
                 from your desktop1
               </p>
               <div className="mb-3 mt-3" style={{ maxWidth: "40px" }}>
@@ -77,14 +77,14 @@ const AppDownload = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                Get started with free Microsoft PowerPoint
+                Get started with free Thunderbees PharmaScan
               </h2>
               <p
                 className=" mb-3 text-primary "
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Use the free versions of Word, Excel, and PowerPoint directly
+                Use the free versions of Word, Excel, and PharmaScan directly
                 from your desktop1
               </p>
               <div

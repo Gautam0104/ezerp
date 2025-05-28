@@ -3,15 +3,16 @@ import { Link } from "react-router-dom"; // Add this import
 import ScrollToHashElement from "../../components/ScrollToHashElement";
 const faqData = [
   {
-    question: "Where can I use Microsoft PowerPoint?",
+    question: "Where can I use Thunderbees PharmaScan?",
     answer:
-      "Microsoft PowerPoint is available as an app for desktop (Windows and MacOS), on mobile devices and tablets (iOS and Android™), and online through your browser."
+      "Thunderbees PharmaScan is available as an app for desktop (Windows and MacOS), on mobile devices and tablets (iOS and Android™), and online through your browser."
   },
   {
-    question: "Is there a free version of Microsoft PowerPoint?",
+    question: "Is there a free version of Thunderbees PharmaScan?",
     answer: (
       <>
-        Yes, Microsoft PowerPoint for the web is free for anyone to use online.{" "}
+        Yes, Thunderbees PharmaScan for the web is free for anyone to use
+        online.{" "}
         <Link
           to="/signup"
           style={{
@@ -26,15 +27,15 @@ const faqData = [
     )
   },
   {
-    question: "Can I collaborate with other people in Microsoft PowerPoint?",
+    question: "Can I collaborate with other people in Thunderbees PharmaScan?",
     answer:
-      "Yes, Microsoft PowerPoint supports real-time collaboration with multiple people."
+      "Yes, Thunderbees PharmaScan supports real-time collaboration with multiple people."
   },
   {
-    question: "In what languages is Microsoft PowerPoint available?",
+    question: "In what languages is Thunderbees PharmaScan available?",
     answer: (
       <>
-        Microsoft PowerPoint is available in more than{" "}
+        Thunderbees PharmaScan is available in more than{" "}
         <Link
           to="/languages"
           style={{

@@ -83,7 +83,7 @@ const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
 const KeyFeatures = () => {
   const features = [
     {
-      title: "Copilot in PowerPoint",
+      title: "Copilot in PharmaScan",
       description:
         "Enjoy faster Copilot performance, enhanced creative tools, and improved features designed to boost .",
       buttonLabel: "Learn more",
@@ -97,9 +97,9 @@ const KeyFeatures = () => {
       imageUrl: KeyFeaturesImage2 // Replace with your image path
     },
     {
-      title: "Get more Microsoft 365",
+      title: "Get more Thunderbees 365",
       description:
-        "Get the apps, security, and storage you need to accomplish your goals with Microsoft 365.",
+        "Get the apps, security, and storage you need to accomplish your goals with Thunderbees 365.",
       buttonLabel: "Learn more",
       imageUrl: KeyFeaturesImage3 // Replace with your image path
     }

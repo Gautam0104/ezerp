@@ -24,8 +24,8 @@ const MobileDownload = () => {
           }}
         >
           <img
-            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://aka.ms/powerpointmobiledownload"
-            alt="PowerPoint Mobile App QR"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://aka.ms/PharmaScanmobiledownload"
+            alt="PharmaScan Mobile App QR"
             style={{ width: 200, height: 200 }}
           />
         </div>
@@ -39,7 +39,7 @@ const MobileDownload = () => {
           >
             /thunderbeesmobiledownload
           </a>{" "}
-          to get the PowerPoint mobile app.
+          to get the PharmaScan mobile app.
         </p>
       </div>
     </>

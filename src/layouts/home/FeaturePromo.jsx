@@ -26,22 +26,22 @@ const FeaturePromo = () => {
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  WALK'S NEW
+                  WHAT'S NEW
                 </span>
                 <h2
                   className=" text-primary  mb-3"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Boost your creativity in PowerPoint
+                  Boost your creativity in PharmaScan
                 </h2>
                 <p
                   className=" mb-3 text-primary "
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  Use the latest AI-powered features in PowerPoint and select
-                  Microsoft 365 apps with a Microsoft 365 subscription
+                  Use the latest AI-powered features in PharmaScan and select
+                  Thunderbees 365 apps with a Thunderbees 365 subscription
                 </p>
                 <div
                   className=" p-4 rounded-3 mb-4"
@@ -50,7 +50,7 @@ const FeaturePromo = () => {
                 >
                   <h4 className="text-primary mb-3">
                     <i className="bi bi-stars me-2"></i>
-                    Introducing Copilot for PowerPoint
+                    Introducing Copilot for PharmaScan
                   </h4>
                   <button className="btn btn-primary px-4 py-2 rounded-pill fw-semibold">
                     Learn more <i className="bi bi-arrow-right ms-2"></i>
@@ -66,7 +66,7 @@ const FeaturePromo = () => {
                 >
                   <img
                     src={Image01}
-                    alt="PowerPoint Promo"
+                    alt="PharmaScan Promo"
                     className="img-fluid rounded-2"
                     style={{
                       width: "100%",

@@ -13,7 +13,7 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Microsoft PowerPoint
+              Thunderbees PharmaScan
             </h1>
             <p className=" mb-4 " data-aos="fade-up" data-aos-delay="300">
               Design captivating presentations and collaborate in real-time from

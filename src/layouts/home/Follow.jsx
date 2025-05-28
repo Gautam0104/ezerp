@@ -7,7 +7,7 @@ const Follow = () => {
   return (
     <section className="py-5 shadow-sm" style={{ backgroundColor: "#fff" }}>
       <div className="container d-flex align-items-center gap-3 flex-wrap px-3">
-        <h5 className="mb-0 ms-3">Follow Microsoft 365</h5>
+        <h5 className="mb-0 ms-3">Follow Thunderbees 365</h5>
         <img
           src={Image02}
           alt="LinkedIn"

@@ -1,20 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-
+import imageIcon from "../assets/images/cardcarousalbackground/1.png";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white border-bottom py-3 px-3 ">
       <div className="container d-flex justify-content-between align-items-center">
         {/* Left: Logo */}
         <div className="d-flex align-items-center gap-3">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-            alt="Microsoft Logo"
-            width="28"
-            height="28"
-          />
-          <span className="fw-bold">Microsoft</span>
+          <img src={imageIcon} alt="Thunderbees Logo" width="40" height="40" />
+          <span className="fw-bold">Thunderbees</span>
         </div>
 
         {/* Hamburger toggler */}
@@ -38,10 +33,10 @@ const Navbar = () => {
           {/* Left nav links */}
           <div className="navbar-nav d-lg-flex align-items-center gap-3">
             <Link to="#" className="nav-link fw-semibold text-dark">
-              Microsoft 365
+              Thunderbees 365
             </Link>
             <Link to="#" className="nav-link text-dark">
-              PowerPoint
+              PharmaScan
             </Link>
             <Link to="#" className="nav-link text-dark dropdown-toggle">
               Plans and pricing
@@ -50,7 +45,7 @@ const Navbar = () => {
               Resources
             </Link>
             <Link to="#" className="nav-link text-primary">
-              More Microsoft 365
+              More Thunderbees
             </Link>
           </div>
 
@@ -67,7 +62,7 @@ const Navbar = () => {
             </Link>
             <button className="btn btn-dark btn-sm">Try for free</button>
             <Link to="#" className="nav-link text-dark">
-              Gautam
+              Thunder
             </Link>
             <button
               className="btn btn-outline-secondary rounded-circle p-1"

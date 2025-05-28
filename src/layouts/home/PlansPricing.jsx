@@ -33,7 +33,7 @@ const PlansPricing = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                PowerPoint is better with <br /> Microsoft 365
+                PharmaScan is better with <br /> Thunderbees 365
               </h2>
               <div
                 className="mb-3 d-flex py-5"
@@ -87,7 +87,7 @@ const PlansPricing = () => {
               <div className="col-md-4">
                 <div className="card h-100 text-center p-3">
                   <div className="card-body">
-                    <h5 className="card-title">Microsoft PowerPoint</h5>
+                    <h5 className="card-title">Thunderbees PharmaScan</h5>
                     <p className="price">Free</p>
                     <div className="d-grid gap-2">
                       <button className="btn btn-dark">Sign up for free</button>
@@ -96,7 +96,7 @@ const PlansPricing = () => {
                     <ul className="text-start mt-3">
                       <li>One person</li>
                       <li>Sharing and real-time collaboration</li>
-                      <li>PowerPoint for the web</li>
+                      <li>PharmaScan for the web</li>
                       <li>Basic spelling and grammar</li>
                       <li>Basic templates, fonts, icons, and stickers</li>
                       <li>Dictation and voice commands</li>
@@ -109,7 +109,7 @@ const PlansPricing = () => {
               <div className="col-md-4">
                 <div className="card h-100 text-center p-3">
                   <div className="card-body">
-                    <h5 className="card-title">Microsoft 365 Personal</h5>
+                    <h5 className="card-title">Thunderbees 365 Personal</h5>
                     <p className="price">
                       ₹ 6,899.00<span class="fs-6"> /year</span>
                     </p>
@@ -121,13 +121,13 @@ const PlansPricing = () => {
                     <ul className="text-start mt-3">
                       <li>For one person</li>
                       <li>Sharing and real-time collaboration</li>
-                      <li>PowerPoint for the web and desktop</li>
+                      <li>PharmaScan for the web and desktop</li>
                       <li>Premium templates, icons, stickers</li>
                       <li>Dictation, voice commands, and transcription</li>
                       <li>Advanced grammar and editing</li>
                       <li>1 TB cloud storage</li>
-                      <li>Word, Excel, PowerPoint, Outlook, OneNote</li>
-                      <li>Microsoft Copilot & Designer</li>
+                      <li>Word, Excel, PharmaScan, Outlook, OneNote</li>
+                      <li>Thunderbees Copilot & Designer</li>
                       <li>Advanced digital security</li>
                       <li>Ad-free experience</li>
                     </ul>
@@ -138,7 +138,7 @@ const PlansPricing = () => {
               <div className="col-md-4">
                 <div className="card h-100 text-center p-3">
                   <div className="card-body">
-                    <h5 className="card-title">Microsoft 365 Family</h5>
+                    <h5 className="card-title">Thunderbees 365 Family</h5>
                     <p className="price">
                       ₹ 8,199.00<span class="fs-6"> /year</span>
                     </p>
@@ -150,13 +150,13 @@ const PlansPricing = () => {
                     <ul className="text-start mt-3">
                       <li>For up to six people</li>
                       <li>Sharing and real-time collaboration</li>
-                      <li>PowerPoint for the web and desktop</li>
+                      <li>PharmaScan for the web and desktop</li>
                       <li>Premium templates, icons, stickers</li>
                       <li>Dictation, voice commands, and transcription</li>
                       <li>Advanced grammar and editing</li>
                       <li>Up to 6 TB cloud storage</li>
-                      <li>Word, Excel, PowerPoint, Outlook, OneNote</li>
-                      <li>Microsoft Copilot & Designer</li>
+                      <li>Word, Excel, PharmaScan, Outlook, OneNote</li>
+                      <li>Thunderbees Copilot & Designer</li>
                       <li>Advanced digital security</li>
                     </ul>
                   </div>

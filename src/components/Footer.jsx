@@ -8,55 +8,55 @@ const Footer = () => {
       "Surface Laptop",
       "Surface Laptop Studio 2",
       "Surface Laptop Go 3",
-      "Microsoft Copilot",
+      "Thunderbees Copilot",
       "AI in Windows",
-      "Explore Microsoft products",
+      "Explore Thunderbees products",
       "Windows 11 apps"
     ],
-    "Microsoft Store": [
+    "Thunderbees Store": [
       "Account profile",
       "Download Center",
-      "Microsoft Store Support",
+      "Thunderbees Store Support",
       "Returns",
       "Order tracking",
       "Virtual workshops and training",
-      "Microsoft Store Promise"
+      "Thunderbees Store Promise"
     ],
     Education: [
-      "Microsoft in education",
+      "Thunderbees in education",
       "Devices for education",
-      "Microsoft Teams for Education",
-      "Microsoft 365 Education",
+      "Thunderbees Teams for Education",
+      "Thunderbees 365 Education",
       "Office Education",
       "Educator training and development",
       "Deals for students and parents",
       "Azure for students"
     ],
     Business: [
-      "Microsoft Cloud",
-      "Microsoft Security",
+      "Thunderbees Cloud",
+      "Thunderbees Security",
       "Azure",
       "Dynamics 365",
-      "Microsoft 365",
-      "Microsoft Advertising",
-      "Microsoft 365 Copilot",
-      "Microsoft Teams"
+      "Thunderbees 365",
+      "Thunderbees Advertising",
+      "Thunderbees 365 Copilot",
+      "Thunderbees Teams"
     ],
     "Developer & IT": [
-      "Microsoft Developer",
-      "Microsoft Learn",
+      "Thunderbees Developer",
+      "Thunderbees Learn",
       "Support for AI marketplace apps",
-      "Microsoft Tech Community",
+      "Thunderbees Tech Community",
       "Azure Marketplace",
       "AppSource",
-      "Microsoft Power Platform",
+      "Thunderbees Power Platform",
       "Visual Studio"
     ],
     Company: [
       "Careers",
-      "About Microsoft",
+      "About Thunderbees",
       "Company news",
-      "Privacy at Microsoft",
+      "Privacy at Thunderbees",
       "Investors",
       "Diversity and inclusion",
       "Accessibility",
@@ -102,7 +102,7 @@ const Footer = () => {
 
           <div className="d-flex gap-3 flex-wrap text-end">
             <Link to="#" className="text-muted text-decoration-none">
-              Contact Microsoft
+              Contact Thunderbees
             </Link>
             <Link to="#" className="text-muted text-decoration-none">
               Privacy
@@ -116,7 +116,7 @@ const Footer = () => {
             <Link to="#" className="text-muted text-decoration-none">
               About our ads
             </Link>
-            <span>© Microsoft 2025</span>
+            <span>© Thunderbees 2025</span>
           </div>
         </div>
       </div>
