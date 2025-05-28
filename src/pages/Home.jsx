@@ -20,12 +20,13 @@ const Home = () => {
       <FeaturePromo />
       <AppDownload />
       <PlansPricing />
+
       <MobileDownload />
+
+      <Resouces />
       <NextStep />
       <Details />
       <Follow />
-      <MobileDownload />
-      <Resouces />
     </div>
   );
 };
