@@ -15,11 +15,11 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Overview />
-      <KeyFeatures />
-      <FeaturePromo />
+      <Overview id="overview" />
+      <KeyFeatures id="keyFeature" />
+      <FeaturePromo id="whatsNew" />
       <AppDownload />
-      <PlansPricing />
+      <PlansPricing id="plans" />
 
       <MobileDownload />
 

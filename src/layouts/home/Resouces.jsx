@@ -6,7 +6,7 @@ import resourceImg4 from "../../assets/images/resources/featured-resources-04-35
 import resourceImg5 from "../../assets/images/resources/featured-resources-05-351314.avif";
 import backGroundImage from "../../assets/images/cardcarousalbackground/card-carousal-background-351314.avif";
 import imageIcon from "../../assets/images/cardcarousalbackground/1.png";
-
+import ScrollToHashElement from "../../components/ScrollToHashElement";
 const resources = [
   {
     img: resourceImg1,
@@ -127,151 +127,26 @@ const Resouces = () => {
   };
 
   return (
-    <div className="bg-light" style={{ minHeight: "100vh", padding: "40px 0" }}>
-      <div className="container">
-        <div
-          className="text-primary fw-semibold text-uppercase mb-2"
-          style={{ letterSpacing: 1, fontSize: 14 }}
-        >
-          RESOURCES
-        </div>
-        <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
-          Make presentations pop with these helpful resources
-        </h2>
-        <div style={{ position: "relative", overflowX: "hidden" }}>
-          <div
-            ref={scrollRef}
-            style={{
-              display: "flex",
-              gap: 32,
-              overflowX: "auto",
-              scrollBehavior: "smooth",
-              paddingBottom: 8,
-              maxWidth: "100%"
-            }}
-            className="hide-scrollbar"
-          >
-            {resources.map((res, idx) => (
-              <div
-                key={idx}
-                style={{
-                  minWidth: 420,
-                  maxWidth: 420,
-                  background: "#fff",
-                  borderRadius: "24px",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                  border: "none",
-                  overflow: "hidden",
-                  minHeight: 400,
-                  display: "flex",
-                  flexDirection: "column",
-                  flexShrink: 0
-                }}
-              >
-                <img
-                  src={res.img}
-                  alt=""
-                  className="resource-img"
-                  style={{
-                    width: "100%",
-                    height: 160,
-                    objectFit: "cover",
-                    borderTopLeftRadius: "24px",
-                    borderTopRightRadius: "24px"
-                  }}
-                />
-                <div
-                  style={{
-                    padding: 32,
-                    flex: 1,
-                    display: "flex",
-                    flexDirection: "column"
-                  }}
-                >
-                  <div
-                    className="fw-medium mb-2 text-primary"
-                    style={{ fontSize: 12 }}
-                  >
-                    {res.tag}
-                  </div>
-                  <div
-                    className="fw-semibold mb-4"
-                    style={{ fontSize: 22, color: "#111", lineHeight: 1.3 }}
-                  >
-                    {res.title}
-                  </div>
-                  <a
-                    href={res.link}
-                    className="mt-auto d-flex align-items-center text-decoration-none fw-medium"
-                    style={{ color: "#111" }}
-                  >
-                    <span
-                      className="d-flex align-items-center justify-content-center"
-                      style={{
-                        width: 40,
-                        height: 40,
-                        borderRadius: "12px",
-                        background: "#091F2C",
-                        color: "#fff",
-                        marginRight: 12,
-                        fontWeight: 500,
-                        fontSize: 20,
-                        transition: "background 0.2s"
-                      }}
-                    >
-                      <span style={{ fontSize: 22, fontWeight: 700 }}>
-                        {">"}
-                      </span>
-                    </span>
-                    Learn more
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="d-flex gap-3 mt-4 ">
-            <button
-              className="btn btn-outline-primary rounded-circle"
-              style={{ width: 48, height: 48, fontSize: 24 }}
-              aria-label="Previous"
-              onClick={() => scroll("left")}
-            >
-              &#8592;
-            </button>
-            <button
-              className="btn btn-outline-dark rounded-circle"
-              style={{ width: 48, height: 48, fontSize: 24 }}
-              aria-label="Next"
-              onClick={() => scroll("right")}
-            >
-              &#8594;
-            </button>
-          </div>
-        </div>
-      </div>
-      <section
-        className="py-5 mt-5"
-        style={{
-          backgroundImage: `url(${backGroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          color: "#fff"
-        }}
+    <>
+      <ScrollToHashElement />
+      <div
+        className="bg-light"
+        style={{ minHeight: "100vh", padding: "40px 0" }}
+        id="resources"
       >
-        <div className="container my-5">
+        <div className="container">
           <div
             className="text-primary fw-semibold text-uppercase mb-2"
             style={{ letterSpacing: 1, fontSize: 14 }}
           >
-            MORE THUNDERBEES
+            RESOURCES
           </div>
           <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
-            Learn more about Thunderbees 365
+            Make presentations pop with these helpful resources
           </h2>
           <div style={{ position: "relative", overflowX: "hidden" }}>
             <div
-              ref={scrollRef2}
+              ref={scrollRef}
               style={{
                 display: "flex",
                 gap: 32,
@@ -282,7 +157,7 @@ const Resouces = () => {
               }}
               className="hide-scrollbar"
             >
-              {moreResources.map((res, idx) => (
+              {resources.map((res, idx) => (
                 <div
                   key={idx}
                   style={{
@@ -304,13 +179,11 @@ const Resouces = () => {
                     alt=""
                     className="resource-img"
                     style={{
-                      width: 48,
-                      height: 48,
-                      objectFit: "contain",
-                      borderRadius: "12px",
-                      margin: "32px 32px 16px 16px",
-                      display: "block",
-                      background: "#F5F6F7"
+                      width: "100%",
+                      height: 160,
+                      objectFit: "cover",
+                      borderTopLeftRadius: "24px",
+                      borderTopRightRadius: "24px"
                     }}
                   />
                   <div
@@ -367,7 +240,7 @@ const Resouces = () => {
                 className="btn btn-outline-primary rounded-circle"
                 style={{ width: 48, height: 48, fontSize: 24 }}
                 aria-label="Previous"
-                onClick={() => scroll2("left")}
+                onClick={() => scroll("left")}
               >
                 &#8592;
               </button>
@@ -375,15 +248,149 @@ const Resouces = () => {
                 className="btn btn-outline-dark rounded-circle"
                 style={{ width: 48, height: 48, fontSize: 24 }}
                 aria-label="Next"
-                onClick={() => scroll2("right")}
+                onClick={() => scroll("right")}
               >
                 &#8594;
               </button>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <section
+          className="py-5 mt-5"
+          style={{
+            backgroundImage: `url(${backGroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            color: "#fff"
+          }}
+        >
+          <div className="container my-5">
+            <div
+              className="text-primary fw-semibold text-uppercase mb-2"
+              style={{ letterSpacing: 1, fontSize: 14 }}
+            >
+              MORE THUNDERBEES
+            </div>
+            <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
+              Learn more about Thunderbees 365
+            </h2>
+            <div style={{ position: "relative", overflowX: "hidden" }}>
+              <div
+                ref={scrollRef2}
+                style={{
+                  display: "flex",
+                  gap: 32,
+                  overflowX: "auto",
+                  scrollBehavior: "smooth",
+                  paddingBottom: 8,
+                  maxWidth: "100%"
+                }}
+                className="hide-scrollbar"
+              >
+                {moreResources.map((res, idx) => (
+                  <div
+                    key={idx}
+                    style={{
+                      minWidth: 420,
+                      maxWidth: 420,
+                      background: "#fff",
+                      borderRadius: "24px",
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                      border: "none",
+                      overflow: "hidden",
+                      minHeight: 400,
+                      display: "flex",
+                      flexDirection: "column",
+                      flexShrink: 0
+                    }}
+                  >
+                    <img
+                      src={res.img}
+                      alt=""
+                      className="resource-img"
+                      style={{
+                        width: 48,
+                        height: 48,
+                        objectFit: "contain",
+                        borderRadius: "12px",
+                        margin: "32px 32px 16px 16px",
+                        display: "block",
+                        background: "#F5F6F7"
+                      }}
+                    />
+                    <div
+                      style={{
+                        padding: 32,
+                        flex: 1,
+                        display: "flex",
+                        flexDirection: "column"
+                      }}
+                    >
+                      <div
+                        className="fw-medium mb-2 text-primary"
+                        style={{ fontSize: 12 }}
+                      >
+                        {res.tag}
+                      </div>
+                      <div
+                        className="fw-semibold mb-4"
+                        style={{ fontSize: 22, color: "#111", lineHeight: 1.3 }}
+                      >
+                        {res.title}
+                      </div>
+                      <a
+                        href={res.link}
+                        className="mt-auto d-flex align-items-center text-decoration-none fw-medium"
+                        style={{ color: "#111" }}
+                      >
+                        <span
+                          className="d-flex align-items-center justify-content-center"
+                          style={{
+                            width: 40,
+                            height: 40,
+                            borderRadius: "12px",
+                            background: "#091F2C",
+                            color: "#fff",
+                            marginRight: 12,
+                            fontWeight: 500,
+                            fontSize: 20,
+                            transition: "background 0.2s"
+                          }}
+                        >
+                          <span style={{ fontSize: 22, fontWeight: 700 }}>
+                            {">"}
+                          </span>
+                        </span>
+                        Learn more
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="d-flex gap-3 mt-4 ">
+                <button
+                  className="btn btn-outline-primary rounded-circle"
+                  style={{ width: 48, height: 48, fontSize: 24 }}
+                  aria-label="Previous"
+                  onClick={() => scroll2("left")}
+                >
+                  &#8592;
+                </button>
+                <button
+                  className="btn btn-outline-dark rounded-circle"
+                  style={{ width: 48, height: 48, fontSize: 24 }}
+                  aria-label="Next"
+                  onClick={() => scroll2("right")}
+                >
+                  &#8594;
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

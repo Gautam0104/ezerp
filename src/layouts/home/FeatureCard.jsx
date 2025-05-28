@@ -6,7 +6,7 @@ import KeyFeaturesImage3 from "../../assets/images/keyfeature/key-features-3-351
 
 const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
   return (
-    <div className="col-md-4 mb-4">
+    <div className="col-md-4 mb-4" id="keyFeature">
       <div
         className="card h-100"
         style={{
