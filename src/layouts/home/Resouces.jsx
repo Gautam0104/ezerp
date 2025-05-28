@@ -30,15 +30,15 @@ const resources = [
   {
     img: resourceImg4,
     tag: "Design tips",
-    title: "Design your own posters with PowerPoint.",
-    link: "#"
+    title: "Perfect your presentation layout with the 10-20-30 rule.",
+    link: "#",
   },
   {
     img: resourceImg5,
     tag: "Presentation tips",
-    title: "Perfect your presentation layout with the 10-20-30 rule.",
-    link: "#"
-  }
+    title: "Make slides pop with complementary colors.",
+    link: "#",
+  },
 ];
 
 const moreResources = [
@@ -101,7 +101,7 @@ const Resouces = () => {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const { scrollLeft } = scrollRef.current;
+      const { scrollLeft} = scrollRef.current;
       const scrollAmount = 400; // width of card + gap
       scrollRef.current.scrollTo({
         left:
