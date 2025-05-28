@@ -5,6 +5,7 @@ import KeyFeatures from "../layouts/home/FeatureCard";
 import FeaturePromo from "../layouts/home/FeaturePromo";
 import MobileDownload from "../layouts/home/MobilDownload";
 import Resouces from "../layouts/home/Resouces";
+import Faq from "../layouts/home/Faq";  
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <FeaturePromo />
       < MobileDownload />
       <Resouces />
+      <Faq />
     </div>
   );
 };
