@@ -39,7 +39,7 @@ const SignIn = () => {
         JSON.stringify({ email: user.email, name: user.displayName })
       );
 
-      navigate("/pharma");
+      window.location.href = "https://gautam0104.github.io/wms/";
     } catch (error) {
       Swal.fire({
         icon: "error",
