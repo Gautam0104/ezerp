@@ -5,14 +5,14 @@ const LayoutNavbar = () => {
   const { hash } = useLocation();
 
   const navLinks = [
-    { id: "#overview", label: "Overview" },
-    { id: "#keyFeature", label: "Key Features" },
-    { id: "#featurePromo", label: "What’s New" },
-    { id: "#plans", label: "Plans & Pricing" },
-    { id: "#mobile", label: "Mobile Download" },
-    { id: "#resources", label: "Resources" },
-    { id: "#faq", label: "FAQ" },
-    { id: "#nextSteps", label: "Next Steps" }
+    { id: "dashboard/home#overview", label: "Overview" },
+    { id: "dashboard/home#keyFeature", label: "Key Features" },
+    { id: "dashboard/home#featurePromo", label: "What’s New" },
+    { id: "dashboard/home#plans", label: "Plans & Pricing" },
+    { id: "dashboard/home#mobile", label: "Mobile Download" },
+    { id: "dashboard/home#resources", label: "Resources" },
+    { id: "dashboard/home#faq", label: "FAQ" },
+    { id: "dashboard/home#nextSteps", label: "Next Steps" }
   ];
 
   return (
