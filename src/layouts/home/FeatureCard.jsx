@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import KeyFeaturesImage1 from "../../assets/images/keyfeature/key-features-1-351314.avif";
+import KeyFeaturesImage1 from "../../assets/images/keyfeature/key-features-10-351314.avif";
 import KeyFeaturesImage2 from "../../assets/images/keyfeature/key-features-2-351314.avif";
 import KeyFeaturesImage3 from "../../assets/images/keyfeature/key-features-3-351314.avif";
 
