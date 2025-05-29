@@ -66,7 +66,8 @@ const Faq = () => {
   return (
     <>
       <ScrollToHashElement />
-      <section className="py-5" style={{ backgroundColor: "#fdfcf9" }}>
+      <section className="py-5" data-aos="fade-up"
+              data-aos-delay="500" style={{ backgroundColor: "#fdfcf9" }}>
         <div
           className="container"
           style={{

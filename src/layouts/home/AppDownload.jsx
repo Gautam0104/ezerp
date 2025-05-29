@@ -27,7 +27,7 @@ const AppDownload = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Use the free versions of Word, Excel, and PharmaScan directly
+                Use the free versions of and PharmaScan directly
                 from your desktop1
               </p>
               <div className="mb-3 mt-3" style={{ maxWidth: "40px" }}>
@@ -84,7 +84,7 @@ const AppDownload = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Use the free versions of Word, Excel, and PharmaScan directly
+                Use the free versions of and PharmaScan directly
                 from your desktop1
               </p>
               <div
