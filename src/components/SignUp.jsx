@@ -1,8 +1,10 @@
+// src/pages/SignUp.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { registerUser, checkEmailExists } from "../services/authService";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { auth } from "../firebase";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,7 @@ const SignUp = () => {
     email: "",
     password: ""
   });
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -18,18 +21,16 @@ const SignUp = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const existing = await checkEmailExists(formData.email);
-      if (existing.data.length > 0) {
-        return Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Email already registered!"
-        });
-      }
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+      );
 
-      await registerUser(formData);
+      await updateProfile(userCredential.user, {
+        displayName: formData.fullName
+      });
 
       Swal.fire({
         icon: "success",
@@ -40,12 +41,11 @@ const SignUp = () => {
       });
 
       navigate("/signin");
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
       Swal.fire({
         icon: "error",
-        title: "Error",
-        text: "Something went wrong!"
+        title: "Signup Failed",
+        text: error.message
       });
     }
   };
