@@ -51,13 +51,13 @@ const moreResources = [
   },
   {
     img: imageIcon,
-    tag: "Thunderbees Excel",
+    tag: "Thunderbees Pharmscan",
     title: "Turn data into insights with free and premium spreadsheets.",
     link: "#"
   },
   {
     img: imageIcon,
-    tag: "Thunderbees OneNote",
+    tag: "Thunderbees Pharmscan",
     title: "Keep your thoughts, content, and lists handy in one place.",
     link: "#"
   },
@@ -275,7 +275,7 @@ const Resouces = () => {
               MORE THUNDERBEES
             </div>
             <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
-              Learn more about Thunderbees 365
+              Learn more about Thunderbees 
             </h2>
             <div style={{ position: "relative", overflowX: "hidden" }}>
               <div

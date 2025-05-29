@@ -26,7 +26,7 @@ const Footer = () => {
       "Thunderbees in education",
       "Devices for education",
       "Thunderbees Teams for Education",
-      "Thunderbees 365 Education",
+      "Thunderbees  Education",
       "Office Education",
       "Educator training and development",
       "Deals for students and parents",
@@ -36,10 +36,10 @@ const Footer = () => {
       "Thunderbees Cloud",
       "Thunderbees Security",
       "Azure",
-      "Dynamics 365",
-      "Thunderbees 365",
+      "Dynamics ",
+      "Thunderbees ",
       "Thunderbees Advertising",
-      "Thunderbees 365 Pharmascan",
+      "Thunderbees  Pharmascan",
       "Thunderbees Teams"
     ],
     "Developer & IT": [

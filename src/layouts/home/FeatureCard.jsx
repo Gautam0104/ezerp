@@ -98,9 +98,9 @@ const KeyFeatures = () => {
       imageUrl: KeyFeaturesImage2 // Replace with your image path
     },
     {
-      title: "Get more Thunderbees 365",
+      title: "Get more Thunderbees ",
       description:
-        "Get the apps, security, and storage you need to accomplish your goals with Thunderbees 365.",
+        "Get the apps, security, and storage you need to accomplish your goals with Thunderbees .",
       buttonLabel: "Learn more",
       imageUrl: KeyFeaturesImage3 // Replace with your image path
     }

@@ -125,7 +125,7 @@ const NextStep = () => {
                         data-aos="fade-up"
                         data-aos-delay="200"
                       >
-                        Thunderbees 365
+                        Thunderbees 
                       </h2>
                       <p>
                         Maximize your potential with apps to optimize the

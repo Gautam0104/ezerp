@@ -17,7 +17,7 @@ const tabContents = [
             content: (
               <div className="text-muted">
                 Generate a Pharmascan outline instantly with Pharmascan in
-                Thunderbees 365.
+                Thunderbees .
               </div>
             )
           },

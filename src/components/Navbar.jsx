@@ -33,7 +33,7 @@ const Navbar = () => {
           {/* Left nav links */}
           <div className="navbar-nav d-lg-flex align-items-center gap-3">
             <Link to="#" className="nav-link fw-semibold text-dark">
-              Thunderbees 365
+              Thunderbees 
             </Link>
             <Link to="#" className="nav-link text-dark">
               PharmaScan

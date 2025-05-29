@@ -28,7 +28,7 @@ const Details = () => {
             Pharmascans, Thunderbees on Mac, and iOS and Android apps.
           </li>
           <li className="list-group-item bg-transparent border-0">
-            <strong>[4]</strong> <br /> Thunderbees 365 Personal or Family
+            <strong>[4]</strong> <br /> Thunderbees  Personal or Family
             subscription required; AI features only available to subscription
             owner and cannot be shared; usage limits apply.{" "}
             <Link to="">Learn more</Link>.
@@ -37,12 +37,12 @@ const Details = () => {
             <strong>[5]</strong> <br /> Once your paid subscription begins,
             cancelation policies vary based on your status as a new customer,
             product, and domain selections on Thunderbees.{" "}
-            <Link to="">Learn more</Link>. Cancel your Thunderbees 365
-            subscription any time by going to the Thunderbees 365 admin center.
+            <Link to="">Learn more</Link>. Cancel your Thunderbees 
+            subscription any time by going to the Thunderbees  admin center.
             When a subscription is canceled, all associated data will be
             deleted. <br />
             <Link to="">Learn more</Link> about data retention, deletion, and
-            destruction in Thunderbees 365.
+            destruction in Thunderbees .
           </li>
         </ul>
       </div>

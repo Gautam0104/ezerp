@@ -41,7 +41,7 @@ const FeaturePromo = () => {
                   data-aos-delay="300"
                 >
                   Use the latest AI-powered features in PharmaScan and select
-                  Thunderbees 365 apps with a Thunderbees 365 subscription
+                  Thunderbees  apps with a Thunderbees  subscription
                 </p>
                 <div
                   className=" p-4 rounded-3 mb-4"

@@ -33,7 +33,7 @@ const PlansPricing = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                PharmaScan is better with <br /> Thunderbees 365
+                PharmaScan is better with <br /> Thunderbees 
               </h2>
               <div
                 className="mb-3 d-flex py-5"
@@ -109,9 +109,9 @@ const PlansPricing = () => {
               <div className="col-md-4">
                 <div className="card h-100 text-center p-3">
                   <div className="card-body">
-                    <h5 className="card-title">Thunderbees 365 Personal</h5>
+                    <h5 className="card-title">Thunderbees  Personal</h5>
                     <p className="price">
-                      ₹ 6,899.00<span class="fs-6"> /year</span>
+                      $6,899.00<span class="fs-6"> /year</span>
                     </p>
                     <p className="text-muted">
                       Subscription automatically renews unless canceled.{" "}
@@ -138,9 +138,9 @@ const PlansPricing = () => {
               <div className="col-md-4">
                 <div className="card h-100 text-center p-3">
                   <div className="card-body">
-                    <h5 className="card-title">Thunderbees 365 Family</h5>
+                    <h5 className="card-title">Thunderbees  Family</h5>
                     <p className="price">
-                      ₹ 8,199.00<span class="fs-6"> /year</span>
+                      $8,199.00<span class="fs-6"> /year</span>
                     </p>
                     <p className="text-muted">
                       Subscription automatically renews unless canceled.{" "}
