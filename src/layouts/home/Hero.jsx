@@ -16,7 +16,7 @@ const Hero = () => {
               Thunderbees PharmaScan
             </h1>
             <p className=" mb-4 " data-aos="fade-up" data-aos-delay="300">
-              Design captivating presentations and collaborate in real-time from
+              Design captivating Pharmascan and collaborate in real-time from
               any device.
             </p>
 

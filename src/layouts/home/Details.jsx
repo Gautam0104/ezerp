@@ -14,18 +14,18 @@ const Details = () => {
           </li>
           <li className="list-group-item bg-transparent border-0">
             <strong>[1]</strong> <br /> Documents must be saved in and shared
-            from OneDrive.
+            from Pharmascan.
           </li>
           <li className="list-group-item bg-transparent border-0">
-            <strong>[2]</strong> <br /> Copilot in Excel requires AutoSave to be
-            enabled, meaning the file must be saved to OneDrive; it doesn't
+            <strong>[2]</strong> <br /> Pharmascan in Excel requires AutoSave to be
+            enabled, meaning the file must be saved to Pharmascan; it doesn't
             function with unsaved files.
           </li>
           <li className="list-group-item bg-transparent border-0">
-            <strong>[3]</strong> <br /> Copilot features in Outlook apply to
-            accounts with @outlook.com, @hotmail.com, @live.com, or @msn.com
-            email addresses and are available in Outlook.com, Outlook built into
-            Windows, Outlook on Mac, and iOS and Android apps.
+            <strong>[3]</strong> <br /> Pharmascan features in Thunderbees apply to
+            accounts with @Thunderbees.com, @hotmail.com, @live.com, or @msn.com
+            email addresses and are available in Thunderbees.com, Thunderbees built into
+            Pharmascans, Thunderbees on Mac, and iOS and Android apps.
           </li>
           <li className="list-group-item bg-transparent border-0">
             <strong>[4]</strong> <br /> Thunderbees 365 Personal or Family

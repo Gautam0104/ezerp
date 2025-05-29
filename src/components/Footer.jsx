@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const footerData = {
     "What's new": [
-      "Surface Pro",
-      "Surface Laptop",
-      "Surface Laptop Studio 2",
-      "Surface Laptop Go 3",
-      "Thunderbees Copilot",
-      "AI in Windows",
+      "Thunderbees Pro",
+      "Thunderbees Pharmascan",
+      "Thunderbees Pharmascan Studio 2",
+      "Thunderbees Pharmascan Go 3",
+      "Thunderbees Pharmascan",
+      "AI in Pharmascans",
       "Explore Thunderbees products",
-      "Windows 11 apps"
+      "Pharmascans 11 apps"
     ],
     "Thunderbees Store": [
       "Account profile",
@@ -39,7 +39,7 @@ const Footer = () => {
       "Dynamics 365",
       "Thunderbees 365",
       "Thunderbees Advertising",
-      "Thunderbees 365 Copilot",
+      "Thunderbees 365 Pharmascan",
       "Thunderbees Teams"
     ],
     "Developer & IT": [

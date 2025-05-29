@@ -47,7 +47,7 @@ const NextStep = () => {
                       </span>
                     </div>
                     <div className="mb-3 p-2">
-                      <h2 className="text-primary">Thunderbees Copilot Pro</h2>
+                      <h2 className="text-primary">Thunderbees Pharmascan Pro</h2>
                       <p>Supercharge your creativity and productivity.</p>
                     </div>
                     <div className="mb-3 p-2">
@@ -59,7 +59,7 @@ const NextStep = () => {
                   <div className="col-md-6">
                     <img
                       src={Image01}
-                      alt="Thunderbees Copilot Pro"
+                      alt="Thunderbees Pharmascan Pro"
                       className="img-fluid w-100 rounded"
                     />
                   </div>
