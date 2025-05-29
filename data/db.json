@@ -5,6 +5,12 @@
       "fullName": "Gautam Shukla",
       "email": "codergk1007@gmail.com",
       "password": "gk123"
+    },
+    {
+      "id": "ff3c",
+      "fullName": "Aman",
+      "email": "aman@gmail.com",
+      "password": "123456"
     }
   ]
 }
