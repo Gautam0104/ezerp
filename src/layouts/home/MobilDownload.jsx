@@ -5,9 +5,8 @@ const MobileDownload = () => {
     <>
       <ScrollToHashElement />
       <div
-        className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light"
-        id="mobile" data-aos="fade-up"
-     data-aos-duration="3000"
+        className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light p-2"
+        id="mobile"
       >
         <h1 className="fw-bold text-center mb-3" style={{ fontSize: "2.8rem" }}>
           Download the Thuderbees mobile app
