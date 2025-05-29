@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup
+} from "firebase/auth";
 import { auth } from "../firebase";
 
 const SignIn = () => {
@@ -33,7 +37,6 @@ const SignIn = () => {
         showConfirmButton: false
       });
 
-      // Store user in localStorage if needed
       localStorage.setItem(
         "user",
         JSON.stringify({ email: user.email, name: user.displayName })
@@ -44,6 +47,35 @@ const SignIn = () => {
       Swal.fire({
         icon: "error",
         title: "Login failed",
+        text: error.message
+      });
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    try {
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
+
+      const user = result.user;
+
+      Swal.fire({
+        icon: "success",
+        title: "Google Sign-In successful!",
+        timer: 1500,
+        showConfirmButton: false
+      });
+
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ email: user.email, name: user.displayName })
+      );
+
+      window.location.href = "https://gautam0104.github.io/wms/";
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Google Sign-In failed",
         text: error.message
       });
     }
@@ -79,12 +111,22 @@ const SignIn = () => {
                 required
               />
             </div>
-            <div className="d-grid gap-2">
+            <div className="d-grid gap-2 mb-3">
               <button type="submit" className="btn btn-dark btn-lg">
                 Sign In
               </button>
             </div>
           </form>
+
+          <div className="d-grid gap-2 mb-3">
+            <button
+              onClick={handleGoogleSignIn}
+              className="btn btn-danger btn-lg"
+            >
+              <i className="bi bi-google me-2"></i> Sign in with Google
+            </button>
+          </div>
+
           <p className="mt-3 text-muted">
             Don't have an account? <a href="/signup">Sign up here</a>
           </p>
