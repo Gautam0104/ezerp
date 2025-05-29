@@ -52,7 +52,8 @@ const faqData = [
 ];
 
 const Faq = () => {
-  const [openIndexes, setOpenIndexes] = useState([0, 1, 2, 3]);
+  // By default, keep collapse all selected (all collapsed)
+  const [openIndexes, setOpenIndexes] = useState([]); // <-- changed from [0, 1, 2, 3]
 
   const handleToggle = (idx) => {
     setOpenIndexes((prev) =>
