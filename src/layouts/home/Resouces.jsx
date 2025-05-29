@@ -141,7 +141,8 @@ const Resouces = () => {
           >
             RESOURCES
           </div>
-          <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
+          <h2 className="fw mb-5 " data-aos="fade-up"
+     data-aos-duration="3000" style={{ fontSize: 48, color: "#111" }}>
             Make presentations pop with these helpful resources
           </h2>
           <div style={{ position: "relative", overflowX: "hidden" }}>
@@ -155,10 +156,10 @@ const Resouces = () => {
                 paddingBottom: 8,
                 maxWidth: "100%"
               }}
-              className="hide-scrollbar"
-            >
+              className="hide-scrollbar" data-aos="fade-up-left"
+              data-aos-delay="3000">
               {resources.map((res, idx) => (
-                <div
+                <div 
                   key={idx}
                   style={{
                     minWidth: 420,

@@ -138,7 +138,8 @@ const Overview = () => {
   return (
     <>
       <LayoutNavbar />
-      <div className="container py-5 px-3 px-md-5">
+      <div className="container py-5 px-3 px-md-5" data-aos="fade-up"
+     data-aos-duration="3000">
         <div className="row gy-5 align-items-center">
           {/* Left Panel */}
           <div className="col-12 col-md-6">

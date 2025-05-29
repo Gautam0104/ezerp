@@ -6,7 +6,8 @@ import KeyFeaturesImage3 from "../../assets/images/keyfeature/key-features-3-351
 
 const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
   return (
-    <div className="col-md-4 mb-4" id="keyFeature">
+    <div className="col-md-4 mb-4" id="keyFeature" data-aos="fade-up"
+     data-aos-duration="3000">
       <div
         className="card h-100"
         style={{
@@ -110,7 +111,8 @@ const KeyFeatures = () => {
       <small className="text-uppercase fw-semibold text-primary mb-2">
         Key Features
       </small>
-      <h2 className="mb-4">Supercharge your presentations</h2>
+      <h2 className="mb-4" data-aos="fade-up"
+     data-aos-duration="300">Supercharge your presentations</h2>
       <div className="row">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
