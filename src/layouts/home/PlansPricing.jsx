@@ -126,7 +126,7 @@ const PlansPricing = () => {
                       <li>Dictation, voice commands, and transcription</li>
                       <li>Advanced grammar and editing</li>
                       <li>1 TB cloud storage</li>
-                      <li>Word, Excel, PharmaScan, Thunderbees, OneNote</li>
+                      <li>PharmaScan, Thunderbees, </li>
                       <li>Thunderbees Pharmascan & Designer</li>
                       <li>Advanced digital security</li>
                       <li>Ad-free experience</li>
@@ -155,7 +155,7 @@ const PlansPricing = () => {
                       <li>Dictation, voice commands, and transcription</li>
                       <li>Advanced grammar and editing</li>
                       <li>Up to 6 TB cloud storage</li>
-                      <li>Word, Excel, PharmaScan, Thunderbees, OneNote</li>
+                      <li>PharmaScan, Thunderbees, </li>
                       <li>Thunderbees Pharmascan & Designer</li>
                       <li>Advanced digital security</li>
                     </ul>

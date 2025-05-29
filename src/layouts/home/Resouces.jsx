@@ -142,7 +142,7 @@ const Resouces = () => {
             RESOURCES
           </div>
           <h2 className="fw mb-5 " data-aos="fade-up"
-     data-aos-duration="3000" style={{ fontSize: 48, color: "#111" }}>
+          data-aos-delay="300" style={{ fontSize: 48, color: "#111" }}>
             Make Pharmascan pop with these helpful resources
           </h2>
           <div style={{ position: "relative", overflowX: "hidden" }}>
@@ -156,8 +156,8 @@ const Resouces = () => {
                 paddingBottom: 8,
                 maxWidth: "100%"
               }}
-              className="hide-scrollbar" data-aos="fade-up-left"
-              data-aos-delay="3000">
+              className="hide-scrollbar" data-aos="fade-left"
+              data-aos-delay="500">
               {resources.map((res, idx) => (
                 <div 
                   key={idx}
@@ -266,7 +266,8 @@ const Resouces = () => {
             color: "#fff"
           }}
         >
-          <div className="container my-5">
+          <div className="container my-5" data-aos="fade-up"
+              data-aos-delay="300">
             <div
               className="text-primary fw-semibold text-uppercase mb-2"
               style={{ letterSpacing: 1, fontSize: 14 }}
@@ -287,7 +288,8 @@ const Resouces = () => {
                   paddingBottom: 8,
                   maxWidth: "100%"
                 }}
-                className="hide-scrollbar"
+                className="hide-scrollbar" data-aos="fade-left"
+              data-aos-delay="500"
               >
                 {moreResources.map((res, idx) => (
                   <div

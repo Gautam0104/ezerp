@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="hero-content-mobile">
           <h1 className="display-5 fw-bold">Thunderbees PharmaScan</h1>
           <p className="mb-3">
-            Design captivating presentations and collaborate in real-time from
+            Design captivating Pharmascan and collaborate in real-time from
             any device.
           </p>
           <Link to="/signup" className="btn btn-primary btn-lg w-100 mb-3">
@@ -70,7 +70,7 @@ const Hero = () => {
             Thunderbees PharmaScan
           </h1>
           <p className=" mb-4 " data-aos="fade-up" data-aos-delay="300">
-            Design captivating presentations and collaborate in real-time from
+            Design captivating Pharmascanand collaborate in real-time from
             any device.
           </p>
 
