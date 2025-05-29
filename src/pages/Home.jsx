@@ -5,7 +5,7 @@ import KeyFeatures from "../layouts/home/FeatureCard";
 import FeaturePromo from "../layouts/home/FeaturePromo";
 import MobileDownload from "../layouts/home/MobilDownload";
 import PlansPricing from "../layouts/home/PlansPricing";
-import AppDownload from "../layouts/home/AppDownload";
+// import AppDownload from "../layouts/home/AppDownload";
 import NextStep from "../layouts/home/NextStep";
 import Details from "../layouts/home/Details";
 import Follow from "../layouts/home/Follow";
@@ -19,7 +19,7 @@ const Home = () => {
       <Overview id="overview" />
       <KeyFeatures id="keyFeature" />
       <FeaturePromo id="whatsNew" />
-      <AppDownload />
+      {/* <AppDownload /> */}
       <PlansPricing id="plans" />
 
       <MobileDownload />

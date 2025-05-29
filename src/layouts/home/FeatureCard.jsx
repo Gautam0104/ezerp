@@ -30,7 +30,7 @@ const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
         />
         <div className="card-body d-flex flex-column align-items-start">
           <h5 className="card-title fw-semibold">{title}</h5>
-          <p className="card-text text-primary mb-4">{description}</p>
+          <p className="card-text text-primary mb-4 text-start">{description}</p>
           <Link
             href="#"
             className="btn"
