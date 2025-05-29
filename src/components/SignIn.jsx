@@ -1,6 +1,5 @@
 // src/pages/SignIn.js
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -12,7 +11,6 @@ import { auth } from "../firebase";
 
 const SignIn = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });

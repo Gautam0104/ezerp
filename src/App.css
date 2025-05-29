@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .hide-scrollbar {
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -21,9 +34,7 @@
   scale: 1.2
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 @media (max-width: 767px) {
   #nextSteps {
