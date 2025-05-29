@@ -25,7 +25,9 @@ const NextStep = () => {
         <div className="container my-3">
           <div className="row g-5">
             <div className="col-12 text-start">
-              <h1 className="text-primary mb-5">Next steps</h1>
+              <h1 className="text-primary mb-5" id="nextStepsheader">
+                Next steps
+              </h1>
 
               {/* First Card */}
               <div
@@ -47,7 +49,7 @@ const NextStep = () => {
                       </span>
                     </div>
                     <div className="mb-3 p-2">
-                      <h2 className="text-primary">Thunderbees Copilot Pro</h2>
+                      <h2 className="text-primary">Thunderbees Pharmascan Pro</h2>
                       <p>Supercharge your creativity and productivity.</p>
                     </div>
                     <div className="mb-3 p-2">
@@ -59,7 +61,7 @@ const NextStep = () => {
                   <div className="col-md-6">
                     <img
                       src={Image01}
-                      alt="Thunderbees Copilot Pro"
+                      alt="Thunderbees Pharmascan Pro"
                       className="img-fluid w-100 rounded"
                     />
                   </div>

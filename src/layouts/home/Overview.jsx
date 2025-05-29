@@ -13,10 +13,10 @@ const tabContents = [
       <CollapsibleSections
         sections={[
           {
-            title: "Start with Thunderbees Copilot",
+            title: "Start with Thunderbees Pharmascan",
             content: (
               <div className="text-muted">
-                Generate a presentation outline instantly with Copilot in
+                Generate a Pharmascan outline instantly with Pharmascan in
                 Thunderbees 365.
               </div>
             )
@@ -26,7 +26,7 @@ const tabContents = [
             content: (
               <div className="text-muted">
                 Ask for more information or a new slide on your topic directly
-                through Copilot in PharmaScan.
+                through Thunderbees in PharmaScan.
               </div>
             )
           },
@@ -80,7 +80,7 @@ const tabContents = [
             title: "Add a video explainer",
             content: (
               <div className="text-muted">
-                Make your presentations more engaging with video explainers.
+                Make your Pharmascan more engaging with video explainers.
               </div>
             )
           },
@@ -96,7 +96,7 @@ const tabContents = [
             title: "Improve accessibility",
             content: (
               <div className="text-muted">
-                Ensure your presentation is accessible to everyone.
+                Ensure your Pharmascan is accessible to everyone.
               </div>
             )
           }
@@ -114,7 +114,7 @@ const tabContents = [
             title: "Share with anyone",
             content: (
               <div className="text-muted">
-                Easily share your presentation with others.
+                Easily share your Pharmascan with others.
               </div>
             )
           },
@@ -147,7 +147,7 @@ const Overview = () => {
               Overview
             </small>
             <h2 className="fw-bold mb-4 fs-2 fs-md-1">
-              Pump up your presentations
+              Pump up your Pharmascan
             </h2>
             <div className="d-flex flex-wrap gap-2 mb-4">
               {tabContents.map((tab, idx) => (

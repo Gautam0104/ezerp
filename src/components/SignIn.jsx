@@ -1,8 +1,10 @@
+// src/pages/SignIn.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { loginUser } from "../services/authService";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
 
 const SignIn = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
@@ -16,29 +18,33 @@ const SignIn = () => {
     e.preventDefault();
 
     try {
-      const res = await loginUser(credentials.email, credentials.password);
-      if (res.data.length > 0) {
-        Swal.fire({
-          icon: "success",
-          title: "Login successful!",
-          timer: 1500,
-          showConfirmButton: false
-        });
-        localStorage.setItem("user", JSON.stringify(res.data[0]));
-        navigate("/pharma");
-      } else {
-        Swal.fire({
-          icon: "error",
-          title: "Login failed",
-          text: "Invalid email or password!"
-        });
-      }
-    } catch (err) {
-      console.error(err);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        credentials.email,
+        credentials.password
+      );
+
+      const user = userCredential.user;
+
+      Swal.fire({
+        icon: "success",
+        title: "Login successful!",
+        timer: 1500,
+        showConfirmButton: false
+      });
+
+      // Store user in localStorage if needed
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ email: user.email, name: user.displayName })
+      );
+
+      navigate("/pharma");
+    } catch (error) {
       Swal.fire({
         icon: "error",
-        title: "Error",
-        text: "Something went wrong!"
+        title: "Login failed",
+        text: error.message
       });
     }
   };

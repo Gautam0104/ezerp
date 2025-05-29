@@ -11,14 +11,14 @@ const resources = [
   {
     img: resourceImg1,
     tag: "Design tips",
-    title: "Pick the perfect font for your presentation.",
+    title: "Pick the perfect font for your Pharmascan.",
     link: "#"
   },
   {
     img: resourceImg2,
-    tag: "Presentation tips",
+    tag: "Pharmascan tips",
     title:
-      "Use visual aids to increase the impact of your speeches and presentations.",
+      "Use visual aids to increase the impact of your speeches and Pharmascan.",
     link: "#"
   },
   {
@@ -30,12 +30,12 @@ const resources = [
   {
     img: resourceImg4,
     tag: "Design tips",
-    title: "Perfect your presentation layout with the 10-20-30 rule.",
+    title: "Perfect your Pharmascan layout with the 10-20-30 rule.",
     link: "#"
   },
   {
     img: resourceImg5,
-    tag: "Presentation tips",
+    tag: "Pharmascan tips",
     title: "Make slides pop with complementary colors.",
     link: "#"
   }
@@ -63,7 +63,7 @@ const moreResources = [
   },
   {
     img: imageIcon,
-    tag: "Thunderbees Outlook",
+    tag: "Thunderbees Pharmascan",
     title: "Manage your email, calendar, tasks, and contacts in one location.",
     link: "#"
   },
@@ -75,7 +75,7 @@ const moreResources = [
   },
   {
     img: imageIcon,
-    tag: "Thunderbees OneDrive",
+    tag: "Thunderbees Pharmascan",
     title:
       "Keep your files and memories protected, up to date, and easily accessible across all your devices.",
     link: "#"
@@ -143,7 +143,7 @@ const Resouces = () => {
           </div>
           <h2 className="fw mb-5 " data-aos="fade-up"
      data-aos-duration="3000" style={{ fontSize: 48, color: "#111" }}>
-            Make presentations pop with these helpful resources
+            Make Pharmascan pop with these helpful resources
           </h2>
           <div style={{ position: "relative", overflowX: "hidden" }}>
             <div

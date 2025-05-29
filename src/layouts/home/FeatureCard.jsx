@@ -84,9 +84,9 @@ const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
 const KeyFeatures = () => {
   const features = [
     {
-      title: "Copilot in PharmaScan",
+      title: "Thunderbees in PharmaScan",
       description:
-        "Enjoy faster Copilot performance, enhanced creative tools, and improved features designed to boost .",
+        "Enjoy faster Pharmascan performance, enhanced creative tools, and improved features designed to boost .",
       buttonLabel: "Learn more",
       imageUrl: KeyFeaturesImage1 // Replace with your image path
     },
@@ -112,7 +112,7 @@ const KeyFeatures = () => {
         Key Features
       </small>
       <h2 className="mb-4" data-aos="fade-up"
-     data-aos-duration="300">Supercharge your presentations</h2>
+     data-aos-duration="300">Supercharge your Pharmascan</h2>
       <div className="row">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />

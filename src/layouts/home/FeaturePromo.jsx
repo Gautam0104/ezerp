@@ -50,7 +50,7 @@ const FeaturePromo = () => {
                 >
                   <h4 className="text-primary mb-3">
                     <i className="bi bi-stars me-2"></i>
-                    Introducing Copilot for PharmaScan
+                    Introducing Thunderbees for PharmaScan
                   </h4>
                   <button className="btn btn-primary px-4 py-2 rounded-pill fw-semibold">
                     Learn more <i className="bi bi-arrow-right ms-2"></i>
