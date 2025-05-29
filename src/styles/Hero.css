@@ -1,10 +1,33 @@
-.hero-section {
-    background: #fffdfb;
-    min-height: 100vh;
+.hero-fullscreen {
+    height: 67vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.hero-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 1rem;
+
+
+.hero-fullscreen .container {
+    z-index: 2;
+    position: relative;
+    color: #091f2c;
+}
+
+/* Mobile Grid Styles */
+.hero-grid-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hero-image-container img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.hero-buttons-mobile {
+    margin-bottom: 1rem;
 }

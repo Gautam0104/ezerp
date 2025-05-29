@@ -5,7 +5,7 @@ const MobileDownload = () => {
     <>
       <ScrollToHashElement />
       <div
-        className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light"
+        className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light p-2"
         id="mobile"
       >
         <h1 className="fw-bold text-center mb-3" style={{ fontSize: "2.8rem" }}>

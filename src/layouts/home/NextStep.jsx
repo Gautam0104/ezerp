@@ -25,7 +25,9 @@ const NextStep = () => {
         <div className="container my-3">
           <div className="row g-5">
             <div className="col-12 text-start">
-              <h1 className="text-primary mb-5">Next steps</h1>
+              <h1 className="text-primary mb-5" id="nextStepsheader">
+                Next steps
+              </h1>
 
               {/* First Card */}
               <div
