@@ -1,5 +1,5 @@
 import React from "react";
-import Image01 from "../../assets/images/featurepromo/interactive-demo-351314.avif";
+import Image01 from "../../assets/images/intractivedemo/interactive-demo-10351314.avif";
 import bgImage from "../../assets/images/featurepromo/mediademo-background-351314.avif"; // Placeholder for background image
 import ScrollToHashElement from "../../components/ScrollToHashElement";
 const FeaturePromo = () => {
