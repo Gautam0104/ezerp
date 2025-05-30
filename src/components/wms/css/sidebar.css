@@ -1,0 +1,7 @@
+.collapsed-sidebar {
+    width: 70px !important;
+}
+
+#sidebar {
+    transition: width 0.3s ease;
+}

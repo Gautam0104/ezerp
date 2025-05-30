@@ -7,6 +7,9 @@ import Home from "../pages/Home";
 import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
 import Welcome from "../pages/Welcome";
+import PharmaScan from "../pages/PharmaScan";
+import PharmaScanDashboard from "../layouts/pharmascan/PharmaScanDashboard";
+import ProductForm from "../layouts/pharmascan/ProductForm";
 
 const AppRoutes = () => {
   return (
@@ -21,7 +24,10 @@ const AppRoutes = () => {
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/pharma" element={<Welcome />} />
-
+      <Route path="/wms" element={<PharmaScan />}>
+        <Route path="pharmahome" element={<PharmaScanDashboard />} />
+        <Route path="product" element={<ProductForm />} />
+      </Route>
       {/* Dashboard Layout */}
       <Route path="/dashboard" element={<Dashboard />}>
         <Route index element={<Navigate to="home" replace />} />

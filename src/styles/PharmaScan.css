@@ -1,0 +1,29 @@
+.pharma-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar fixed on the left */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+}
+
+/* Main content scrollable */
+.main-content {
+    margin-left: 250px;
+    /* same as sidebar width */
+    padding: 5px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    overflow-y: auto;
+    width: 100%;
+}

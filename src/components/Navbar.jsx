@@ -33,9 +33,9 @@ const Navbar = () => {
           {/* Left nav links */}
           <div className="navbar-nav d-lg-flex align-items-center gap-3">
             <Link to="#" className="nav-link fw-semibold text-dark">
-              Thunderbees 
+              Thunderbees
             </Link>
-            <Link to="#" className="nav-link text-dark">
+            <Link to="/wms/pharmahome" className="nav-link text-dark">
               PharmaScan
             </Link>
             <Link to="#" className="nav-link text-dark dropdown-toggle">
