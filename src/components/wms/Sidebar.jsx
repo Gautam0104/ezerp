@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// Sidebar.jsx
+import React, { useState, useEffect } from "react";
 import {
   BsBoxSeam,
   BsChevronLeft,
@@ -17,52 +18,69 @@ import {
 } from "react-icons/bs";
 import "./css/sidebar.css";
 
-const Sidebar = () => {
-  const [collapsed, setCollapsed] = useState(false);
+const Sidebar = ({ collapsed, toggleSidebar }) => {
   const [activeLink, setActiveLink] = useState("/ezerp/#/wms/pharmahome");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-  const toggleSidebar = () => {
-    setCollapsed(!collapsed);
-  };
+  // Handle resize for mobile detection
+  useEffect(() => {
+    const handleResize = () => {
+      const isNowMobile = window.innerWidth <= 768;
+      setIsMobile(isNowMobile);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-  const sidebarClass = `d-flex flex-column bg-light h-100 position-relative border-end p-3 transition-all ${
-    collapsed ? "collapsed-sidebar" : ""
+  const sidebarClass = `d-flex flex-column bg-light h-100 position-fixed top-0 start-0 border-end p-3 transition-all ${
+    collapsed ? "" : "expanded"
   }`;
 
   const handleLinkClick = (href, e) => {
-    e.preventDefault(); // prevent default link navigation for demo
+    e.preventDefault();
     setActiveLink(href);
-    // Navigate to href (comment out if using SPA routing)
+    if (isMobile) toggleSidebar(); // Collapse on mobile after navigation
     window.location.href = href;
   };
 
   return (
-    <div
-      id="sidebar"
-      className={sidebarClass}
-      style={{ width: collapsed ? "70px" : "250px" }}
-    >
-      {/* Top Section */}
-      <div className="position-absolute top-0 start-0 end-0 p-3 bg-light">
-        <div className="d-flex justify-content-between align-items-center">
-          <h4 className="mb-4 d-flex align-items-center gap-2 fs-5 fw-semibold text-dark">
-            <BsBoxSeam />
-            {!collapsed && <span>WMS</span>}
-          </h4>
-          <button
-            onClick={toggleSidebar}
-            className="btn btn-sm btn-light rounded-circle"
-          >
-            <BsChevronLeft
-              style={{
-                transform: collapsed ? "rotate(180deg)" : "none",
-                transition: "0.3s"
-              }}
-            />
-          </button>
-        </div>
-        {!collapsed && <h6 className="text-muted">MODULES</h6>}
-      </div>
+    <>
+      {isMobile && !collapsed && (
+        <div className="sidebar-overlay" onClick={toggleSidebar}></div>
+      )}
+      {!collapsed && (
+        <div
+          id="sidebar"
+          className={sidebarClass}
+          style={{ width: collapsed ? "0px" : "250px", zIndex: 1041 }}
+        >
+          {/* Header */}
+          <div className="position-absolute top-0 start-0 end-0 p-3 bg-light">
+            <div className="d-flex justify-content-between align-items-center">
+              <h4 className="mb-4 d-flex align-items-center gap-2 fs-5 fw-semibold text-dark">
+                {!collapsed && (
+                  <>
+                    <BsBoxSeam />
+                    <span>WMS</span>
+                  </>
+                )}
+              </h4>
+              {!collapsed && (
+                <button
+                  onClick={toggleSidebar}
+                  className="btn btn-sm btn-light rounded-circle"
+                >
+                  <BsChevronLeft
+                    style={{
+                      transform: collapsed ? "rotate(180deg)" : "none",
+                      transition: "0.3s"
+                    }}
+                  />
+                </button>
+              )}
+            </div>
+            {!collapsed && <h6 className="text-muted">MODULES</h6>}
+          </div>
 
       {/* Middle Section */}
       <div className="flex-grow-1 overflow-auto mt-5 mb-5">
@@ -182,29 +200,35 @@ const Sidebar = () => {
         </nav>
       </div>
 
-      {/* Bottom Section */}
-      <div className="position-absolute bottom-0 start-0 end-0 p-3 bg-light">
-        {!collapsed && <h6 className="text-muted">SETTINGS</h6>}
-        <nav className="nav flex-column">
-          <SidebarLink
-            icon={<BsGear />}
-            label="Setting"
-            href="#"
-            collapsed={collapsed}
-            active={activeLink === "#"}
-            onClick={handleLinkClick}
-          />
-          <SidebarLink
-            icon={<BsGear />}
-            label="System Setting"
-            href="#"
-            collapsed={collapsed}
-            active={activeLink === "#"}
-            onClick={handleLinkClick}
-          />
-        </nav>
-      </div>
-    </div>
+          {/* Settings */}
+          <div className="position-absolute bottom-0 start-0 end-0 p-3 bg-light">
+            {!collapsed && <h6 className="text-muted">SETTINGS</h6>}
+            <nav className="nav flex-column">
+              {!collapsed && (
+                <SidebarLink
+                  icon={<BsGear />}
+                  label="Setting"
+                  href="#"
+                  collapsed={collapsed}
+                  active={activeLink === "#"}
+                  onClick={handleLinkClick}
+                />
+              )}
+              {!collapsed && (
+                <SidebarLink
+                  icon={<BsGear />}
+                  label="System Setting"
+                  href="#"
+                  collapsed={collapsed}
+                  active={activeLink === "#"}
+                  onClick={handleLinkClick}
+                />
+              )}
+            </nav>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

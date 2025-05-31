@@ -12,17 +12,20 @@ export default function PharmaScanDashboard() {
           <i className="bi bi-upc-scan me-2"></i>PharmaScan
         </Link>
         <div className="d-flex align-items-center gap-2">
-          <i className="bi bi-bell-fill"></i>
-          <span>
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
+          <i className="bi bi-bell-fill fs-5"></i>
+          <div className="d-flex flex-column text-md-end">
+            <span className="fw-semibold">John Doe</span>
+            <small className="text-muted">Warehouse Manager</small>
+          </div>
         </div>
       </div>
 
+      {/* Main Content */}
       <div
-        className="bg-white p-4 rounded shadow my-4"
-        style={{ minHeight: "calc(100vh - 100px)", overflowY: "auto" }}
+        className="bg-white p-3 p-md-4 rounded shadow my-4"
+        style={{ minHeight: "calc(100vh - 120px)", overflowY: "auto" }}
       >
+        {/* Summary Cards */}
         <div className="row mb-4">
           {[
             {
@@ -37,8 +40,6 @@ export default function PharmaScanDashboard() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 >
                   <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
                   <polyline points="16 7 22 7 22 13" />
@@ -57,8 +58,6 @@ export default function PharmaScanDashboard() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 >
                   <circle cx="12" cy="12" r="10" />
                   <line x1="12" y1="8" x2="12" y2="12" />
@@ -78,8 +77,6 @@ export default function PharmaScanDashboard() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 >
                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                   <circle cx="9" cy="7" r="4" />
@@ -100,8 +97,6 @@ export default function PharmaScanDashboard() {
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 >
                   <line x1="18" y1="20" x2="18" y2="10" />
                   <line x1="12" y1="20" x2="12" y2="4" />
@@ -110,14 +105,14 @@ export default function PharmaScanDashboard() {
               )
             }
           ].map((item, i) => (
-            <div className="col-md-3 mb-3" key={i}>
+            <div className="col-12 col-sm-6 col-md-3 mb-3" key={i}>
               <div
                 className={`bg-${item.color}-100 p-3 rounded d-flex justify-content-between align-items-center shadow-sm`}
               >
                 <div>
-                  <h5 className={`text-${item.color} fw-semibold`}>
+                  <h6 className={`text-${item.color} fw-semibold mb-1`}>
                     {item.title}
-                  </h5>
+                  </h6>
                   <h4 className={`text-${item.color} fw-bold`}>{item.count}</h4>
                 </div>
                 <div>{item.icon}</div>
@@ -126,13 +121,13 @@ export default function PharmaScanDashboard() {
           ))}
         </div>
 
-        <div className="d-flex align-items-center text-primary mb-3">
-          <h4 className="fw-semibold d-flex align-items-center">
-            <i className="bi bi-upc-scan me-2"></i> PharmaScan
-          </h4>
-        </div>
+        {/* Section Title */}
+        <h5 className="fw-semibold text-primary mb-3">
+          <i className="bi bi-upc-scan me-2"></i> PharmaScan
+        </h5>
 
-        <div className="row g-4">
+        {/* Module Cards */}
+        <div className="row g-3 g-md-4">
           {[
             {
               icon: "bi-box-seam",
@@ -155,53 +150,61 @@ export default function PharmaScanDashboard() {
               desc: "Consolidated shipping preparation with scan-to-confirm."
             }
           ].map((mod, i) => (
-            <div className="col-md-3" key={i}>
+            <div className="col-12 col-sm-6 col-lg-3" key={i}>
               <div className="bg-white shadow text-center h-100 p-3 rounded d-flex flex-column justify-content-between">
-                <i className={`${mod.icon} fs-2`}></i>
-                <h5 className="fw-semibold">{mod.title}</h5>
-                <p className="text-muted small">{mod.desc}</p>
-                <button className="btn btn-primary w-100">Open Module</button>
+                <i className={`${mod.icon} fs-2 mb-2`}></i>
+                <h6 className="fw-semibold">{mod.title}</h6>
+                <p className="text-muted small flex-grow-1">{mod.desc}</p>
+                <button className="btn btn-primary w-100 mt-2">
+                  Open Module
+                </button>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-4 text-muted fw-medium">
+        {/* Tip Box */}
+        <div className="mt-4 text-muted fw-medium small">
           <strong>Pro Tip:</strong> Use the barcode scanner to quickly process
           items through each module.
         </div>
 
-        <div className="my-4 d-flex bg-white shadow p-3 rounded align-items-center">
-          <div className="me-3 text-primary fs-4">
+        {/* Scanner Box */}
+        <div className="my-4 d-flex flex-column flex-md-row bg-white shadow p-3 rounded align-items-start align-items-md-center gap-3">
+          <div className="text-primary fs-4">
             <i className="bi bi-upc-scan"></i>
           </div>
           <div className="flex-grow-1">
-            <h5 className="fw-semibold">Quick Barcode Scanner</h5>
-            <p className="text-muted small">
+            <h6 className="fw-semibold">Quick Barcode Scanner</h6>
+            <p className="text-muted small mb-0">
               Scan any item or location barcode for quick access
             </p>
           </div>
           <div>
-            <button className="btn btn-outline-primary">Show Scanner</button>
+            <button className="btn btn-outline-primary w-100 w-md-auto">
+              Show Scanner
+            </button>
           </div>
         </div>
 
-        <ul className="nav nav-tabs mb-3">
+        {/* Tabs */}
+        <ul className="nav nav-tabs mb-3 flex-wrap">
           <li className="nav-item">
-            <Link className="nav-link active" href="#">
+            <Link className="nav-link active" to="#">
               Recent Activity
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#">
+            <Link className="nav-link" to="#">
               Analytic
             </Link>
           </li>
         </ul>
 
+        {/* Recent Activity */}
         <div className="bg-white shadow rounded">
           <div className="p-3 border-bottom">
-            <h5 className="fw-semibold">Recent Activity</h5>
+            <h6 className="fw-semibold">Recent Activity</h6>
           </div>
           <div className="p-3">
             {[
