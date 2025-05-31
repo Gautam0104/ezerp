@@ -3,18 +3,22 @@ import { Link } from "react-router-dom";
 
 const PalletManagement = () => {
   return (
-    <div className="flex-grow px-4 py-3">
+    <div className="flex-grow px-4">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
         <div>
-          <Link to="shipment.html" className="btn btn-outline-primary fs-4 fw-semibold">
+          <Link
+            to="shipment.html"
+            className="btn btn-outline-primary fs-4 fw-semibold"
+          >
             <i className="bi bi-box-arrow-in-up me-2"></i>Pallet
           </Link>
         </div>
         <div className="d-flex align-items-center gap-2">
           <i className="bi bi-bell-fill me-2"></i>
           <span>
-            John Doe <span className="text-muted d-block small">Warehouse Manager</span>
+            John Doe{" "}
+            <span className="text-muted d-block small">Warehouse Manager</span>
           </span>
         </div>
       </div>
@@ -36,7 +40,10 @@ const PalletManagement = () => {
         {/* Stats */}
         <div className="row g-3 mb-4">
           <div className="col-lg-4 col-md-6">
-            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
+            <div
+              className=" p-3 rounded d-flex align-items-center"
+              style={{ backgroundColor: "#DBEAFE", color: "#1D4ED8" }}
+            >
               <div>
                 <p className="fw-semibold fs-5 mb-1">Total Weight</p>
                 <p className="fw-bold fs-4">36.5 kg</p>
@@ -45,7 +52,10 @@ const PalletManagement = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
+            <div
+              className=" p-3 rounded d-flex align-items-center"
+              style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
+            >
               <div>
                 <p className="fw-semibold fs-5 mb-1">Total Packages</p>
                 <p className="fw-bold fs-4">3</p>
@@ -54,7 +64,10 @@ const PalletManagement = () => {
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
+            <div
+              className=" p-3 rounded d-flex align-items-center"
+              style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
+            >
               <div>
                 <p className="fw-semibold fs-5 mb-1">Destination</p>
                 <p className="fw-bold fs-4">Warehouse B</p>
@@ -66,7 +79,9 @@ const PalletManagement = () => {
 
         {/* Scan Input */}
         <div className="mb-4">
-          <label className="form-label fw-semibold text-secondary">Scan Packages</label>
+          <label className="form-label fw-semibold text-secondary">
+            Scan Packages
+          </label>
           <input
             type="text"
             className="form-control"

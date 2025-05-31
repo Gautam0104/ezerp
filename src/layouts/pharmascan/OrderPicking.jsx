@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const OrderPicking = () => {
   return (
-    <div className="flex-grow px-4 py-3">
+    <div className="flex-grow px-4 ">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
         <div>
@@ -26,7 +26,9 @@ const OrderPicking = () => {
       {/* Main Card */}
       <div className="bg-white shadow-sm p-4 rounded">
         {/* Order ID */}
-        <p className="mb-4">Order ID: <strong>ORD-12345</strong></p>
+        <p className="mb-4">
+          Order ID: <strong>ORD-12345</strong>
+        </p>
 
         {/* Tabs */}
         <ul className="nav nav-tabs mb-4">

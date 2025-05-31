@@ -29,7 +29,8 @@ export default function PharmaScanDashboard() {
         <div className="row mb-4">
           {[
             {
-              color: "primary",
+              color: "#1D4EDF",
+              bgColor: "#DBEAFE",
               title: "Received Today",
               count: 12,
               icon: (
@@ -49,6 +50,7 @@ export default function PharmaScanDashboard() {
             {
               color: "warning",
               title: "Pending Put-away",
+              bgColor: "#FEF3C7",
               count: 8,
               icon: (
                 <svg
@@ -67,6 +69,7 @@ export default function PharmaScanDashboard() {
             },
             {
               color: "success",
+              bgColor: "#DCFCE7",
               title: "Orders to Fulfill",
               count: 15,
               icon: (
@@ -87,6 +90,7 @@ export default function PharmaScanDashboard() {
             },
             {
               color: "purple",
+              bgColor: "#EDE9FE",
               title: "Pallets Built",
               count: 5,
               icon: (
@@ -108,6 +112,10 @@ export default function PharmaScanDashboard() {
             <div className="col-12 col-sm-6 col-md-3 mb-3" key={i}>
               <div
                 className={`bg-${item.color}-100 p-3 rounded d-flex justify-content-between align-items-center shadow-sm`}
+                style={{
+                  color: item.color,
+                  backgroundColor: item.bgColor || "#f8f9fa"
+                }}
               >
                 <div>
                   <h6 className={`text-${item.color} fw-semibold mb-1`}>

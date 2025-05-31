@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const PickingPage = () => {
- return (
-    <div className="flex-grow px-4 py-3">
+  return (
+    <div className="flex-grow px-4 ">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
         <div>
-          <Link to="shipment.html" className="btn btn-outline-primary fs-4 fw-semibold">
+          <Link
+            to="shipment.html"
+            className="btn btn-outline-primary fs-4 fw-semibold"
+          >
             <i className="bi bi-box-arrow-in-up me-2"></i>Picking
           </Link>
         </div>
@@ -22,7 +24,9 @@ const PickingPage = () => {
 
       <div className="bg-white p-4 rounded shadow my-5">
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <p className="text-muted mb-0">Manage order fulfillment and picking</p>
+          <p className="text-muted mb-0">
+            Manage order fulfillment and picking
+          </p>
           <button className="btn btn-primary d-flex align-items-center">
             <i className="fas fa-barcode me-2"></i> Scan Order Barcode
           </button>
@@ -60,7 +64,7 @@ const PickingPage = () => {
                   date: "2024-06-10",
                   items: 5,
                   priority: "High",
-                  color: "danger",
+                  color: "danger"
                 },
                 {
                   id: "ORD-12346",
@@ -68,7 +72,7 @@ const PickingPage = () => {
                   date: "2024-06-11",
                   items: 3,
                   priority: "Medium",
-                  color: "warning",
+                  color: "warning"
                 },
                 {
                   id: "ORD-12347",
@@ -76,7 +80,7 @@ const PickingPage = () => {
                   date: "2024-06-12",
                   items: 7,
                   priority: "Low",
-                  color: "success",
+                  color: "success"
                 },
                 {
                   id: "ORD-12348",
@@ -84,8 +88,8 @@ const PickingPage = () => {
                   date: "2024-06-13",
                   items: 2,
                   priority: "High",
-                  color: "danger",
-                },
+                  color: "danger"
+                }
               ].map((order, idx) => (
                 <tr key={idx}>
                   <td>{order.id}</td>
@@ -93,7 +97,9 @@ const PickingPage = () => {
                   <td>{order.date}</td>
                   <td>{order.items}</td>
                   <td>
-                    <span className={`bg-${order.color}-subtle text-${order.color} px-2 py-1 rounded d-inline-block`}>
+                    <span
+                      className={`bg-${order.color}-subtle text-${order.color} px-2 py-1 rounded d-inline-block`}
+                    >
                       {order.priority}
                     </span>
                   </td>
@@ -117,15 +123,21 @@ const PickingPage = () => {
               <i className="fas fa-check-circle text-success fs-5 me-3"></i>
               <div>
                 <p className="fw-semibold mb-0">Order ORD-12340 completed</p>
-                <p className="text-muted mb-0">All items picked and packed successfully</p>
+                <p className="text-muted mb-0">
+                  All items picked and packed successfully
+                </p>
                 <p className="text-secondary small mb-0">Today, 10:23 AM</p>
               </div>
             </div>
             <div className="d-flex align-items-start mb-3">
               <i className="fas fa-exclamation-triangle text-warning fs-5 me-3"></i>
               <div>
-                <p className="fw-semibold mb-0">Inventory alert for Order ORD-12342</p>
-                <p className="text-muted mb-0">Item SKU-789 has insufficient stock</p>
+                <p className="fw-semibold mb-0">
+                  Inventory alert for Order ORD-12342
+                </p>
+                <p className="text-muted mb-0">
+                  Item SKU-789 has insufficient stock
+                </p>
                 <p className="text-secondary small mb-0">Today, 9:45 AM</p>
               </div>
             </div>
@@ -133,7 +145,9 @@ const PickingPage = () => {
               <i className="fas fa-check-circle text-success fs-5 me-3"></i>
               <div>
                 <p className="fw-semibold mb-0">Order ORD-12339 completed</p>
-                <p className="text-muted mb-0">All items picked and packed successfully</p>
+                <p className="text-muted mb-0">
+                  All items picked and packed successfully
+                </p>
                 <p className="text-secondary small mb-0">Yesterday, 4:12 PM</p>
               </div>
             </div>
