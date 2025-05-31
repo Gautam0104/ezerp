@@ -102,73 +102,73 @@ const Sidebar = () => {
           <SidebarLink
             icon={<BsBoxArrowInDown />}
             label="Receiving"
-            href="/#/wms"
+            href="/ezerp/#/wms/Receiving"
             collapsed={collapsed}
-            active={activeLink === "receiving.html"}
+            active={activeLink === "/ezerp/#/wms/Receiving"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsArrowDownUp />}
             label="Put-away"
-            href="/#/wms"
+            href="/ezerp/#/wms/PutAwayDashboard"
             collapsed={collapsed}
-            active={activeLink === "put_away.html"}
+            active={activeLink === "/ezerp/#/wms/PutAwayDashboard"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<Bs0Circle />}
             label="Order"
-            href="/#/wms"
+            href="/ezerp/#/wms/order"
             collapsed={collapsed}
-            active={activeLink === "order.html"}
+            active={activeLink === "/ezerp/#/wms/order"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsCartCheck />}
             label="Picking"
-            href="/#/wms"
+            href="/ezerp/#/wms/PickingPage"
             collapsed={collapsed}
-            active={activeLink === "picking.html"}
+            active={activeLink === "/ezerp/#/wms/PickingPage"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsBoxes />}
             label="Packing"
-            href="/#/wms"
+            href="/ezerp/#/wms/PackingDashboard"
             collapsed={collapsed}
-            active={activeLink === "packing.html"}
+            active={activeLink === "/ezerp/#/wms/PackingDashboard"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsBoxArrowInUp />}
             label="Pallet"
-            href="/#/wms"
+            href="/ezerp/#/wms/palletmanagement"
             collapsed={collapsed}
-            active={activeLink === "pallet.html"}
+            active={activeLink === "/ezerp/#/wms/palletmanagement"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsBoxArrowInUp />}
             label="Pallet Builder"
-            href="/#/wms"
+            href="/ezerp/#/wms/palletbuilder"
             collapsed={collapsed}
-            active={activeLink === "pallet_bulider.html"}
+            active={activeLink === "/ezerp/#/wms/palletbuilder"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsGeoAlt />}
             label="Expedition"
-            href="/#/wms"
+            href="/ezerp/#/wms/Expedition"
             collapsed={collapsed}
-            active={activeLink === "location.html"}
+            active={activeLink === "/ezerp/#/wms/Expedition"}
             onClick={handleLinkClick}
           />
           <SidebarLink
             icon={<BsCartCheck />}
             label="Shipment"
-            href="/#/wms"
+            href="/ezerp/#/wms/ShipmentVerification"
             collapsed={collapsed}
-            active={activeLink === "shipment.html"}
+            active={activeLink === "/ezerp/#/wms/ShipmentVerification"}
             onClick={handleLinkClick}
           />
           <SidebarLink

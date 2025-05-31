@@ -10,6 +10,15 @@ import Welcome from "../pages/Welcome";
 import PharmaScan from "../pages/PharmaScan";
 import PharmaScanDashboard from "../layouts/pharmascan/PharmaScanDashboard";
 import ProductForm from "../layouts/pharmascan/ProductForm";
+import OrderPicking from "../layouts/pharmascan/OrderPicking";
+import PalletManagement from "../layouts/pharmascan/PalletManagement";
+import Expedition from "../layouts/pharmascan/Expedition";
+import Receiving from "../layouts/pharmascan/Receiving";
+import PutAwayDashboard from "../layouts/pharmascan/PutAwayDashboard";
+import PickingPage from "../layouts/pharmascan/PickingPage";
+import PackingDashboard from "../layouts/pharmascan/PackingDashboard";
+import PalletBuilder from "../layouts/pharmascan/PalletBuilder";
+import ShipmentVerification from "../layouts/pharmascan/ShipmentVerification";
 
 const AppRoutes = () => {
   return (
@@ -27,6 +36,16 @@ const AppRoutes = () => {
       <Route path="/wms" element={<PharmaScan />}>
         <Route path="pharmahome" element={<PharmaScanDashboard />} />
         <Route path="product" element={<ProductForm />} />
+        <Route path="order" element={<OrderPicking />} />
+        <Route path="palletmanagement" element={<PalletManagement />} />
+        <Route path="Expedition" element={<Expedition />} />
+        <Route path="receiving" element={<Receiving />} />
+        <Route path="putawaydashboard" element={<PutAwayDashboard />} />
+        <Route path="pickingpage" element={<PickingPage />} />
+        <Route path="packingdashboard" element={<PackingDashboard />} />
+        <Route path="palletbuilder" element={<PalletBuilder />} />
+        <Route path="ShipmentVerification" element={<ShipmentVerification />} />
+
       </Route>
       {/* Dashboard Layout */}
       <Route path="/dashboard" element={<Dashboard />}>
