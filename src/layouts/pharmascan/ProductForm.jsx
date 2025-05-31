@@ -126,7 +126,7 @@ function ProductForm() {
                 <input type="date" className="form-control" />
               </div>
 
-              <button className="btn btn-primary w-100">Save Product</button>
+              <button className="btn btn-success w-100">Save Product</button>
             </div>
           </div>
         </div>

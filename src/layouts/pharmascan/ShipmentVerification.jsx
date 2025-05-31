@@ -39,28 +39,28 @@ const ShipmentVerification = () => {
         {/* Stats Cards */}
         <div className="row g-3 mb-4">
           <div className="col-md-4">
-            <div className="d-flex align-items-center bg-success bg-opacity-10 p-3 rounded">
+            <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
               <div>
-                <p className="text-success fw-semibold fs-5 mb-1">Matched Items</p>
-                <p className="text-success fw-bold fs-4">1</p>
+                <p className=" fw-semibold fs-5 mb-1">Matched Items</p>
+                <p className=" fw-bold fs-4">1</p>
               </div>
               <i className="fas fa-check-circle text-success fs-3 ms-auto"></i>
             </div>
           </div>
           <div className="col-md-4">
-            <div className="d-flex align-items-center bg-warning bg-opacity-10 p-3 rounded">
+            <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
-                <p className="text-warning fw-semibold fs-5 mb-1">Shortages</p>
-                <p className="text-warning fw-bold fs-4">2</p>
+                <p className="fw-semibold fs-5 mb-1">Shortages</p>
+                <p className="fw-bold fs-4">2</p>
               </div>
               <i className="fas fa-exclamation-triangle text-warning fs-3 ms-auto"></i>
             </div>
           </div>
           <div className="col-md-4">
-            <div className="d-flex align-items-center bg-danger bg-opacity-10 p-3 rounded">
+            <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEE2E2", color:"#B91C1C"}}>
               <div>
-                <p className="text-danger fw-semibold fs-5 mb-1">Unexpected Items</p>
-                <p className="text-danger fw-bold fs-4">1</p>
+                <p className="fw-semibold fs-5 mb-1">Unexpected Items</p>
+                <p className="fw-bold fs-4">1</p>
               </div>
               <i className="fas fa-times-circle text-danger fs-3 ms-auto"></i>
             </div>

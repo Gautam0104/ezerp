@@ -29,28 +29,28 @@ const PutAwayDashboard = () => {
 
         <div className="row g-3 mb-4">
           <div className="col-lg-4">
-            <div className="bg-primary bg-opacity-10 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
               <div>
-                <p className="text-primary fs-5 fw-semibold">Pending Items</p>
-                <h2 className="text-primary fw-bold">2</h2>
+                <p className="fs-5 fw-semibold">Pending Items</p>
+                <h2 className="fw-bold">2</h2>
               </div>
               <i className="fas fa-box text-primary fs-2 ms-3"></i>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="bg-success bg-opacity-10 p-3 rounded d-flex align-items-center">
+            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
               <div>
-                <p className="text-success fs-5 fw-semibold">Stored Items</p>
-                <h2 className="text-success fw-bold">1</h2>
+                <p className="fs-5 fw-semibold">Stored Items</p>
+                <h2 className="fw-bold">1</h2>
               </div>
               <i className="fas fa-check-circle text-success fs-2 ms-3"></i>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="bg-warning bg-opacity-25 p-3 rounded d-flex align-items-center">
+            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
-                <p className="text-warning fs-5 fw-semibold">Quarantined Items</p>
-                <h2 className="text-warning fw-bold">1</h2>
+                <p className="fs-5 fw-semibold">Quarantined Items</p>
+                <h2 className="fw-bold">1</h2>
               </div>
               <i className="fas fa-exclamation-circle text-warning fs-2 ms-3"></i>
             </div>

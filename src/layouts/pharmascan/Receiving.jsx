@@ -38,37 +38,37 @@ const Receiving = () => {
         {/* Cards */}
         <div className="row g-3 mb-4">
           <div className="col-sm-6 col-lg-3">
-            <div className="bg-primary bg-opacity-10 p-3 rounded d-flex justify-content-between align-items-center">
+            <div className="p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4EDF"}}>
               <div>
-                <p className="text-primary fs-5 fw-semibold">All Shipments</p>
-                <p className="text-primary fs-3 fw-bold">5</p>
+                <p className=" fs-5 fw-semibold">All Shipments</p>
+                <p className=" fs-3 fw-bold">5</p>
               </div>
               <i className="fas fa-box text-primary fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <div className="bg-warning bg-opacity-25 p-3 rounded d-flex justify-content-between align-items-center">
+            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
-                <p className="text-warning fs-5 fw-semibold">Pending</p>
-                <p className="text-warning fs-3 fw-bold">2</p>
+                <p className=" fs-5 fw-semibold">Pending</p>
+                <p className=" fs-3 fw-bold">2</p>
               </div>
               <i className="fas fa-exclamation-triangle text-warning fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <div className="bg-primary bg-opacity-10 p-3 rounded d-flex justify-content-between align-items-center">
+            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#DCFCE7", color:"#158058"}}>
               <div>
-                <p className="text-primary fs-5 fw-semibold">In Progress</p>
-                <p className="text-primary fs-3 fw-bold">1</p>
+                <p className=" fs-5 fw-semibold">In Progress</p>
+                <p className=" fs-3 fw-bold">1</p>
               </div>
               <i className="fas fa-truck text-primary fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <div className="bg-danger bg-opacity-25 p-3 rounded d-flex justify-content-between align-items-center">
+            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#F3E8FF", color:"#7E22CE"}}>
               <div>
-                <p className="text-danger fs-5 fw-semibold">Issues</p>
-                <p className="text-danger fs-3 fw-bold">1</p>
+                <p className=" fs-5 fw-semibold">Issues</p>
+                <p className=" fs-3 fw-bold">1</p>
               </div>
               <i className="fas fa-times-circle text-danger fs-2"></i>
             </div>

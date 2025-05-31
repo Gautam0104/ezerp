@@ -36,28 +36,28 @@ const PalletManagement = () => {
         {/* Stats */}
         <div className="row g-3 mb-4">
           <div className="col-lg-4 col-md-6">
-            <div className="bg-primary bg-opacity-10 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
               <div>
-                <p className="text-primary fw-semibold fs-5 mb-1">Total Weight</p>
-                <p className="text-primary fw-bold fs-4">36.5 kg</p>
+                <p className="fw-semibold fs-5 mb-1">Total Weight</p>
+                <p className="fw-bold fs-4">36.5 kg</p>
               </div>
               <i className="fas fa-weight text-primary fs-3 ms-auto"></i>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="bg-warning bg-opacity-25 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
-                <p className="text-warning fw-semibold fs-5 mb-1">Total Packages</p>
-                <p className="text-warning fw-bold fs-4">3</p>
+                <p className="fw-semibold fs-5 mb-1">Total Packages</p>
+                <p className="fw-bold fs-4">3</p>
               </div>
               <i className="fas fa-box text-warning fs-3 ms-auto"></i>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
-            <div className="bg-success bg-opacity-25 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
               <div>
-                <p className="text-success fw-semibold fs-5 mb-1">Destination</p>
-                <p className="text-success fw-bold fs-4">Warehouse B</p>
+                <p className="fw-semibold fs-5 mb-1">Destination</p>
+                <p className="fw-bold fs-4">Warehouse B</p>
               </div>
               <i className="fas fa-landmark text-success fs-3 ms-auto"></i>
             </div>

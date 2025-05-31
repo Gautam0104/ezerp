@@ -34,28 +34,28 @@ function PalletBuilder() {
         {/* Stats Cards */}
         <div className="row g-3 mb-4">
           <div className="col-lg-4">
-            <div className="bg-primary bg-opacity-10 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
               <div>
-                <p className="text-primary fs-4 fw-semibold mb-1">Total Pallets</p>
-                <p className="text-primary fs-3 fw-bold mb-0">3</p>
+                <p className="fs-4 fw-semibold mb-1">Total Pallets</p>
+                <p className="fs-3 fw-bold mb-0">3</p>
               </div>
               <i className="fas fa-chart-bar text-primary fs-2 ms-auto"></i>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="bg-warning bg-opacity-10 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
-                <p className="text-warning fs-4 fw-semibold mb-1">In Progress</p>
-                <p className="text-warning fs-3 fw-bold mb-0">2</p>
+                <p className="fs-4 fw-semibold mb-1">In Progress</p>
+                <p className="fs-3 fw-bold mb-0">2</p>
               </div>
               <i className="fas fa-exclamation-triangle text-warning fs-2 ms-auto"></i>
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="bg-success bg-opacity-10 p-3 rounded d-flex align-items-center">
+            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
               <div>
-                <p className="text-success fs-4 fw-semibold mb-1">Completed</p>
-                <p className="text-success fs-3 fw-bold mb-0">1</p>
+                <p className="fw-semibold fs-4 mb-1">Completed</p>
+                <p className="fw-bold fs-3 mb-0">1</p>
               </div>
               <i className="fas fa-check-circle text-success fs-2 ms-auto"></i>
             </div>
