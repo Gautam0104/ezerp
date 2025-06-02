@@ -35,7 +35,7 @@ export default function PharmaScanDashboard() {
               count: 12,
               icon: (
                 <svg
-                  className="text-primary"
+                  className="text-blue-600"
                   width="24"
                   height="24"
                   fill="none"

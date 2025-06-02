@@ -41,38 +41,41 @@ const PalletManagement = () => {
         <div className="row g-3 mb-4">
           <div className="col-lg-4 col-md-6">
             <div
-              className=" p-3 rounded d-flex align-items-center"
+              className="p-3 rounded d-flex align-items-center"
               style={{ backgroundColor: "#DBEAFE", color: "#1D4ED8" }}
             >
               <div>
                 <p className="fw-semibold fs-5 mb-1">Total Weight</p>
                 <p className="fw-bold fs-4">36.5 kg</p>
               </div>
-              <i className="fas fa-weight text-primary fs-3 ms-auto"></i>
+              <i className="bi bi-speedometer text-blue-600 fs-3 ms-auto"></i>{" "}
+    
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div
-              className=" p-3 rounded d-flex align-items-center"
+              className="p-3 rounded d-flex align-items-center"
               style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
             >
               <div>
                 <p className="fw-semibold fs-5 mb-1">Total Packages</p>
                 <p className="fw-bold fs-4">3</p>
               </div>
-              <i className="fas fa-box text-warning fs-3 ms-auto"></i>
+              <i className="bi bi-box-seam-fill text-warning fs-3 ms-auto"></i>{" "}
+
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div
-              className=" p-3 rounded d-flex align-items-center"
+              className="p-3 rounded d-flex align-items-center"
               style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
             >
               <div>
                 <p className="fw-semibold fs-5 mb-1">Destination</p>
                 <p className="fw-bold fs-4">Warehouse B</p>
               </div>
-              <i className="fas fa-landmark text-success fs-3 ms-auto"></i>
+              <i className="bi bi-geo-alt-fill text-success fs-3 ms-auto"></i>{" "}
+  
             </div>
           </div>
         </div>

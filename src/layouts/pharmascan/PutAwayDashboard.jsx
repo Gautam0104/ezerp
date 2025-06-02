@@ -34,7 +34,7 @@ const PutAwayDashboard = () => {
                 <p className="fs-5 fw-semibold">Pending Items</p>
                 <h2 className="fw-bold">2</h2>
               </div>
-              <i className="fas fa-box text-primary fs-2 ms-3"></i>
+              <i className="bi bi-box-fill text-blue-600 fs-2 ms-"></i>
             </div>
           </div>
           <div className="col-lg-4">
@@ -43,7 +43,7 @@ const PutAwayDashboard = () => {
                 <p className="fs-5 fw-semibold">Stored Items</p>
                 <h2 className="fw-bold">1</h2>
               </div>
-              <i className="fas fa-check-circle text-success fs-2 ms-3"></i>
+              <i className="bi bi-check-circle-fill text-success fs-2 ms-5"></i>
             </div>
           </div>
           <div className="col-lg-4">
@@ -52,7 +52,7 @@ const PutAwayDashboard = () => {
                 <p className="fs-5 fw-semibold">Quarantined Items</p>
                 <h2 className="fw-bold">1</h2>
               </div>
-              <i className="fas fa-exclamation-circle text-warning fs-2 ms-3"></i>
+              <i className="bi bi-exclamation-circle-fill text-warning fs-2 ms-5"></i>
             </div>
           </div>
         </div>

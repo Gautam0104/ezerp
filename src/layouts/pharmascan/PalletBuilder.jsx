@@ -34,30 +34,30 @@ function PalletBuilder() {
         {/* Stats Cards */}
         <div className="row g-3 mb-4">
           <div className="col-lg-4">
-            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
+            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
               <div>
                 <p className="fs-4 fw-semibold mb-1">Total Pallets</p>
                 <p className="fs-3 fw-bold mb-0">3</p>
               </div>
-              <i className="fas fa-chart-bar text-primary fs-2 ms-auto"></i>
+              <i className="bi bi-stack fs-2 ms-auto"></i> {/* Total Pallets */}
             </div>
           </div>
           <div className="col-lg-4">
-            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
+            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
                 <p className="fs-4 fw-semibold mb-1">In Progress</p>
                 <p className="fs-3 fw-bold mb-0">2</p>
               </div>
-              <i className="fas fa-exclamation-triangle text-warning fs-2 ms-auto"></i>
+              <i className="bi bi-exclamation-triangle-fill fs-2 ms-auto"></i> {/* In Progress */}
             </div>
           </div>
           <div className="col-lg-4">
-            <div className=" p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
+            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
               <div>
                 <p className="fw-semibold fs-4 mb-1">Completed</p>
                 <p className="fw-bold fs-3 mb-0">1</p>
               </div>
-              <i className="fas fa-check-circle text-success fs-2 ms-auto"></i>
+              <i className="bi bi-check-circle-fill fs-2 ms-auto"></i> {/* Completed */}
             </div>
           </div>
         </div>

@@ -43,7 +43,7 @@ const Receiving = () => {
                 <p className=" fs-5 fw-semibold">All Shipments</p>
                 <p className=" fs-3 fw-bold">5</p>
               </div>
-              <i className="fas fa-box text-primary fs-2"></i>
+              <i className="bi bi-box-fill text-blue-600 fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
@@ -52,25 +52,25 @@ const Receiving = () => {
                 <p className=" fs-5 fw-semibold">Pending</p>
                 <p className=" fs-3 fw-bold">2</p>
               </div>
-              <i className="fas fa-exclamation-triangle text-warning fs-2"></i>
+              <i className="bi bi-exclamation-triangle-fill text-yellow-600 fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#DCFCE7", color:"#158058"}}>
+            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4EDA"}}>
               <div>
                 <p className=" fs-5 fw-semibold">In Progress</p>
                 <p className=" fs-3 fw-bold">1</p>
               </div>
-              <i className="fas fa-truck text-primary fs-2"></i>
+              <i className="bi bi-truck text-blue-600 fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
-            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#F3E8FF", color:"#7E22CE"}}>
+            <div className=" p-3 rounded d-flex justify-content-between align-items-center" style={{backgroundColor:"#FEE2E2", color:"#B91C1C"}}>
               <div>
                 <p className=" fs-5 fw-semibold">Issues</p>
                 <p className=" fs-3 fw-bold">1</p>
               </div>
-              <i className="fas fa-times-circle text-danger fs-2"></i>
+              <i className="bi bi-exclamation-octagon-fill text-red-600 fs-2"></i>
             </div>
           </div>
         </div>

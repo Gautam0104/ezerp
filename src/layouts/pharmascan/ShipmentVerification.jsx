@@ -37,36 +37,35 @@ const ShipmentVerification = () => {
         <p className="text-muted mb-4">Shipment ID: SHP-2024-0042</p>
 
         {/* Stats Cards */}
-        <div className="row g-3 mb-4">
-          <div className="col-md-4">
-            <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
-              <div>
-                <p className=" fw-semibold fs-5 mb-1">Matched Items</p>
-                <p className=" fw-bold fs-4">1</p>
-              </div>
-              <i className="fas fa-check-circle text-success fs-3 ms-auto"></i>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
-              <div>
-                <p className="fw-semibold fs-5 mb-1">Shortages</p>
-                <p className="fw-bold fs-4">2</p>
-              </div>
-              <i className="fas fa-exclamation-triangle text-warning fs-3 ms-auto"></i>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEE2E2", color:"#B91C1C"}}>
-              <div>
-                <p className="fw-semibold fs-5 mb-1">Unexpected Items</p>
-                <p className="fw-bold fs-4">1</p>
-              </div>
-              <i className="fas fa-times-circle text-danger fs-3 ms-auto"></i>
-            </div>
-          </div>
-        </div>
-
+<div className="row g-3 mb-4">
+  <div className="col-md-4">
+    <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
+      <div>
+        <p className=" fw-semibold fs-5 mb-1">Matched Items</p>
+        <p className=" fw-bold fs-4">1</p>
+      </div>
+      <i className="bi bi-check-circle-fill text-success fs-3 ms-auto"></i> {/* Matched Items */}
+    </div>
+  </div>
+  <div className="col-md-4">
+    <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
+      <div>
+        <p className="fw-semibold fs-5 mb-1">Shortages</p>
+        <p className="fw-bold fs-4">2</p>
+      </div>
+      <i className="bi bi-exclamation-triangle-fill text-warning fs-3 ms-auto"></i> {/* Shortages */}
+    </div>
+  </div>
+  <div className="col-md-4">
+    <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEE2E2", color:"#B91C1C"}}>
+      <div>
+        <p className="fw-semibold fs-5 mb-1">Unexpected Items</p>
+        <p className="fw-bold fs-4">1</p>
+      </div>
+      <i className="bi bi-question-circle-fill text-danger fs-3 ms-auto"></i> {/* Unexpected Items */}
+    </div>
+  </div>
+</div>
         {/* Search */}
         <div className="mb-4">
           <input
