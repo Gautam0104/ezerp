@@ -29,10 +29,10 @@ const PalletManagement = () => {
         <div className="d-flex justify-content-between mb-4">
           <div>
             <button className="btn btn-secondary me-2">
-              <i className="fas fa-times me-2"></i>Close
+              <i className="bi bi-x me-2"></i>Close
             </button>
             <button className="btn btn-primary">
-              <i className="fas fa-list me-2"></i>Finalize Pallet
+              <i className="bi bi-list me-2"></i>Finalize Pallet
             </button>
           </div>
         </div>
@@ -126,13 +126,13 @@ const PalletManagement = () => {
                 <td>12.5 kg</td>
                 <td>24" x 18" x 12"</td>
                 <td>
-                  <span className="badge bg-success bg-opacity-25 text-success">
+                  <span className="" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
                     Verified
                   </span>
                 </td>
                 <td>
                   <button className="btn btn-sm text-danger">
-                    <i className="fas fa-times"></i>
+                    <i className="bi bi-x"></i>
                   </button>
                 </td>
               </tr>
@@ -142,13 +142,13 @@ const PalletManagement = () => {
                 <td>8.3 kg</td>
                 <td>18" x 12" x 10"</td>
                 <td>
-                  <span className="badge bg-success bg-opacity-25 text-success">
+                  <span className="" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
                     Verified
                   </span>
                 </td>
                 <td>
                   <button className="btn btn-sm text-danger">
-                    <i className="fas fa-times"></i>
+                    <i className="bi bi-x"></i>
                   </button>
                 </td>
               </tr>
@@ -158,13 +158,13 @@ const PalletManagement = () => {
                 <td>15.7 kg</td>
                 <td>30" x 20" x 15"</td>
                 <td>
-                  <span className="badge bg-warning bg-opacity-25 text-warning">
+                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
                     Pending
                   </span>
                 </td>
                 <td>
                   <button className="btn btn-sm text-success">
-                    <i className="fas fa-check"></i>
+                    <i className="bi bi-check"></i>
                   </button>
                 </td>
               </tr>

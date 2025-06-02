@@ -22,7 +22,7 @@ const PackingDashboard = () => {
         <div className="d-flex justify-content-between align-items-center mb-3">
           <p className="text-muted mb-0">Manage order fulfillment and picking</p>
           <button className="btn btn-primary d-flex align-items-center">
-            <i className="fas fa-barcode me-2"></i>Scan Order Barcode
+            <i className="bi bi-barcode me-2"></i>Scan Order Barcode
           </button>
         </div>
 
@@ -95,7 +95,7 @@ const PackingDashboard = () => {
                   </td>
                   <td>
                     <button className="btn btn-primary">
-                      Process <i className="fas fa-arrow-right ms-2"></i>
+                      Process <i className="bi bi-arrow-right ms-2"></i>
                     </button>
                   </td>
                 </tr>
@@ -110,7 +110,7 @@ const PackingDashboard = () => {
           </div>
           <div className="p-3">
             <div className="d-flex align-items-start mb-3">
-              <i className="fas fa-check-circle text-success fs-4 me-3"></i>
+              <i className="bi bi-check-circle-fill text-success fs-4 me-3"></i>
               <div>
                 <p className="fw-semibold mb-1">Order ORD-12340 completed</p>
                 <p className="text-muted mb-1">All items picked and packed successfully</p>
@@ -118,7 +118,7 @@ const PackingDashboard = () => {
               </div>
             </div>
             <div className="d-flex align-items-start mb-3">
-              <i className="fas fa-exclamation-triangle text-warning fs-4 me-3"></i>
+              <i className="bi bi-exclamation-triangle-fill text-warning fs-4 me-3"></i>
               <div>
                 <p className="fw-semibold mb-1">Inventory alert for Order ORD-12342</p>
                 <p className="text-muted mb-1">Item SKU-789 has insufficient stock</p>
@@ -126,7 +126,7 @@ const PackingDashboard = () => {
               </div>
             </div>
             <div className="d-flex align-items-start">
-              <i className="fas fa-check-circle text-success fs-4 me-3"></i>
+              <i className="bi bi-check-circle-fill text-success fs-4 me-3"></i>
               <div>
                 <p className="fw-semibold mb-1">Order ORD-12339 completed</p>
                 <p className="text-muted mb-1">All items picked and packed successfully</p>

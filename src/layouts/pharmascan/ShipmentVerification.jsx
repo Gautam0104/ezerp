@@ -27,10 +27,10 @@ const ShipmentVerification = () => {
         {/* Action Buttons */}
         <div className="d-flex gap-3 mb-4">
           <button className="btn btn-light">
-            <i className="fas fa-list me-2"></i>Shipment Details
+            <i className="bi bi-list me-2"></i>Shipment Details
           </button>
           <button className="btn btn-primary text-white">
-            <i className="fas fa-user me-2"></i>Complete Verification
+            <i className="bi bi-person-check-fill me-2"></i>Complete Verification
           </button>
         </div>
 
@@ -111,7 +111,7 @@ const ShipmentVerification = () => {
                 <td>10</td>
                 <td>10</td>
                 <td>
-                  <span className="badge bg-success bg-opacity-25 text-success">
+                  <span className="" style={{backgroundColor:"#dcfce7", color:"#15805d"}}>
                     Matched
                   </span>
                 </td>
@@ -124,7 +124,7 @@ const ShipmentVerification = () => {
                 <td>8</td>
                 <td>5</td>
                 <td>
-                  <span className="badge bg-warning bg-opacity-25 text-warning">
+                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
                     Shortage
                   </span>
                 </td>
@@ -141,7 +141,7 @@ const ShipmentVerification = () => {
                 <td>5</td>
                 <td>0</td>
                 <td>
-                  <span className="badge bg-warning bg-opacity-25 text-warning">
+                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
                     Shortage
                   </span>
                 </td>
@@ -158,7 +158,7 @@ const ShipmentVerification = () => {
         {/* Info Box */}
         <div className="mt-4 bg-info bg-opacity-10 p-3 rounded">
           <p className="text-primary mb-1">
-            <i className="fas fa-exclamation-triangle me-2"></i>Reconciliation Required
+            <i className="bi bi-exclamation-triangle-fill me-2"></i>Reconciliation Required
           </p>
           <p className="text-muted mb-0">
             There are 2 shortages and 1 unexpected item that need reconciliation

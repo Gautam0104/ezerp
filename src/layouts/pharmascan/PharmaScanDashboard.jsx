@@ -217,19 +217,19 @@ export default function PharmaScanDashboard() {
           <div className="p-3">
             {[
               {
-                icon: "fas fa-check-circle text-success",
+                icon: "bi bi-check-circle-fill text-success",
                 title: "Shipment SHP-2024-0042 received",
                 desc: "25 items processed with 0 discrepancies",
                 time: "Today, 10:23 AM"
               },
               {
-                icon: "fas fa-check-circle text-success",
+                icon: "bi bi-check-circle-fill text-success",
                 title: "Order ORD-12345 fulfilled",
                 desc: "All items picked and packed successfully",
                 time: "Today, 9:45 AM"
               },
               {
-                icon: "fas fa-exclamation-triangle text-warning",
+                icon: "bi bi-exclamation-triangle-fill text-warning",
                 title: "Inventory alert for SKU-003",
                 desc: "Stock level below minimum threshold",
                 time: "Yesterday, 4:12 PM"

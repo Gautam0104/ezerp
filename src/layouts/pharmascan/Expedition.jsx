@@ -27,7 +27,7 @@ const Expedition = () => {
         {/* Item Header */}
         <div className="mb-4">
           <span className="badge bg-secondary text-dark">
-            <i className="fas fa-box me-1"></i>Item #12345
+            <i className="bi bi-box-fill me-1"></i>Item #12345
           </span>
         </div>
 
@@ -97,7 +97,7 @@ const Expedition = () => {
         <div className="d-flex justify-content-between">
           <button className="btn btn-light">Cancel</button>
           <button className="btn btn-primary">
-            Confirm Location <i className="fas fa-arrow-right ms-2"></i>
+            Confirm Location <i className="bi bi-arrow-right ms-2"></i>
           </button>
         </div>
       </div>

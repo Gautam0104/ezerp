@@ -23,7 +23,7 @@ const PutAwayDashboard = () => {
         <div className="d-flex justify-content-between align-items-center mb-4">
           <p className="text-muted mb-0">Assign storage locations to received inventory items</p>
           <button className="btn btn-primary d-flex align-items-center">
-            <i className="fas fa-file-alt me-2"></i> Generate Put-away Report
+            <i className="bi bi-file-alt me-2"></i> Generate Put-away Report
           </button>
         </div>
 
@@ -102,7 +102,7 @@ const PutAwayDashboard = () => {
                 <td>Product Alpha</td>
                 <td>25</td>
                 <td>BATCH-2024-001</td>
-                <td><span className="badge bg-warning text-dark">Pending</span></td>
+                <td><span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span></td>
                 <td>Not assigned</td>
                 <td><button className="btn btn-link text-primary">Assign Location</button></td>
               </tr>
@@ -111,7 +111,7 @@ const PutAwayDashboard = () => {
                 <td>Product Beta</td>
                 <td>15</td>
                 <td>BATCH-2024-002</td>
-                <td><span className="badge bg-warning text-dark">Pending</span></td>
+                <td><span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span></td>
                 <td>Not assigned</td>
                 <td><button className="btn btn-link text-primary">Assign Location</button></td>
               </tr>
@@ -121,7 +121,7 @@ const PutAwayDashboard = () => {
 
         <div className="mt-4 bg-primary bg-opacity-10 p-4 rounded">
           <p className="text-primary fw-semibold mb-1">
-            <i className="fas fa-box me-2"></i> Pending Put-away
+            <i className="bi bi-box-fill me-2"></i> Pending Put-away
           </p>
           <p className="text-muted mb-0">
             There are 2 items pending put-away. Scan items or select from the list above to assign storage locations.

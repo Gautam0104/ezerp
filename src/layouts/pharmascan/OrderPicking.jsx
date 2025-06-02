@@ -78,7 +78,7 @@ const OrderPicking = () => {
                   <td>5</td>
                   <td>LOT-A123</td>
                   <td>
-                    <span className="badge bg-warning text-dark">Pending</span>
+                    <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
                   </td>
                 </tr>
                 <tr>
@@ -87,7 +87,7 @@ const OrderPicking = () => {
                   <td>3</td>
                   <td>LOT-B456</td>
                   <td>
-                    <span className="badge bg-warning text-dark">Pending</span>
+                    <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
                   </td>
                 </tr>
                 <tr>
@@ -96,7 +96,7 @@ const OrderPicking = () => {
                   <td>2</td>
                   <td>LOT-C789</td>
                   <td>
-                    <span className="badge bg-warning text-dark">Pending</span>
+                    <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
                   </td>
                 </tr>
               </tbody>

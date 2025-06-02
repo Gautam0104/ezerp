@@ -27,7 +27,7 @@ function PalletBuilder() {
         {/* Create Button */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <button className="btn btn-primary shadow">
-            <i className="fas fa-plus me-2"></i> Create New Pallet
+            <i className="bi bi-plus me-2"></i> Create New Pallet
           </button>
         </div>
 
@@ -93,7 +93,7 @@ function PalletBuilder() {
                 <td>Warehouse A</td>
                 <td>2024-06-10</td>
                 <td>
-                  <span className="badge bg-warning text-dark">In Progress</span>
+                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>In Progress</span>
                 </td>
                 <td>
                   <Link to="#" className="text-primary text-decoration-underline">View</Link>
@@ -106,11 +106,11 @@ function PalletBuilder() {
                 <td>Distribution Center B</td>
                 <td>2024-06-09</td>
                 <td>
-                  <span className="badge bg-success">Completed</span>
+                  <span className="" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>Completed</span>
                 </td>
                 <td>
                   <Link to="#" className="text-primary text-decoration-underline">View</Link>
-                  <Link to="#" className="text-muted ms-2"><i className="fas fa-print"></i></Link>
+                  <Link to="#" className="text-muted ms-2"><i className="bi bi-print"></i></Link>
                 </td>
               </tr>
               <tr>
@@ -120,7 +120,7 @@ function PalletBuilder() {
                 <td>Retail Store C</td>
                 <td>2024-06-08</td>
                 <td>
-                  <span className="badge bg-warning text-dark">In Progress</span>
+                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>In Progress</span>
                 </td>
                 <td>
                   <Link to="#" className="text-primary text-decoration-underline">View</Link>
@@ -132,7 +132,7 @@ function PalletBuilder() {
 
         {/* Info Alert */}
         <div className="alert alert-primary d-flex align-items-center mt-4">
-          <i className="fas fa-info-circle me-2"></i>
+          <i className="bi bi-info-circle-fill me-2"></i>
           <div>
             You have pallets in progress. Complete them before shipping to ensure proper inventory tracking.
           </div>

@@ -25,10 +25,10 @@ const Receiving = () => {
         <div className="d-flex justify-content-between align-items-center mb-3">
           <div className="d-flex gap-3">
             <button className="btn btn-outline-secondary">
-              <i className="fas fa-plus me-2"></i> New Shipment
+              <i className="bi bi-plus me-2"></i> New Shipment
             </button>
             <button className="btn btn-primary text-white">
-              <i className="fas fa-barcode me-2"></i> Scan Shipment
+              <i className="bi bi-barcode me-2"></i> Scan Shipment
             </button>
           </div>
         </div>
@@ -166,7 +166,7 @@ const Receiving = () => {
         {/* Info box */}
         <div className="mt-4 bg-primary bg-opacity-10 p-4 rounded">
           <p className="text-primary mb-1">
-            <i className="fas fa-info-circle me-2"></i> Upcoming Deliveries
+            <i className="bi bi-info-circle-fill me-2"></i> Upcoming Deliveries
           </p>
           <p className="text-muted">
             You have 2 pending shipments scheduled for delivery in the next 7 days.
