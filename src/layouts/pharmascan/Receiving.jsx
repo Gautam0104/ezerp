@@ -46,50 +46,50 @@ const Receiving = () => {
         <div className="row g-3 mb-4">
           <div className="col-sm-6 col-lg-3">
             <div
-              className="p-3 rounded d-flex  align-items-center"
+              className="p-3 rounded d-flex justify-content-between align-items-center"
               style={{ backgroundColor: "#DBEAFE", color: "#1D4EDF" }}
             >
               <div>
                 <p className=" fs-5 fw-semibold">All Shipments</p>
                 <p className=" fs-3 fw-bold">5</p>
               </div>
-              <i className="bi bi-box-fill text-blue-600 fs-2 ms-3"></i>
+              <i className="bi bi-box-fill text-blue-600 fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
             <div
-              className=" p-3 rounded d-flex  align-items-center"
+              className=" p-3 rounded d-flex justify-content-between align-items-center"
               style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
             >
               <div>
                 <p className=" fs-5 fw-semibold">Pending</p>
                 <p className=" fs-3 fw-bold">2</p>
               </div>
-              <i className="bi bi-exclamation-triangle-fill text-yellow-600 fs-2 ms-3"></i>
+              <i className="bi bi-exclamation-triangle-fill text-yellow-600 fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
             <div
-              className=" p-3 rounded d-flex  align-items-center"
+              className=" p-3 rounded d-flex justify-content-between align-items-center"
               style={{ backgroundColor: "#DBEAFE", color: "#1D4EDA" }}
             >
               <div>
                 <p className=" fs-5 fw-semibold">In Progress</p>
                 <p className=" fs-3 fw-bold">1</p>
               </div>
-              <i className="bi bi-truck text-blue-600 fs-2 ms-3"></i>
+              <i className="bi bi-truck text-blue-600 fs-2"></i>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3">
             <div
-              className=" p-3 rounded d-flex  align-items-center"
+              className=" p-3 rounded d-flex justify-content-between align-items-center"
               style={{ backgroundColor: "#FEE2E2", color: "#B91C1C" }}
             >
               <div>
                 <p className=" fs-5 fw-semibold">Issues</p>
                 <p className=" fs-3 fw-bold">1</p>
               </div>
-              <i className="bi bi-exclamation-octagon-fill text-red-600 fs-2 ms-3"></i>
+              <i className="bi bi-exclamation-octagon-fill text-red-600 fs-2"></i>
             </div>
           </div>
         </div>
