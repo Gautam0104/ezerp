@@ -12,7 +12,7 @@ const PackingDashboard = () => {
         </div>
         <div className="d-flex align-items-center gap-2">
           <i className="bi bi-bell-fill"></i>
-          <span>
+          <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>

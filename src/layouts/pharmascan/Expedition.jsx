@@ -15,8 +15,8 @@ const Expedition = () => {
           </Link>
         </div>
         <div className="d-flex align-items-center gap-2">
-          <i className="bi bi-bell-fill me-2"></i>
-          <span>
+          <i className="bi bi-bell-fill"></i>
+          <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>
