@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../../styles/hero.css";
+import "../../styles/Hero.css";
 import Image01 from "../../assets/images/hero/hero-background-351314-1.avif"; // Replace with actual image path
 
 const Hero = () => {
