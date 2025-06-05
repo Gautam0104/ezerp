@@ -129,7 +129,7 @@ const ShipmentVerification = () => {
                   </span>
                 </td>
                 <td>
-                  <span className="badge bg-secondary bg-opacity-10 text-muted">
+                  <span className="" style={{backgroundColor:"#F3F4F6", color:"#7A7FC1"}}>
                     Reconcile
                   </span>
                 </td>
@@ -146,7 +146,7 @@ const ShipmentVerification = () => {
                   </span>
                 </td>
                 <td>
-                  <span className="badge bg-secondary bg-opacity-10 text-muted">
+                  <span className="" style={{backgroundColor:"#F3F4F6", color:"#7A7FC1"}}>
                     Reconcile
                   </span>
                 </td>

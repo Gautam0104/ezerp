@@ -26,7 +26,7 @@ const Expedition = () => {
       <div className="bg-white p-4 rounded shadow mt-4">
         {/* Item Header */}
         <div className="mb-4">
-          <span className="badge bg-secondary text-dark">
+          <span className="" style={{backgroundColor:"#E5E7EB", color:"#000000"}}>
             <i className="bi bi-box-fill me-1"></i>Item #12345
           </span>
         </div>
