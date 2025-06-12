@@ -18,8 +18,8 @@
   },
 
   "keyfeatures": {
-    "title": "Principais Recursos",
-    "description": "Turbine seu Pharmascan",
+    "title": "Por que código de barras",
+    "description": "SEJA EFICIENTE, PRECISO, CONECTADO.",
     "learnmore": "Saber mais",
     "items": [
       {
@@ -36,6 +36,37 @@
         "title": "Melhoria Contínua",
         "description": "Nosso compromisso vai além das soluções iniciais; buscamos continuamente eliminar fricções operacionais e melhorar a experiência do usuário, garantindo que nossas soluções sempre levem a melhorias mensuráveis.",
         "imageKey": "feature3"
+      }
+    ]
+  },
+  "scancards": {
+    "whatnew": "NOVIDADES",
+    "title": "Acelere o trabalho do dia a dia",
+    "description": "Se você não está acostumado com códigos de barras, talvez não esteja claro como eles podem ajudar a agilizar seu trabalho. Aqui estão alguns exemplos de como o sistema de inventário com código de barras da inFlow pode ajudar:",
+    "items": [
+      {
+        "title": "Escanear para receber",
+        "description": "Atualize o inventário instantaneamente após a chegada do produto."
+      },
+      {
+        "title": "Escanear para coletar com precisão",
+        "description": "Verifique o produto correto para cada pedido em tempo real."
+      },
+      {
+        "title": "Escanear para verificar estoque",
+        "description": "Realize verificações imediatas de estoque no local."
+      },
+      {
+        "title": "Escanear para ajustar estoque",
+        "description": "Ajuste as quantidades do inventário para discrepâncias ou danos na hora."
+      },
+      {
+        "title": "Escanear para transferir estoque",
+        "description": "Gerencie transferências de inventário entre locais com eficiência."
+      },
+      {
+        "title": "Escanear para consultar pedidos",
+        "description": "Acesse e revise rapidamente pedidos de compra e venda escaneando os códigos de barras associados."
       }
     ]
   }
