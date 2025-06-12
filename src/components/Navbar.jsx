@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import imageIcon from "../assets/images/cardcarousalbackground/1.png";
+import { useTranslation } from "react-i18next";
+
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+  const changeLangauge = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <nav className="navbar navbar-expand-lg bg-white border-bottom py-3 px-3 ">
       <div className="container d-flex justify-content-between align-items-center">
@@ -33,19 +39,24 @@ const Navbar = () => {
           {/* Left nav links */}
           <div className="navbar-nav d-lg-flex align-items-center gap-3">
             <Link to="#" className="nav-link fw-semibold text-dark">
-              Thunderbees
+              {t("navbar.brand")}
             </Link>
             <Link to="/wms/pharmahome" className="nav-link text-dark">
-              PharmaScan
+              {t("navbar.pharmascan")}
             </Link>
+            <select
+              className="nav-link text-dark dropdown-toggle"
+              onChange={(e) => changeLangauge(e.target.value)}
+            >
+              <option desabled>Choose language</option>
+              <option value="en">{t("navbar.language_en")}</option>
+              <option value="por">{t("navbar.language_por")}</option>
+            </select>
             <Link to="#" className="nav-link text-dark dropdown-toggle">
-              Plans and pricing
-            </Link>
-            <Link to="#" className="nav-link text-dark dropdown-toggle">
-              Resources
+              {t("navbar.resources")}
             </Link>
             <Link to="#" className="nav-link text-primary">
-              More Thunderbees
+              {t("navbar.more")}
             </Link>
           </div>
 
@@ -55,12 +66,12 @@ const Navbar = () => {
               to="#"
               className="nav-link text-dark d-flex align-items-center"
             >
-              Search <i className="bi bi-search ms-1"></i>
+              {t("navbar.search")} <i className="bi bi-search ms-1"></i>
             </Link>
             <Link to="#" className="nav-link text-dark">
               Français
             </Link>
-            <button className="btn btn-dark btn-sm">Try for free</button>
+            <button className="btn btn-dark btn-sm">{t("navbar.try")}</button>
             <Link to="#" className="nav-link text-dark">
               Thunder
             </Link>

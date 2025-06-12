@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../styles/hero.css";
 import Image01 from "../../assets/images/hero/hero-background-351314-1.avif"; // Replace with actual image path
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   const heroImage = Image01; // Replace with actual image
-
+  const { t } = useTranslation();
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 992);
@@ -27,17 +28,14 @@ const Hero = () => {
             to="/signin"
             className="btn btn-outline-primary btn-lg w-100 mb-3"
           >
-            Sign in
+            {t("hero.signin")}
           </Link>
         </div>
         <div className="hero-content-mobile">
-          <h1 className="display-5 fw-bold">Thunderbees PharmaScan</h1>
-          <p className="mb-3">
-            Design captivating Pharmascan and collaborate in real-time from any
-            device.
-          </p>
+          <h1 className="display-5 fw-bold">{t("title")}</h1>
+          <p className="mb-3">{t("paragraph")}</p>
           <Link to="/signup" className="btn btn-primary btn-lg w-100 mb-3">
-            Sign up for free
+            {t("hero.signup")}
           </Link>
           <Link
             to="/plans"
@@ -46,7 +44,7 @@ const Hero = () => {
             <span className="bg-primary text-white p-2 rounded">
               <i className="bi bi-chevron-right" />
             </span>
-            See plans and pricing
+            {t("hero.planandprice")}
           </Link>
         </div>
       </section>
@@ -67,11 +65,10 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            Thunderbees PharmaScan
+            {t("hero.tittle")}
           </h1>
           <p className=" mb-4 " data-aos="fade-up" data-aos-delay="300">
-            Design captivating Pharmascan and collaborate in real-time from any
-            device.
+            {t("hero.paragraph")}
           </p>
 
           <div
@@ -80,10 +77,10 @@ const Hero = () => {
             data-aos-delay="300"
           >
             <Link to="/signup" className="btn btn-primary btn-lg px-4">
-              Sign up for free
+              {t("hero.signup")}
             </Link>
             <Link to="/signin" className="btn btn-outline-primary btn-lg px-4">
-              Sign in
+              {t("hero.signin")}
             </Link>
           </div>
 
@@ -99,7 +96,7 @@ const Hero = () => {
               <span className="d-flex justify-content-center align-item-center bg-primary rounded p-2 text-white">
                 <i className="bi bi-chevron-right"></i>
               </span>{" "}
-              See plans and pricing
+              {t("hero.planandprice")}
             </Link>
           </div>
         </div>

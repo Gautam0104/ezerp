@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "brand": "Thunderbees",
+    "pharmascan": "PharmaScan",
+    "language_en": "English",
+    "language_por": "Portuguese",
+    "resources": "Resources",
+    "more": "More Thunderbees",
+    "search": "Search",
+    "try": "Try for free"
+  },
+  "hero": {
+    "tittle": "Thunderbees PharmaScan",
+    "paragraph": "Design captivating Pharmascan and collaborate in real-time from any device.",
+    "signup": "Sign up for free",
+    "signin": "Sign in",
+    "planandprice": "See plans and pricing"
+  },
+
+  "keyfeatures": {
+    "title": "Key Features",
+    "description": "Discover the benefits of our powerful features.",
+    "learnmore": "Learn more",
+    "items": [
+      {
+        "title": "Process, People, Technology",
+        "description": "Our ability to connect process, people, and technology is how we build solutions to support organizations around the world.",
+        "imageKey": "feature1"
+      },
+      {
+        "title": "Capture, Track, and Integrate",
+        "description": "At the heart of our technical expertise lies our ability to capture, track, and seamlessly integrate data throughout your operations.",
+        "imageKey": "feature2"
+      },
+      {
+        "title": "Continuous Improvement",
+        "description": "We continuously strive to eliminate operational friction and enhance user experiences.",
+        "imageKey": "feature3"
+      }
+    ]
+  }
+}

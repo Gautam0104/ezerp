@@ -1,13 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import KeyFeaturesImage1 from "../../assets/images/keyfeature/key-features-10-351314.avif";
 import KeyFeaturesImage2 from "../../assets/images/keyfeature/key-features-2-351314.avif";
 import KeyFeaturesImage3 from "../../assets/images/keyfeature/key-features-3-351314.avif";
 
-const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
+const imageMap = {
+  feature1: KeyFeaturesImage1,
+  feature2: KeyFeaturesImage2,
+  feature3: KeyFeaturesImage3
+};
+
+const FeatureCard = ({ title, description, buttonLabel, imageKey }) => {
+  const imageUrl = imageMap[imageKey];
+
   return (
-    <div className="col-md-4 mb-4" id="keyFeature" data-aos="fade-up"
-     data-aos-duration="3000">
+    <div className="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="3000">
       <div
         className="card h-100"
         style={{
@@ -30,9 +39,11 @@ const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
         />
         <div className="card-body d-flex flex-column align-items-start">
           <h5 className="card-title fw-semibold">{title}</h5>
-          <p className="card-text text-primary mb-4 text-start">{description}</p>
+          <p className="card-text text-primary mb-4 text-start">
+            {description}
+          </p>
           <Link
-            href="#"
+            to="#"
             className="btn"
             style={{
               background: "#001a2d",
@@ -82,40 +93,26 @@ const FeatureCard = ({ title, description, buttonLabel, imageUrl }) => {
 };
 
 const KeyFeatures = () => {
-  const features = [
-    {
-      title: "Thunderbees in PharmaScan",
-      description:
-        "Enjoy faster Pharmascan performance, enhanced creative tools, and improved features designed to boost .",
-      buttonLabel: "Learn more",
-      imageUrl: KeyFeaturesImage1 // Replace with your image path
-    },
-    {
-      title: "Rehearse with Speaker Coach",
-      description:
-        "Improve your pacing and pitch to speak more confidently with help from an AI-driven coach.",
-      buttonLabel: "Learn more",
-      imageUrl: KeyFeaturesImage2 // Replace with your image path
-    },
-    {
-      title: "Get more Thunderbees ",
-      description:
-        "Get the apps, security, and storage you need to accomplish your goals with Thunderbees .",
-      buttonLabel: "Learn more",
-      imageUrl: KeyFeaturesImage3 // Replace with your image path
-    }
-  ];
+  const { t } = useTranslation();
+  const features = t("keyfeatures.items", { returnObjects: true });
 
   return (
     <div className="container text-center my-5">
       <small className="text-uppercase fw-semibold text-primary mb-2">
-        Key Features
+        {t("keyfeatures.title")}
       </small>
-      <h2 className="mb-4" data-aos="fade-up"
-     data-aos-duration="300">Supercharge your Pharmascan</h2>
+      <h2 className="mb-4" data-aos="fade-up" data-aos-duration="300">
+        {t("keyfeatures.description")}
+      </h2>
       <div className="row">
         {features.map((feature, index) => (
-          <FeatureCard key={index} {...feature} />
+          <FeatureCard
+            key={index}
+            title={feature.title}
+            description={feature.description}
+            buttonLabel={t("keyfeatures.learnmore")}
+            imageKey={feature.imageKey}
+          />
         ))}
       </div>
     </div>
