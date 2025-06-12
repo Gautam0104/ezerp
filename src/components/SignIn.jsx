@@ -8,10 +8,11 @@ import {
   signInWithPopup
 } from "firebase/auth";
 import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
@@ -40,7 +41,7 @@ const SignIn = () => {
         JSON.stringify({ email: user.email, name: user.displayName })
       );
 
-      window.location.href = "https://gautam0104.github.io/wms/";
+      navigate(`/wms/pharmahome`);
     } catch (error) {
       Swal.fire({
         icon: "error",
@@ -69,7 +70,7 @@ const SignIn = () => {
         JSON.stringify({ email: user.email, name: user.displayName })
       );
 
-      window.location.href = "https://gautam0104.github.io/wms/";
+      navigate(`/wms/pharmahome`);
     } catch (error) {
       Swal.fire({
         icon: "error",
