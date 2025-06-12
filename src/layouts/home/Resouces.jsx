@@ -10,35 +10,34 @@ import ScrollToHashElement from "../../components/ScrollToHashElement";
 const resources = [
   {
     img: resourceImg1,
-    tag: "Design tips",
-    title: "Pick the perfect font for your Pharmascan.",
+    tag: "WorkFaster:Enhanced EDI/Invoice Integration",
+    title: "EzERP harnesses advanced EDI/invoicing capabilities to accelerate the receiving process significantly. Upon receipt, barcodes on invoices are automatically scanned, instantly identifying and correlating with Purchase Orders (PO). This automated matching speeds up the verification process, ensures all items are accounted for immediately, eliminates manual errors, and integrates seamlessly with accounting modules to update financial records in real-time.",
     link: "#"
   },
   {
     img: resourceImg2,
-    tag: "Pharmascan tips",
-    title:
-      "Use visual aids to increase the impact of your speeches and Pharmascan.",
+    tag: "Advanced Label Design: Customization and Integration",
+    title:"With EzERP, you can design and print custom labels that are not only compliant with industry standards but also tailored to meet specific operational needs. Our module supports a wide range of customization, from simple barcodes to complex labels incorporating detailed product information, logos, and other branding elements. Integrated with professional printing tools, it ensures high-quality label production that can be aligned with marketing strategies and regulatory requirements.",
     link: "#"
   },
   {
     img: resourceImg3,
-    tag: "Design tips",
-    title: "Design your own posters with PharmaScan.",
+    tag: "Scan Smarter: Precision and Speed",
+    title: "EzERP's barcode scanning is engineered for both accuracy and efficiency, ensuring rapid verification of product details against existing data. This capability guarantees that each item is correctly logged and tracked throughout its journey from warehouse entry to shipment, dramatically reducing the need for manual data entry and minimizing potential errors during inventory audits or customer deliveries.",
     link: "#"
   },
   {
     img: resourceImg4,
-    tag: "Design tips",
-    title: "Perfect your Pharmascan layout with the 10-20-30 rule.",
+    tag: "Mobile Compatibility: Empowering On-the-Go Operations",
+    title: "Ensure full functionality of your barcode system on mobile devices, allowing for operations anywhere and anytime. This feature supports on-the-go activities such as receiving, inventory checks, and order processing through smartphones or tablets, which is especially useful for field sales teams or managing remote warehouse operations.",
     link: "#"
   },
-  {
-    img: resourceImg5,
-    tag: "Pharmascan tips",
-    title: "Make slides pop with complementary colors.",
-    link: "#"
-  }
+  // {
+  //   img: resourceImg5,
+  //   tag: "Pharmascan tips",
+  //   title: "Make slides pop with complementary colors.",
+  //   link: "#"
+  // }
 ];
 
 const moreResources = [
@@ -143,8 +142,9 @@ const Resouces = () => {
           </div>
           <h2 className="fw mb-5 " data-aos="fade-up"
           data-aos-delay="300" style={{ fontSize: 48, color: "#111" }}>
-            Make Pharmascan pop with these helpful resources
+            Why EzERP Barcode Module
           </h2>
+          <p style={{ marginBottom: 32 }}>EzERP harnesses advanced EDI/invoicing capabilities to accelerate the receiving process significantly. Upon receipt, barcodes on invoices are automatically scanned, instantly identifying and correlating with Purchase Orders (PO). This automated matching speeds up the verification process, ensures all items are accounted for immediately, eliminates manual errors, and integrates seamlessly with accounting modules to update financial records in real-time.</p>
           <div style={{ position: "relative", overflowX: "hidden" }}>
             <div
               ref={scrollRef}
@@ -196,14 +196,14 @@ const Resouces = () => {
                     }}
                   >
                     <div
-                      className="fw-medium mb-2 text-primary"
-                      style={{ fontSize: 12 }}
+                        className="fw-semibold mb-4"
+                      style={{ fontSize: 22, color: "#111", lineHeight: 1.3 }}
                     >
                       {res.tag}
                     </div>
                     <div
-                      className="fw-semibold mb-4"
-                      style={{ fontSize: 22, color: "#111", lineHeight: 1.3 }}
+                      className="fw-medium mb-2 text-primary"
+                      style={{ fontSize: 16 }}
                     >
                       {res.title}
                     </div>
