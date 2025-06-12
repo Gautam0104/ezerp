@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/ezerp/static/css/main.d38df5d6.css",
-    "main.js": "/ezerp/static/js/main.ddb8c7c5.js",
+    "main.js": "/ezerp/static/js/main.8c67b161.js",
     "static/js/845.85e3297b.chunk.js": "/ezerp/static/js/845.85e3297b.chunk.js",
-    "static/media/interactive-demo-10351314.avif": "/ezerp/static/media/interactive-demo-10351314.d52b03194384fbeae04c.avif",
     "static/media/key-features-10-351314.avif": "/ezerp/static/media/key-features-10-351314.6620f33b60b6c8bbedb7.avif",
     "static/media/hero-background-351314-1.avif": "/ezerp/static/media/hero-background-351314-1.c63980c134fe35aa8b60.avif",
     "static/media/key-features-3-351314.avif": "/ezerp/static/media/key-features-3-351314.004b884f2ee6885206dc.avif",
@@ -12,8 +11,6 @@
     "static/media/vertical-accordian-3.avif": "/ezerp/static/media/vertical-accordian-3.cda7758f8663ef4a24db.avif",
     "static/media/card-carousal-background-351314.avif": "/ezerp/static/media/card-carousal-background-351314.f154b341754135ab3a9d.avif",
     "static/media/sku-cards-background-351314.avif": "/ezerp/static/media/sku-cards-background-351314.59503234f4a43e8cdce0.avif",
-    "static/media/vertical-accordian-4.avif": "/ezerp/static/media/vertical-accordian-4.2922a8be6a70aebf2768.avif",
-    "static/media/featured-resources-05-351314.avif": "/ezerp/static/media/featured-resources-05-351314.74d018ce83806c056f82.avif",
     "static/media/bootstrap-icons.woff?": "/ezerp/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/featured-resources-03-351314.avif": "/ezerp/static/media/featured-resources-03-351314.cfc874f6a7eba952a34f.avif",
     "static/media/featured-resources-01-351314.avif": "/ezerp/static/media/featured-resources-01-351314.da72ecafaaf090ffc303.avif",
@@ -33,11 +30,11 @@
     "static/media/Blog-1.avif": "/ezerp/static/media/Blog-1.45221fb7ed3bcb8592a2.avif",
     "static/media/LinkedIn-29.avif": "/ezerp/static/media/LinkedIn-29.1ff7dafe628cfbd09eae.avif",
     "main.d38df5d6.css.map": "/ezerp/static/css/main.d38df5d6.css.map",
-    "main.ddb8c7c5.js.map": "/ezerp/static/js/main.ddb8c7c5.js.map",
+    "main.8c67b161.js.map": "/ezerp/static/js/main.8c67b161.js.map",
     "845.85e3297b.chunk.js.map": "/ezerp/static/js/845.85e3297b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d38df5d6.css",
-    "static/js/main.ddb8c7c5.js"
+    "static/js/main.8c67b161.js"
   ]
 }
