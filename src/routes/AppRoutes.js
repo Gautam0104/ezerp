@@ -45,7 +45,6 @@ const AppRoutes = () => {
         <Route path="packingdashboard" element={<PackingDashboard />} />
         <Route path="palletbuilder" element={<PalletBuilder />} />
         <Route path="ShipmentVerification" element={<ShipmentVerification />} />
-
       </Route>
       {/* Dashboard Layout */}
       <Route path="/dashboard" element={<Dashboard />}>
