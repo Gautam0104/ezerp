@@ -15,8 +15,8 @@ const Expedition = () => {
           </Link>
         </div>
         <div className="d-flex align-items-center gap-2">
-          <i className="bi bi-bell-fill me-2"></i>
-          <span>
+          <i className="bi bi-bell-fill"></i>
+          <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>
@@ -26,7 +26,7 @@ const Expedition = () => {
       <div className="bg-white p-4 rounded shadow mt-4">
         {/* Item Header */}
         <div className="mb-4">
-          <span className="badge bg-secondary text-dark">
+          <span className="" style={{backgroundColor:"#E5E7EB", color:"#000000"}}>
             <i className="bi bi-box-fill me-1"></i>Item #12345
           </span>
         </div>

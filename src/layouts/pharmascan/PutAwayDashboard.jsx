@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const PutAwayDashboard = () => {
   return (
-    <div className="flex-grow px-4 py-3">
+    <div className="flex-grow px-4">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
         <div>
@@ -15,8 +15,8 @@ const PutAwayDashboard = () => {
           </Link>
         </div>
         <div className="d-flex align-items-center gap-2">
-          <i className="bi bi-bell-fill me-2"></i>
-          <span>
+          <i className="bi bi-bell-fill"></i>
+          <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>

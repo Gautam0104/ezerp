@@ -15,8 +15,8 @@ const ShipmentVerification = () => {
           </Link>
         </div>
         <div className="d-flex align-items-center gap-2">
-          <i className="bi bi-bell-fill me-2"></i>
-          <span>
+          <i className="bi bi-bell-fill"></i>
+          <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>
@@ -129,7 +129,7 @@ const ShipmentVerification = () => {
                   </span>
                 </td>
                 <td>
-                  <span className="badge bg-secondary bg-opacity-10 text-muted">
+                  <span className="" style={{backgroundColor:"#F3F4F6", color:"#7A7FC1"}}>
                     Reconcile
                   </span>
                 </td>
@@ -146,7 +146,7 @@ const ShipmentVerification = () => {
                   </span>
                 </td>
                 <td>
-                  <span className="badge bg-secondary bg-opacity-10 text-muted">
+                  <span className="" style={{backgroundColor:"#F3F4F6", color:"#7A7FC1"}}>
                     Reconcile
                   </span>
                 </td>

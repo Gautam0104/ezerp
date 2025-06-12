@@ -13,7 +13,7 @@ function ProductForm() {
         </Link>
         <div className="d-flex align-items-center gap-2">
           <i className="bi bi-bell-fill"></i>
-          <span>
+          <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>
@@ -126,7 +126,14 @@ function ProductForm() {
                 <input type="date" className="form-control" />
               </div>
 
-              <button className="btn btn-success w-100">Save Product</button>
+              <div class="flex justify-end my-2">
+            <button class=" px-4 py-2 rounded m-2" style={{ backgroundColor: "#EF4444", color: "#fdffff" }}>
+             Cancel
+            </button>
+            <button class=" px-4 py-2 rounded" style={{ backgroundColor: "#22c55e", color: "#fdffff" }}>
+             Save
+            </button>
+           </div>
             </div>
           </div>
         </div>
