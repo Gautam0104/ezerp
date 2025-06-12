@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "brand": "Thunderbees",
+    "pharmascan": "Escaneamento de Farmácia",
+    "language_en": "Inglês",
+    "language_por": "Português",
+    "resources": "Recursos",
+    "more": "Mais Thunderbees",
+    "search": "Procurar",
+    "try": "Experimente grátis"
+  },
+  "hero": {
+    "tittle": "Thunderbees PharmaScan",
+    "paragraph": "Crie o cativante Pharmascan e colabore em tempo real a partir de qualquer dispositivo.",
+    "signup": "Cadastre-se gratuitamente",
+    "signin": "Entrar",
+    "planandprice": "Veja planos e preços"
+  },
+
+  "keyfeatures": {
+    "title": "Por que código de barras",
+    "description": "SEJA EFICIENTE, PRECISO, CONECTADO.",
+    "learnmore": "Saber mais",
+    "items": [
+      {
+        "title": "Processo, Pessoas, Tecnologia",
+        "description": "Nossa capacidade de conectar processos, pessoas e tecnologia é como construímos soluções para apoiar organizações em todo o mundo.",
+        "imageKey": "feature1"
+      },
+      {
+        "title": "Capturar, Rastrear e Integrar",
+        "description": "No centro de nossa expertise técnica está nossa capacidade de capturar, rastrear e integrar dados perfeitamente em todas as suas operações. O EzERP é projetado para resolver desafios logísticos complexos por meio de gerenciamento avançado de dados.",
+        "imageKey": "feature2"
+      },
+      {
+        "title": "Melhoria Contínua",
+        "description": "Nosso compromisso vai além das soluções iniciais; buscamos continuamente eliminar fricções operacionais e melhorar a experiência do usuário, garantindo que nossas soluções sempre levem a melhorias mensuráveis.",
+        "imageKey": "feature3"
+      }
+    ]
+  },
+  "scancards": {
+    "whatnew": "NOVIDADES",
+    "title": "Acelere o trabalho do dia a dia",
+    "description": "Se você não está acostumado com códigos de barras, talvez não esteja claro como eles podem ajudar a agilizar seu trabalho. Aqui estão alguns exemplos de como o sistema de inventário com código de barras da inFlow pode ajudar:",
+    "items": [
+      {
+        "title": "Escanear para receber",
+        "description": "Atualize o inventário instantaneamente após a chegada do produto."
+      },
+      {
+        "title": "Escanear para coletar com precisão",
+        "description": "Verifique o produto correto para cada pedido em tempo real."
+      },
+      {
+        "title": "Escanear para verificar estoque",
+        "description": "Realize verificações imediatas de estoque no local."
+      },
+      {
+        "title": "Escanear para ajustar estoque",
+        "description": "Ajuste as quantidades do inventário para discrepâncias ou danos na hora."
+      },
+      {
+        "title": "Escanear para transferir estoque",
+        "description": "Gerencie transferências de inventário entre locais com eficiência."
+      },
+      {
+        "title": "Escanear para consultar pedidos",
+        "description": "Acesse e revise rapidamente pedidos de compra e venda escaneando os códigos de barras associados."
+      }
+    ]
+  }
+}

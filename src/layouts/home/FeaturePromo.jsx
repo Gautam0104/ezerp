@@ -1,8 +1,25 @@
 import React from "react";
-import Image01 from "../../assets/images/intractivedemo/interactive-demo-10351314.avif";
-import bgImage from "../../assets/images/featurepromo/mediademo-background-351314.avif"; // Placeholder for background image
+import bgImage from "../../assets/images/featurepromo/mediademo-background-351314.avif";
 import ScrollToHashElement from "../../components/ScrollToHashElement";
+import { useTranslation } from "react-i18next";
+
+// Define the ScanFeatureCard component
+const ScanFeatureCard = ({ title, description }) => (
+  <div className="col-md-4 mb-4" data-aos="fade-up">
+    <div
+      className="card h-100 shadow-sm bg-white text-dark"
+      style={{ borderRadius: "16px", padding: "20px", border: "none" }}
+    >
+      <h5 className="fw-bold mb-2">{title}</h5>
+      <p className="mb-0">{description}</p>
+    </div>
+  </div>
+);
+
 const FeaturePromo = () => {
+  const { t } = useTranslation();
+  const cards = t("scancards.items", { returnObjects: true });
+
   return (
     <>
       <ScrollToHashElement />
@@ -19,62 +36,36 @@ const FeaturePromo = () => {
       >
         <div className="container">
           <div className="row align-items-center g-5">
-            <div className="col-lg-12 text-center ">
+            <div className="col-lg-12 text-center">
               <div className="pe-lg-5">
                 <span
                   className="text-uppercase fw-semibold text-primary mb-2"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
-                  WHAT'S NEW
+                  {t("scancards.whatnew")}
                 </span>
                 <h2
-                  className=" text-primary  mb-3"
+                  className="text-primary mb-3"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
-                  Boost your creativity in PharmaScan
+                  {t("scancards.title")}
                 </h2>
                 <p
-                  className=" mb-3 text-primary "
+                  className="mb-3 text-primary"
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  Use the latest AI-powered features in PharmaScan and select
-                  Thunderbees  apps with a Thunderbees  subscription
+                  {t("scancards.description")}
                 </p>
-                <div
-                  className=" p-4 rounded-3 mb-4"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <h4 className="text-primary mb-3">
-                    <i className="bi bi-stars me-2"></i>
-                    Introducing Thunderbees for PharmaScan
-                  </h4>
-                  <button className="btn btn-primary px-4 py-2 rounded-pill fw-semibold">
-                    Learn more <i className="bi bi-arrow-right ms-2"></i>
-                  </button>
-                </div>
               </div>
             </div>
             <div className="col-lg-12">
-              <div className="p-3  rounded-3  d-flex justify-content-center align-items-center">
-                <div
-                  className="rounded-2 overflow-hidden "
-                  style={{ Height: "400px", width: "60%" }}
-                >
-                  <img
-                    src={Image01}
-                    alt="PharmaScan Promo"
-                    className="img-fluid rounded-2"
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      objectFit: "contain"
-                    }}
-                  />
-                </div>
+              <div className="row">
+                {cards.map((card, index) => (
+                  <ScanFeatureCard key={index} {...card} />
+                ))}
               </div>
             </div>
           </div>

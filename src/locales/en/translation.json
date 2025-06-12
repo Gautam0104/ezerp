@@ -1,0 +1,73 @@
+{
+  "navbar": {
+    "brand": "Thunderbees",
+    "pharmascan": "PharmaScan",
+    "language_en": "English",
+    "language_por": "Portuguese",
+    "resources": "Resources",
+    "more": "More Thunderbees",
+    "search": "Search",
+    "try": "Try for free"
+  },
+  "hero": {
+    "tittle": "Thunderbees PharmaScan",
+    "paragraph": "Design captivating Pharmascan and collaborate in real-time from any device.",
+    "signup": "Sign up for free",
+    "signin": "Sign in",
+    "planandprice": "See plans and pricing"
+  },
+
+  "keyfeatures": {
+    "title": "Why Barcoding",
+    "description": "BE EFFICIENT, ACCURATE, CONNECTED..",
+    "learnmore": "Learn more",
+    "items": [
+      {
+        "title": "Process, People, Technology",
+        "description": "Our ability to connect process, people, and technology is how we build solutions to support organizations around the world.",
+        "imageKey": "feature1"
+      },
+      {
+        "title": "Capture, Track, and Integrate",
+        "description": "At the heart of our technical expertise lies our ability to capture, track, and seamlessly integrate data throughout your operations.",
+        "imageKey": "feature2"
+      },
+      {
+        "title": "Continuous Improvement",
+        "description": "We continuously strive to eliminate operational friction and enhance user experiences.",
+        "imageKey": "feature3"
+      }
+    ]
+  },
+  "scancards": {
+    "whatnew": "WHAT'S NEW",
+    "title": "Speed up everyday work",
+    "description": "If you’re not used to barcodes, it might not be clear how they might help you get work done faster. Here are a few examples of how inFlow’s barcode inventory system can help:",
+    "items": [
+      {
+        "title": "Scan to receive",
+        "description": "Update inventory instantly upon product arrival."
+      },
+      {
+        "title": "Scan to pick accurately",
+        "description": "Verify the correct product for each order in real-time."
+      },
+      {
+        "title": "Scan to check stock",
+        "description": "Conduct immediate stock verifications on the floor."
+      },
+      {
+        "title": "Scan to adjust stock",
+        "description": "Adjust inventory quantities for discrepancies or damages on the spot."
+      },
+      {
+        "title": "Scan to transfer stock",
+        "description": "Manage inventory transfers between locations efficiently."
+      },
+      {
+        "title": "Scan to look up orders",
+        "description": "Quickly access and review purchase and sales orders by scanning associated barcodes."
+      }
+    ]
+  }
+}

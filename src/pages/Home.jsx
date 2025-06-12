@@ -11,11 +11,12 @@ import Details from "../layouts/home/Details";
 import Follow from "../layouts/home/Follow";
 import Resouces from "../layouts/home/Resouces";
 import Faq from "../layouts/home/Faq";
-
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <div>
-      <Hero />
+      <Hero t={t} />
       <Overview id="overview" />
       <KeyFeatures id="keyFeature" />
       <FeaturePromo id="whatsNew" />
