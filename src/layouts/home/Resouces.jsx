@@ -77,6 +77,7 @@ const Resouces = () => {
                   className="bg-white rounded-4 shadow-sm d-flex flex-column"
                 >
                   <img
+                    className="resource-img"
                     src={imageMap[res.img]}
                     alt=""
                     style={{
