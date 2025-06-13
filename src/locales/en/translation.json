@@ -9,6 +9,81 @@
     "search": "Search",
     "try": "Try for free"
   },
+
+  "footer": {
+    "sections": {
+      "What's new": [
+        "Thunderbees Pro",
+        "Thunderbees Pharmascan",
+        "Thunderbees Pharmascan Studio 2",
+        "Thunderbees Pharmascan Go 3",
+        "Thunderbees Pharmascan",
+        "AI in Pharmascans",
+        "Explore Thunderbees products",
+        "Pharmascans 11 apps"
+      ],
+      "Thunderbees Store": [
+        "Account profile",
+        "Download Center",
+        "Thunderbees Store Support",
+        "Returns",
+        "Order tracking",
+        "Virtual workshops and training",
+        "Thunderbees Store Promise"
+      ],
+      "Education": [
+        "Thunderbees in education",
+        "Devices for education",
+        "Thunderbees Teams for Education",
+        "Thunderbees Education",
+        "Office Education",
+        "Educator training and development",
+        "Deals for students and parents",
+        "Azure for students"
+      ],
+      "Business": [
+        "Thunderbees Cloud",
+        "Thunderbees Security",
+        "Azure",
+        "Dynamics",
+        "Thunderbees",
+        "Thunderbees Advertising",
+        "Thunderbees Pharmascan",
+        "Thunderbees Teams"
+      ],
+      "Developer & IT": [
+        "Thunderbees Developer",
+        "Thunderbees Learn",
+        "Support for AI marketplace apps",
+        "Thunderbees Tech Community",
+        "Azure Marketplace",
+        "AppSource",
+        "Thunderbees Power Platform",
+        "Visual Studio"
+      ],
+      "Company": [
+        "Careers",
+        "About Thunderbees",
+        "Company news",
+        "Privacy at Thunderbees",
+        "Investors",
+        "Diversity and inclusion",
+        "Accessibility",
+        "Sustainability"
+      ]
+    },
+    "footerNote": {
+      "language": "English (Canada)",
+      "privacy": "✔ Your Privacy Choices",
+      "consumerHealth": "Consumer Health Privacy",
+      "contact": "Contact Thunderbees",
+      "privacyLink": "Privacy",
+      "terms": "Terms of use",
+      "trademarks": "Trademarks",
+      "ads": "About our ads",
+      "copyright": "© Thunderbees 2025"
+    }
+  },
   "hero": {
     "tittle": "Thunderbees PharmaScan",
     "paragraph": "Design captivating Pharmascan and collaborate in real-time from any device.",
