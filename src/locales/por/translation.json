@@ -118,5 +118,111 @@
         ]
       }
     ]
+  },
+
+  "faq": {
+    "title": "Perguntas frequentes",
+    "questions": [
+      {
+        "question": "Onde posso usar o Thunderbees PharmaScan?",
+        "answer": "O Thunderbees PharmaScan está disponível como aplicativo para desktop (Windows e macOS), em dispositivos móveis e tablets (iOS e Android™), e online através do seu navegador."
+      },
+      {
+        "question": "Existe uma versão gratuita do Thunderbees PharmaScan?",
+        "answer": "Sim, o Thunderbees PharmaScan para a web é gratuito para qualquer pessoa usar online. <link>Cadastre-se ou faça login</link> usando qualquer endereço de e-mail."
+      },
+      {
+        "question": "Posso colaborar com outras pessoas no Thunderbees PharmaScan?",
+        "answer": "Sim, o Thunderbees PharmaScan permite colaboração em tempo real com várias pessoas."
+      },
+      {
+        "question": "Em quais idiomas o Thunderbees PharmaScan está disponível?",
+        "answer": "O Thunderbees PharmaScan está disponível em mais de <link>80 idiomas</link>."
+      }
+    ],
+    "expandAll": "Expandir tudo",
+    "collapseAll": "Recolher tudo"
+  },
+
+  "resourcesSection": {
+    "title": "Por que o Módulo de Código de Barras EzERP",
+    "desc": "O EzERP utiliza recursos avançados de EDI/faturamento para acelerar significativamente o processo de recebimento. Ao receber produtos, os códigos de barras nas faturas são automaticamente escaneados, identificando e correlacionando instantaneamente com os Pedidos de Compra (PO). Essa correspondência automatizada agiliza a verificação, garante que todos os itens sejam contabilizados imediatamente, elimina erros manuais e integra-se perfeitamente aos módulos contábeis para atualizar os registros financeiros em tempo real.",
+    "learnMore": "Saiba mais",
+    "resources": [
+      {
+        "img": "resourceImg1",
+        "tag": "Trabalhe mais rápido: Integração avançada de EDI/Fatura",
+        "title": "O EzERP utiliza recursos avançados de EDI/faturamento para acelerar significativamente o processo de recebimento...",
+        "link": "#"
+      },
+      {
+        "img": "resourceImg2",
+        "tag": "Design de etiquetas avançado: personalização e integração",
+        "title": "Com o EzERP, você pode criar e imprimir etiquetas personalizadas que estão em conformidade com os padrões da indústria...",
+        "link": "#"
+      },
+      {
+        "img": "resourceImg3",
+        "tag": "Escaneamento inteligente: precisão e velocidade",
+        "title": "O escaneamento de código de barras do EzERP é projetado para precisão e eficiência...",
+        "link": "#"
+      },
+      {
+        "img": "resourceImg4",
+        "tag": "Compatibilidade móvel: operações em movimento",
+        "title": "Garanta funcionalidade total do sistema de código de barras em dispositivos móveis...",
+        "link": "#"
+      }
+    ],
+    "moreResources": [
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Word",
+        "title": "Eleve sua escrita e crie documentos incríveis — em qualquer lugar, a qualquer hora.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmscan",
+        "title": "Transforme dados em insights com planilhas gratuitas e premium.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmscan",
+        "title": "Mantenha seus pensamentos, conteúdos e listas organizados em um só lugar.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmascan",
+        "title": "Gerencie seu e-mail, calendário, tarefas e contatos em um só local.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Defender",
+        "title": "Simplifique sua segurança online.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmascan",
+        "title": "Mantenha seus arquivos e memórias protegidos, atualizados e acessíveis em todos os seus dispositivos.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Designer",
+        "title": "Crie designs e edite fotos em segundos com o poder da IA.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Teams",
+        "title": "Reúna todos em um só lugar para se encontrar, conversar, ligar e colaborar.",
+        "link": "#"
+      }
+    ]
   }
 }

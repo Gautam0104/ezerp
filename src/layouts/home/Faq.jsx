@@ -1,59 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Add this import
+import { Link } from "react-router-dom";
+import { useTranslation, Trans } from "react-i18next";
 import ScrollToHashElement from "../../components/ScrollToHashElement";
-const faqData = [
-  {
-    question: "Where can I use Thunderbees PharmaScan?",
-    answer:
-      "Thunderbees PharmaScan is available as an app for desktop (Windows and MacOS), on mobile devices and tablets (iOS and Android™), and online through your browser."
-  },
-  {
-    question: "Is there a free version of Thunderbees PharmaScan?",
-    answer: (
-      <>
-        Yes, Thunderbees PharmaScan for the web is free for anyone to use
-        online.{" "}
-        <Link
-          to="/signup"
-          style={{
-            color: "#0067b8",
-            textDecoration: "underline"
-          }}
-        >
-          Sign up or sign in
-        </Link>{" "}
-        using any email address.
-      </>
-    )
-  },
-  {
-    question: "Can I collaborate with other people in Thunderbees PharmaScan?",
-    answer:
-      "Yes, Thunderbees PharmaScan supports real-time collaboration with multiple people."
-  },
-  {
-    question: "In what languages is Thunderbees PharmaScan available?",
-    answer: (
-      <>
-        Thunderbees PharmaScan is available in more than{" "}
-        <Link
-          to="/languages"
-          style={{
-            color: "#0067b8",
-            textDecoration: "underline"
-          }}
-        >
-          80 languages
-        </Link>
-        .
-      </>
-    )
-  }
-];
 
 const Faq = () => {
-  // By default, keep collapse all selected (all collapsed)
-  const [openIndexes, setOpenIndexes] = useState([]); // <-- changed from [0, 1, 2, 3]
+  const { t } = useTranslation();
+  const faqData = t("faq.questions", { returnObjects: true });
+
+  const [openIndexes, setOpenIndexes] = useState([]);
 
   const handleToggle = (idx) => {
     setOpenIndexes((prev) =>
@@ -67,25 +21,22 @@ const Faq = () => {
   return (
     <>
       <ScrollToHashElement />
-      <section className="py-5" data-aos="fade-up"
-              data-aos-delay="500" style={{ backgroundColor: "#fdfcf9" }}>
+      <section
+        className="py-5"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        style={{ backgroundColor: "#fdfcf9" }}
+      >
         <div
           className="container"
           style={{
             fontFamily: "Segoe UI, Arial, sans-serif",
-
             maxHeight: "100vh"
           }}
           id="faq"
         >
-          <h1
-            style={{
-              fontSize: 44,
-              fontWeight: 400,
-              marginBottom: 32
-            }}
-          >
-            Frequently asked questions
+          <h1 style={{ fontSize: 44, fontWeight: 400, marginBottom: 32 }}>
+            {t("faq.title")}
           </h1>
           <div
             style={{
@@ -101,8 +52,8 @@ const Faq = () => {
                 padding: "8px 20px",
                 border:
                   openIndexes.length === faqData.length
-                    ? "2px solid #111820" // selected
-                    : "2px dashed #ccc", // not selected
+                    ? "2px solid #111820"
+                    : "2px dashed #ccc",
                 borderRadius: 6,
                 background: "#fdfcf9",
                 color: "#888",
@@ -111,7 +62,7 @@ const Faq = () => {
               }}
               disabled={openIndexes.length === faqData.length}
             >
-              Expand all
+              {t("faq.expandAll")}
             </button>
             <button
               onClick={handleCollapseAll}
@@ -119,8 +70,8 @@ const Faq = () => {
                 padding: "8px 20px",
                 border:
                   openIndexes.length === 0
-                    ? "2px solid #111820" // selected
-                    : "2px dashed #ccc", // not selected
+                    ? "2px solid #111820"
+                    : "2px dashed #ccc",
                 borderRadius: 6,
                 background: "#fdfcf9",
                 color: "#888",
@@ -129,7 +80,7 @@ const Faq = () => {
               }}
               disabled={openIndexes.length === 0}
             >
-              Collapse all
+              {t("faq.collapseAll")}
             </button>
           </div>
           <div>
@@ -179,7 +130,25 @@ const Faq = () => {
                             marginTop: 2
                           }}
                         >
-                          {item.answer}
+                          {/* Use <Trans> only when link is needed */}
+                          {item.answer.includes("<link>") ? (
+                            <Trans
+                              i18nKey={`faq.questions.${idx}.answer`}
+                              components={{
+                                link: (
+                                  <Link
+                                    to={idx === 1 ? "/signup" : "/languages"}
+                                    style={{
+                                      color: "#0067b8",
+                                      textDecoration: "underline"
+                                    }}
+                                  />
+                                )
+                              }}
+                            />
+                          ) : (
+                            item.answer
+                          )}
                         </div>
                       )}
                     </div>
