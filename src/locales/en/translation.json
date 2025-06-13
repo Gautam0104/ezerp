@@ -69,5 +69,54 @@
         "description": "Quickly access and review purchase and sales orders by scanning associated barcodes."
       }
     ]
+  },
+
+  "overviewDetails": {
+    "overview": "Overview",
+    "title": "About EzERP Barcode Module",
+    "tabContents": [
+      {
+        "label": "About EzERP Barcode Module",
+        "image": "verticalAccordian1",
+        "sections": [
+          {
+            "title": "About EzERP",
+            "content": "EzERP significantly reduces costs associated with workforce allocation and administrative tasks by integrating barcode technology. This solution ensures accurate inventory data at every stage—receiving, shipping, storage, and picking—enhancing operational efficiency and data accuracy."
+          },
+          {
+            "title": "Barcode Module",
+            "content": "The integrated system thus maximizes the accuracy of the data collection and improves overall efficiency. A barcode system that is getting real-time data from the ERP and feeds real-time data back to the ERP solution will ensure timely delivery and accurate shipments. This will thereby improve customer’s response time and service."
+          },
+          {
+            "title": "Barcoding",
+            "content": "Companies choose EzERP because we excel at solving logistical and operational problems, making daily operations smoother and more efficient. Our barcode system enhances accuracy and connectivity across all operations, driving significant improvements in workflow efficiency."
+          }
+        ]
+      },
+      {
+        "label": "Introduction",
+        "image": "verticalAccordian2",
+        "sections": [
+          {
+            "title": "Beautify with Thunderbees Designer",
+            "content": "EzERP controls incoming and outgoing shipments through enforceable rules, codes, and customizable routes. It employs strategic put-away methods, such as analyzing slow and fast movers, and uses cross-docking to optimize storage and reduce movement distance."
+          }
+        ]
+      },
+      {
+        "label": "Our Vision And Mission",
+        "image": "verticalAccordian3",
+        "sections": [
+          {
+            "title": "Our Vision",
+            "content": "Our vision is to be the leader in intelligent EzERP Barcode Module solutions. We aim for a future where every product tells its story securely and transparently. We envision unprecedented operational efficiency for businesses and paramount customer trust, making supply chains fully agile and information readily accessible."
+          },
+          {
+            "title": "Mission",
+            "content": "Our mission is to empower businesses with a secure and fast EzERP Barcode Module. We enable real-time product information updates for consumers, from receiving to last-mile shipment. This ensures data integrity, streamlines operations, and enhances customer experience by communicating features and benefits effectively."
+          }
+        ]
+      }
+    ]
   }
 }

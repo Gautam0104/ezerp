@@ -69,5 +69,54 @@
         "description": "Acesse e revise rapidamente pedidos de compra e venda escaneando os códigos de barras associados."
       }
     ]
+  },
+
+  "overviewDetails": {
+    "overview": "Visão Geral",
+    "title": "Sobre o Módulo de Código de Barras EzERP",
+    "tabContents": [
+      {
+        "label": "Sobre o Módulo de Código de Barras EzERP",
+        "image": "verticalAccordian1",
+        "sections": [
+          {
+            "title": "Sobre o EzERP",
+            "content": "O EzERP reduz significativamente os custos associados à alocação de mão de obra e às tarefas administrativas, integrando a tecnologia de código de barras. Esta solução garante dados precisos de inventário em cada etapa — recebimento, envio, armazenamento e separação — aumentando a eficiência operacional e a precisão dos dados."
+          },
+          {
+            "title": "Módulo de Código de Barras",
+            "content": "O sistema integrado maximiza a precisão da coleta de dados e melhora a eficiência geral. Um sistema de código de barras que obtém dados em tempo real do ERP e envia dados em tempo real de volta ao ERP garante entregas pontuais e remessas precisas. Isso melhora o tempo de resposta e o serviço ao cliente."
+          },
+          {
+            "title": "Códigos de Barras",
+            "content": "As empresas escolhem o EzERP porque somos especialistas em resolver problemas logísticos e operacionais, tornando as operações diárias mais suaves e eficientes. Nosso sistema de código de barras melhora a precisão e a conectividade em todas as operações, promovendo melhorias significativas na eficiência do fluxo de trabalho."
+          }
+        ]
+      },
+      {
+        "label": "Introdução",
+        "image": "verticalAccordian2",
+        "sections": [
+          {
+            "title": "Embeleze com o Designer da Thunderbees",
+            "content": "O EzERP controla as remessas de entrada e saída por meio de regras aplicáveis, códigos e rotas personalizáveis. Utiliza métodos estratégicos de armazenamento, como a análise de itens de alta e baixa rotatividade, e emprega o cross-docking para otimizar o espaço e reduzir a distância de movimentação."
+          }
+        ]
+      },
+      {
+        "label": "Nossa Visão e Missão",
+        "image": "verticalAccordian3",
+        "sections": [
+          {
+            "title": "Nossa Visão",
+            "content": "Nossa visão é ser líder em soluções inteligentes de Módulo de Código de Barras EzERP. Almejamos um futuro em que cada produto conte sua história com segurança e transparência. Visualizamos uma eficiência operacional sem precedentes para as empresas e total confiança dos clientes, tornando as cadeias de suprimento totalmente ágeis e a informação acessível."
+          },
+          {
+            "title": "Missão",
+            "content": "Nossa missão é capacitar as empresas com um Módulo de Código de Barras EzERP seguro e rápido. Permitimos atualizações em tempo real de informações dos produtos para os consumidores, desde o recebimento até a entrega final. Isso garante integridade dos dados, operações otimizadas e uma melhor experiência do cliente ao comunicar recursos e benefícios de forma eficaz."
+          }
+        ]
+      }
+    ]
   }
 }
