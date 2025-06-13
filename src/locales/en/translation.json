@@ -9,6 +9,81 @@
     "search": "Search",
     "try": "Try for free"
   },
+
+  "footer": {
+    "sections": {
+      "What's new": [
+        "Thunderbees Pro",
+        "Thunderbees Pharmascan",
+        "Thunderbees Pharmascan Studio 2",
+        "Thunderbees Pharmascan Go 3",
+        "Thunderbees Pharmascan",
+        "AI in Pharmascans",
+        "Explore Thunderbees products",
+        "Pharmascans 11 apps"
+      ],
+      "Thunderbees Store": [
+        "Account profile",
+        "Download Center",
+        "Thunderbees Store Support",
+        "Returns",
+        "Order tracking",
+        "Virtual workshops and training",
+        "Thunderbees Store Promise"
+      ],
+      "Education": [
+        "Thunderbees in education",
+        "Devices for education",
+        "Thunderbees Teams for Education",
+        "Thunderbees Education",
+        "Office Education",
+        "Educator training and development",
+        "Deals for students and parents",
+        "Azure for students"
+      ],
+      "Business": [
+        "Thunderbees Cloud",
+        "Thunderbees Security",
+        "Azure",
+        "Dynamics",
+        "Thunderbees",
+        "Thunderbees Advertising",
+        "Thunderbees Pharmascan",
+        "Thunderbees Teams"
+      ],
+      "Developer & IT": [
+        "Thunderbees Developer",
+        "Thunderbees Learn",
+        "Support for AI marketplace apps",
+        "Thunderbees Tech Community",
+        "Azure Marketplace",
+        "AppSource",
+        "Thunderbees Power Platform",
+        "Visual Studio"
+      ],
+      "Company": [
+        "Careers",
+        "About Thunderbees",
+        "Company news",
+        "Privacy at Thunderbees",
+        "Investors",
+        "Diversity and inclusion",
+        "Accessibility",
+        "Sustainability"
+      ]
+    },
+    "footerNote": {
+      "language": "English (Canada)",
+      "privacy": "✔ Your Privacy Choices",
+      "consumerHealth": "Consumer Health Privacy",
+      "contact": "Contact Thunderbees",
+      "privacyLink": "Privacy",
+      "terms": "Terms of use",
+      "trademarks": "Trademarks",
+      "ads": "About our ads",
+      "copyright": "© Thunderbees 2025"
+    }
+  },
   "hero": {
     "tittle": "Thunderbees PharmaScan",
     "paragraph": "Design captivating Pharmascan and collaborate in real-time from any device.",
@@ -116,6 +191,112 @@
             "content": "Our mission is to empower businesses with a secure and fast EzERP Barcode Module. We enable real-time product information updates for consumers, from receiving to last-mile shipment. This ensures data integrity, streamlines operations, and enhances customer experience by communicating features and benefits effectively."
           }
         ]
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently asked questions",
+    "questions": [
+      {
+        "question": "Where can I use Thunderbees PharmaScan?",
+        "answer": "Thunderbees PharmaScan is available as an app for desktop (Windows and MacOS), on mobile devices and tablets (iOS and Android™), and online through your browser."
+      },
+      {
+        "question": "Is there a free version of Thunderbees PharmaScan?",
+        "answer": "Yes, Thunderbees PharmaScan for the web is free for anyone to use online. <link>Sign up or sign in</link> using any email address."
+      },
+      {
+        "question": "Can I collaborate with other people in Thunderbees PharmaScan?",
+        "answer": "Yes, Thunderbees PharmaScan supports real-time collaboration with multiple people."
+      },
+      {
+        "question": "In what languages is Thunderbees PharmaScan available?",
+        "answer": "Thunderbees PharmaScan is available in more than <link>80 languages</link>."
+      }
+    ],
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all"
+  },
+
+  "resourcesSection": {
+    "title": "Why EzERP Barcode Module",
+    "desc": "EzERP harnesses advanced EDI/invoicing capabilities to accelerate the receiving process significantly. Upon receipt, barcodes on invoices are automatically scanned, instantly identifying and correlating with Purchase Orders (PO). This automated matching speeds up the verification process, ensures all items are accounted for immediately, eliminates manual errors, and integrates seamlessly with accounting modules to update financial records in real-time.",
+    "learnMore": "Learn more",
+    "resources": [
+      {
+        "img": "resourceImg1",
+        "tag": "WorkFaster:Enhanced EDI/Invoice Integration",
+        "title": "EzERP harnesses advanced EDI/invoicing capabilities to accelerate the receiving process significantly...",
+        "link": "#"
+      },
+      {
+        "img": "resourceImg2",
+        "tag": "Advanced Label Design: Customization and Integration",
+        "title": "With EzERP, you can design and print custom labels that are not only compliant with industry standards...",
+        "link": "#"
+      },
+      {
+        "img": "resourceImg3",
+        "tag": "Scan Smarter: Precision and Speed",
+        "title": "EzERP's barcode scanning is engineered for both accuracy and efficiency...",
+        "link": "#"
+      },
+      {
+        "img": "resourceImg4",
+        "tag": "Mobile Compatibility: Empowering On-the-Go Operations",
+        "title": "Ensure full functionality of your barcode system on mobile devices...",
+        "link": "#"
+      }
+    ],
+    "moreResources": [
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Word",
+        "title": "Elevate your writing and create beautiful documents—anywhere, anytime.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmscan",
+        "title": "Turn data into insights with free and premium spreadsheets.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmscan",
+        "title": "Keep your thoughts, content, and lists handy in one place.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmascan",
+        "title": "Manage your email, calendar, tasks, and contacts in one location.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Defender",
+        "title": "Simplify your online security.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Pharmascan",
+        "title": "Keep your files and memories protected, up to date, and easily accessible across all your devices.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Thunderbees Designer",
+        "title": "Create designs and edit photos in seconds with the power of AI.",
+        "link": "#"
+      },
+      {
+        "img": "imageIcon",
+        "tag": "Teams",
+        "title": "Bring everyone together in one place to meet, chat, call, and collaborate.",
+        "link": "#"
       }
     ]
   }

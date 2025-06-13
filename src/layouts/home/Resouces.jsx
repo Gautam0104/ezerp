@@ -1,125 +1,39 @@
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
+
 import resourceImg1 from "../../assets/images/resources/featured-resources-01-351314.avif";
 import resourceImg2 from "../../assets/images/resources/featured-resources-02-351314.avif";
 import resourceImg3 from "../../assets/images/resources/featured-resources-03-351314.avif";
 import resourceImg4 from "../../assets/images/resources/featured-resources-04-351314.avif";
 
-import backGroundImage from "../../assets/images/cardcarousalbackground/card-carousal-background-351314.avif";
 import imageIcon from "../../assets/images/cardcarousalbackground/1.png";
-import ScrollToHashElement from "../../components/ScrollToHashElement";
-const resources = [
-  {
-    img: resourceImg1,
-    tag: "WorkFaster:Enhanced EDI/Invoice Integration",
-    title:
-      "EzERP harnesses advanced EDI/invoicing capabilities to accelerate the receiving process significantly. Upon receipt, barcodes on invoices are automatically scanned, instantly identifying and correlating with Purchase Orders (PO). This automated matching speeds up the verification process, ensures all items are accounted for immediately, eliminates manual errors, and integrates seamlessly with accounting modules to update financial records in real-time.",
-    link: "#"
-  },
-  {
-    img: resourceImg2,
-    tag: "Advanced Label Design: Customization and Integration",
-    title:
-      "With EzERP, you can design and print custom labels that are not only compliant with industry standards but also tailored to meet specific operational needs. Our module supports a wide range of customization, from simple barcodes to complex labels incorporating detailed product information, logos, and other branding elements. Integrated with professional printing tools, it ensures high-quality label production that can be aligned with marketing strategies and regulatory requirements.",
-    link: "#"
-  },
-  {
-    img: resourceImg3,
-    tag: "Scan Smarter: Precision and Speed",
-    title:
-      "EzERP's barcode scanning is engineered for both accuracy and efficiency, ensuring rapid verification of product details against existing data. This capability guarantees that each item is correctly logged and tracked throughout its journey from warehouse entry to shipment, dramatically reducing the need for manual data entry and minimizing potential errors during inventory audits or customer deliveries.",
-    link: "#"
-  },
-  {
-    img: resourceImg4,
-    tag: "Mobile Compatibility: Empowering On-the-Go Operations",
-    title:
-      "Ensure full functionality of your barcode system on mobile devices, allowing for operations anywhere and anytime. This feature supports on-the-go activities such as receiving, inventory checks, and order processing through smartphones or tablets, which is especially useful for field sales teams or managing remote warehouse operations.",
-    link: "#"
-  }
-  // {
-  //   img: resourceImg5,
-  //   tag: "Pharmascan tips",
-  //   title: "Make slides pop with complementary colors.",
-  //   link: "#"
-  // }
-];
+import backGroundImage from "../../assets/images/cardcarousalbackground/card-carousal-background-351314.avif";
 
-const moreResources = [
-  {
-    img: imageIcon,
-    tag: "Thunderbees Word",
-    title:
-      "Elevate your writing and create beautiful documents—anywhere, anytime.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Thunderbees Pharmscan",
-    title: "Turn data into insights with free and premium spreadsheets.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Thunderbees Pharmscan",
-    title: "Keep your thoughts, content, and lists handy in one place.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Thunderbees Pharmascan",
-    title: "Manage your email, calendar, tasks, and contacts in one location.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Thunderbees Defender",
-    title: "Simplify your online security.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Thunderbees Pharmascan",
-    title:
-      "Keep your files and memories protected, up to date, and easily accessible across all your devices.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Thunderbees Designer",
-    title: "Create designs and edit photos in seconds with the power of AI.",
-    link: "#"
-  },
-  {
-    img: imageIcon,
-    tag: "Teams",
-    title:
-      "Bring everyone together in one place to meet, chat, call, and collaborate.",
-    link: "#"
-  }
-];
+import ScrollToHashElement from "../../components/ScrollToHashElement";
+
+const imageMap = {
+  resourceImg1,
+  resourceImg2,
+  resourceImg3,
+  resourceImg4,
+  imageIcon
+};
 
 const Resouces = () => {
   const scrollRef = useRef(null);
   const scrollRef2 = useRef(null);
+  const { t } = useTranslation();
 
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      const { scrollLeft } = scrollRef.current;
-      const scrollAmount = 400; // width of card + gap
-      scrollRef.current.scrollTo({
-        left:
-          direction === "left"
-            ? scrollLeft - scrollAmount
-            : scrollLeft + scrollAmount,
-        behavior: "smooth"
-      });
-    }
-  };
-  const scroll2 = (direction) => {
-    if (scrollRef.current) {
-      const { scrollLeft } = scrollRef2.current;
-      const scrollAmount = 400; // width of card + gap
-      scrollRef2.current.scrollTo({
+  const resources = t("resourcesSection.resources", { returnObjects: true });
+  const moreResources = t("resourcesSection.moreResources", {
+    returnObjects: true
+  });
+
+  const scroll = (ref, direction) => {
+    if (ref.current) {
+      const { scrollLeft } = ref.current;
+      const scrollAmount = 400;
+      ref.current.scrollTo({
         left:
           direction === "left"
             ? scrollLeft - scrollAmount
@@ -144,151 +58,81 @@ const Resouces = () => {
           >
             RESOURCES
           </div>
-          <h2
-            className="fw mb-5 "
-            data-aos="fade-up"
-            data-aos-delay="300"
-            style={{ fontSize: 48, color: "#111" }}
-          >
-            Why EzERP Barcode Module
+          <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
+            {t("resourcesSection.title")}
           </h2>
-          <p style={{ marginBottom: 32 }}>
-            EzERP harnesses advanced EDI/invoicing capabilities to accelerate
-            the receiving process significantly. Upon receipt, barcodes on
-            invoices are automatically scanned, instantly identifying and
-            correlating with Purchase Orders (PO). This automated matching
-            speeds up the verification process, ensures all items are accounted
-            for immediately, eliminates manual errors, and integrates seamlessly
-            with accounting modules to update financial records in real-time.
-          </p>
+          <p style={{ marginBottom: 32 }}>{t("resourcesSection.desc")}</p>
+
+          {/* First Carousel */}
           <div style={{ position: "relative", overflowX: "hidden" }}>
             <div
               ref={scrollRef}
-              style={{
-                display: "flex",
-                gap: 32,
-                overflowX: "auto",
-                scrollBehavior: "smooth",
-                paddingBottom: 8,
-                maxWidth: "100%"
-              }}
-              className="hide-scrollbar"
+              className="d-flex gap-4 overflow-auto hide-scrollbar pb-2"
               data-aos="fade-left"
-              data-aos-delay="500"
             >
               {resources.map((res, idx) => (
                 <div
                   key={idx}
-                  style={{
-                    minWidth: 420,
-                    maxWidth: 420,
-                    background: "#fff",
-                    borderRadius: "24px",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                    border: "none",
-                    overflow: "hidden",
-                    minHeight: 400,
-                    display: "flex",
-                    flexDirection: "column",
-                    flexShrink: 0
-                  }}
+                  style={{ minWidth: 420, maxWidth: 420 }}
+                  className="bg-white rounded-4 shadow-sm d-flex flex-column"
                 >
                   <img
-                    src={res.img}
+                    src={imageMap[res.img]}
                     alt=""
-                    className="resource-img"
                     style={{
-                      width: "100%",
                       height: 160,
                       objectFit: "cover",
-                      borderTopLeftRadius: "24px",
-                      borderTopRightRadius: "24px"
+                      borderTopLeftRadius: 24,
+                      borderTopRightRadius: 24
                     }}
                   />
-                  <div
-                    style={{
-                      padding: 32,
-                      flex: 1,
-                      display: "flex",
-                      flexDirection: "column"
-                    }}
-                  >
-                    <div
-                      className="fw-semibold mb-4"
-                      style={{ fontSize: 22, color: "#111", lineHeight: 1.3 }}
-                    >
-                      {res.tag}
-                    </div>
-                    <div
-                      className="fw-medium mb-2 text-primary"
-                      style={{ fontSize: 16 }}
-                    >
-                      {res.title}
-                    </div>
+                  <div className="p-4 d-flex flex-column flex-grow-1">
+                    <h5 className="fw-semibold mb-3">{res.tag}</h5>
+                    <p className="text-primary fw-medium mb-2">{res.title}</p>
                     <a
                       href={res.link}
-                      className="mt-auto d-flex align-items-center text-decoration-none fw-medium"
-                      style={{ color: "#111" }}
+                      className="mt-auto d-flex align-items-center text-decoration-none text-dark fw-medium"
                     >
                       <span
-                        className="d-flex align-items-center justify-content-center"
-                        style={{
-                          width: 40,
-                          height: 40,
-                          borderRadius: "12px",
-                          background: "#091F2C",
-                          color: "#fff",
-                          marginRight: 12,
-                          fontWeight: 500,
-                          fontSize: 20,
-                          transition: "background 0.2s"
-                        }}
+                        className="d-inline-flex justify-content-center align-items-center bg-dark text-white rounded-3 me-3"
+                        style={{ width: 40, height: 40 }}
                       >
-                        <span style={{ fontSize: 22, fontWeight: 700 }}>
-                          {">"}
-                        </span>
+                        &gt;
                       </span>
-                      Learn more
+                      {t("resourcesSection.learnMore")}
                     </a>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="d-flex gap-3 mt-4 ">
+            <div className="d-flex gap-3 mt-4">
               <button
                 className="btn btn-outline-primary rounded-circle"
-                style={{ width: 48, height: 48, fontSize: 24 }}
-                aria-label="Previous"
-                onClick={() => scroll("left")}
+                style={{ width: 48, height: 48 }}
+                onClick={() => scroll(scrollRef, "left")}
               >
                 &#8592;
               </button>
               <button
                 className="btn btn-outline-dark rounded-circle"
-                style={{ width: 48, height: 48, fontSize: 24 }}
-                aria-label="Next"
-                onClick={() => scroll("right")}
+                style={{ width: 48, height: 48 }}
+                onClick={() => scroll(scrollRef, "right")}
               >
                 &#8594;
               </button>
             </div>
           </div>
         </div>
+
+        {/* Second Carousel */}
         <section
           className="py-5 mt-5"
           style={{
             backgroundImage: `url(${backGroundImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            color: "#fff"
+            backgroundSize: "cover"
           }}
         >
-          <div
-            className="container my-5"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
+          <div className="container my-5">
             <div
               className="text-primary fw-semibold text-uppercase mb-2"
               style={{ letterSpacing: 1, fontSize: 14 }}
@@ -298,115 +142,64 @@ const Resouces = () => {
             <h2 className="fw mb-5" style={{ fontSize: 48, color: "#111" }}>
               Learn more about Thunderbees
             </h2>
+
             <div style={{ position: "relative", overflowX: "hidden" }}>
               <div
                 ref={scrollRef2}
-                style={{
-                  display: "flex",
-                  gap: 32,
-                  overflowX: "auto",
-                  scrollBehavior: "smooth",
-                  paddingBottom: 8,
-                  maxWidth: "100%"
-                }}
-                className="hide-scrollbar"
+                className="d-flex gap-4 overflow-auto hide-scrollbar pb-2"
                 data-aos="fade-left"
-                data-aos-delay="500"
               >
                 {moreResources.map((res, idx) => (
                   <div
                     key={idx}
-                    style={{
-                      minWidth: 420,
-                      maxWidth: 420,
-                      background: "#fff",
-                      borderRadius: "24px",
-                      boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
-                      border: "none",
-                      overflow: "hidden",
-                      minHeight: 400,
-                      display: "flex",
-                      flexDirection: "column",
-                      flexShrink: 0
-                    }}
+                    style={{ minWidth: 420, maxWidth: 420 }}
+                    className="bg-white rounded-4 shadow-sm d-flex flex-column"
                   >
                     <img
-                      src={res.img}
+                      src={imageMap[res.img]}
                       alt=""
-                      className="resource-img"
                       style={{
                         width: 48,
                         height: 48,
                         objectFit: "contain",
-                        borderRadius: "12px",
+                        borderRadius: 12,
                         margin: "32px 32px 16px 16px",
-                        display: "block",
                         background: "#F5F6F7"
                       }}
                     />
-                    <div
-                      style={{
-                        padding: 32,
-                        flex: 1,
-                        display: "flex",
-                        flexDirection: "column"
-                      }}
-                    >
-                      <div
-                        className="fw-medium mb-2 text-primary"
-                        style={{ fontSize: 12 }}
-                      >
+                    <div className="p-4 d-flex flex-column flex-grow-1">
+                      <small className="text-primary fw-medium">
                         {res.tag}
-                      </div>
-                      <div
-                        className="fw-semibold mb-4"
-                        style={{ fontSize: 22, color: "#111", lineHeight: 1.3 }}
-                      >
-                        {res.title}
-                      </div>
+                      </small>
+                      <h5 className="fw-semibold my-3">{res.title}</h5>
                       <a
                         href={res.link}
-                        className="mt-auto d-flex align-items-center text-decoration-none fw-medium"
-                        style={{ color: "#111" }}
+                        className="mt-auto d-flex align-items-center text-decoration-none text-dark fw-medium"
                       >
                         <span
-                          className="d-flex align-items-center justify-content-center"
-                          style={{
-                            width: 40,
-                            height: 40,
-                            borderRadius: "12px",
-                            background: "#091F2C",
-                            color: "#fff",
-                            marginRight: 12,
-                            fontWeight: 500,
-                            fontSize: 20,
-                            transition: "background 0.2s"
-                          }}
+                          className="d-inline-flex justify-content-center align-items-center bg-dark text-white rounded-3 me-3"
+                          style={{ width: 40, height: 40 }}
                         >
-                          <span style={{ fontSize: 22, fontWeight: 700 }}>
-                            {">"}
-                          </span>
+                          &gt;
                         </span>
-                        Learn more
+                        {t("resourcesSection.learnMore")}
                       </a>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="d-flex gap-3 mt-4 ">
+              <div className="d-flex gap-3 mt-4">
                 <button
                   className="btn btn-outline-primary rounded-circle"
-                  style={{ width: 48, height: 48, fontSize: 24 }}
-                  aria-label="Previous"
-                  onClick={() => scroll2("left")}
+                  style={{ width: 48, height: 48 }}
+                  onClick={() => scroll(scrollRef2, "left")}
                 >
                   &#8592;
                 </button>
                 <button
                   className="btn btn-outline-dark rounded-circle"
-                  style={{ width: 48, height: 48, fontSize: 24 }}
-                  aria-label="Next"
-                  onClick={() => scroll2("right")}
+                  style={{ width: 48, height: 48 }}
+                  onClick={() => scroll(scrollRef2, "right")}
                 >
                   &#8594;
                 </button>
