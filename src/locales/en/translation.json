@@ -299,5 +299,114 @@
         "link": "#"
       }
     ]
+  },
+
+  "nextSteps": {
+    "sectionTitle": "Next steps",
+    "learnMore": "Learn more",
+    "exploreNow": "Explore now",
+    "servicesTitle": "Our Services",
+    "cards": [
+      {
+        "title": "Real-Time Inventory Updates: Streamlined Process Improvements",
+        "description": "Implement real-time tracking of inventory changes as items are scanned, which is essential for maintaining up-to-date and accurate inventory records. Detailed processes include",
+        "services": [
+          "Scan to Receive",
+          "Purchase Order Received",
+          "Manually Entering Product Information",
+          "System Generates Barcodes",
+          "Print Barcodes",
+          "Pasting Barcodes on Items"
+        ]
+      },
+      {
+        "title": "Barcode Receiving System",
+        "description": "Our barcode system facilitates seamless logistics operations by ensuring end-to-end visibility and traceability. Improved order accuracy, reduced lead times, and enhanced customer satisfaction are direct results of our comprehensive tracking capabilities.",
+        "subsections": [
+          {
+            "subTitle": "Understand Barcodes",
+            "content": "A barcode is the visual representation of data using lines and spacing, which is readable by digital scanners. It is widely used for inventory management purposes for accurate inventory management and billing. In a barcode inventory system, the user is required to scan affix barcodes on products through point-of-sale (POS) systems and ensure their delivery. The system is also useful for returned items and for updating inventory levels.",
+            "type": "text"
+          },
+          {
+            "subTitle": "Barcode Receiving Process",
+            "content": [
+              "Product arrive in the warehouse",
+              "Purchase order received",
+              "Manually entering product information",
+              "System generates barcodes",
+              "Print barcodes",
+              "Pasting barcodes on items",
+              "Scanning barcodes",
+              "Sales order received",
+              "Picking the item based on barcode information",
+              "The system automatically removes the item sold from the stock",
+              "Finally, ship the item"
+            ],
+            "type": "list"
+          }
+        ]
+      },
+      {
+        "title": "Warehouse Management",
+        "description": "A warehouse management system (WMS) consists of software and processes that allow organizations to control and administer warehouse operations from the time goods or materials enter a warehouse until they move out. Warehouses sit at the center of manufacturing and supply chain operations because they hold all the material used or produced in those processes, from raw materials to finished goods.",
+        "subsections": [
+          {
+            "subTitle": "Features of warehouse management systems",
+            "content": [
+              "Inventory tracking with advanced systems like RFID and barcode scanners",
+              "Receiving and storage with pick-to-light or pick-to-voice technology",
+              "Picking and packing goods including zone, wave and batch picking",
+              "Shipping with packing lists, invoices, and shipment notifications"
+            ],
+            "type": "list"
+          }
+        ]
+      },
+      {
+        "title": "Distribution",
+        "description": "With a distribution ERP system made specifically for distributors, you can optimize your inventory management, preventing errors in purchasing & order fulfillment. By streamlining your processes from order entry to delivery, your customers will get what they ordered, quickly and without friction.",
+        "subsections": [
+          {
+            "subTitle": "",
+            "content": [
+              "[1] Involves giving the parcel to the distribution carrier and tracking of the parcel.",
+              "[2] Monitoring the package's movement and sharing updates with customers.",
+              "[3] Final warehouse steps to prepare consignment for shipment."
+            ],
+            "type": "list"
+          }
+        ]
+      }
+    ]
+  },
+
+  "details": {
+    "items": [
+      "A disponibilidade do app varia por dispositivo/idioma. Recursos variam por plataforma. Limites de idade mínima podem se aplicar ao uso de recursos de IA. Detalhes.",
+      "[1] Os documentos devem ser salvos e compartilhados a partir do Pharmascan.",
+      "[2] O Pharmascan no Excel requer que o AutoSave esteja ativado, ou seja, o arquivo deve estar salvo no Pharmascan; não funciona com arquivos não salvos.",
+      "[3] Os recursos do Pharmascan no Thunderbees aplicam-se a contas com emails @Thunderbees.com, @hotmail.com, @live.com ou @msn.com e estão disponíveis no Thunderbees.com, Thunderbees integrado ao Pharmascans, Thunderbees no Mac e nos apps iOS e Android.",
+      "[4] É necessária uma assinatura Thunderbees Pessoal ou Familiar; recursos de IA disponíveis apenas para o assinante; limites de uso se aplicam. Saiba mais.",
+      "[5] Após iniciar sua assinatura paga, as políticas de cancelamento variam conforme seu status como novo cliente, produto e domínio selecionado no Thunderbees. Saiba mais. Você pode cancelar a assinatura a qualquer momento no centro de administração do Thunderbees. Ao cancelar, todos os dados associados serão excluídos. Saiba mais sobre retenção, exclusão e destruição de dados no Thunderbees."
+    ],
+    "learnMore": "Saiba mais"
+  },
+  "sections": [
+    {
+      "tagline": "BAIXE O APLICATIVO",
+      "title": "Comece com o Thunderbees PharmaScan gratuito",
+      "description": "Use as versões gratuitas do PharmaScan diretamente no seu desktop",
+      "platform": "Windows",
+      "platformText": "Leia e imprima gratuitamente",
+      "buttonText": "Baixar para Windows"
+    }
+  ],
+  "mobileDownload": {
+    "title": "Download the Thunderbees mobile app",
+    "description": "Create, read, and collaborate on the move with the Thunderbees mobile app.",
+    "fallbackText": "If you're having trouble with the QR code, using your mobile device, go to",
+    "linkText": "/thunderbeesmobiledownload",
+    "getAppText": "to get the PharmaScan mobile app."
   }
 }

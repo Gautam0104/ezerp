@@ -299,5 +299,186 @@
         "link": "#"
       }
     ]
+  },
+
+  "sectionTitle": "Próximos Passos",
+  "cards": [
+    {
+      "title": "Atualizações de Inventário em Tempo Real: Melhorias nos Processos",
+      "description": "Implemente o rastreamento em tempo real das alterações no inventário à medida que os itens são escaneados, essencial para manter registros de estoque atualizados e precisos. Os processos detalhados incluem:",
+      "servicesTitle": "Nossos Serviços",
+      "services": [
+        "Escanear para Receber",
+        "Pedido de Compra Recebido",
+        "Inserção Manual das Informações do Produto",
+        "Sistema Gera os Códigos de Barras",
+        "Imprimir Códigos de Barras",
+        "Colar Códigos de Barras nos Itens"
+      ],
+      "buttonText": "Saiba mais"
+    },
+    {
+      "title": "Sistema de Recebimento com Código de Barras",
+      "description": "Nosso sistema de código de barras facilita operações logísticas perfeitas, garantindo visibilidade e rastreabilidade de ponta a ponta. Maior precisão nos pedidos, redução nos prazos e maior satisfação do cliente são resultados diretos das nossas capacidades de rastreamento.",
+      "subsections": [
+        {
+          "heading": "Entendendo os Códigos de Barras",
+          "text": "Um código de barras é uma representação visual de dados usando linhas e espaços, que podem ser lidos por leitores digitais. É amplamente utilizado para gestão de inventário precisa e faturamento. Em um sistema de inventário com código de barras, o usuário precisa escanear e fixar os códigos de barras nos produtos por meio de sistemas de ponto de venda (POS) e garantir a entrega. O sistema também é útil para itens devolvidos e para atualização dos níveis de estoque."
+        },
+        {
+          "heading": "Processo de Recebimento com Código de Barras",
+          "list": [
+            "Produto chega ao armazém",
+            "Pedido de compra recebido",
+            "Inserção manual das informações do produto",
+            "Sistema gera códigos de barras",
+            "Imprimir códigos de barras",
+            "Colar códigos de barras nos itens",
+            "Escanear códigos de barras",
+            "Pedido de venda recebido",
+            "Separar o item com base nas informações do código de barras",
+            "O sistema remove automaticamente o item vendido do estoque",
+            "Por fim, enviar o item"
+          ]
+        }
+      ],
+      "buttonText": "Explorar agora"
+    },
+    {
+      "title": "Gestão de Armazéns",
+      "description": "Um sistema de gestão de armazéns (WMS) consiste em software e processos que permitem às organizações controlar e administrar operações desde a entrada de produtos até a sua saída do armazém.",
+      "subsections": [
+        {
+          "heading": "Recursos dos sistemas de gestão de armazéns",
+          "list": [
+            "Rastreamento de inventário. Isso abrange rastreamento avançado e sistemas automáticos de identificação e captura de dados (AIDC), incluindo RFID e leitores de código de barras para garantir que os produtos possam ser localizados facilmente quando necessário.",
+            "Recebimento e armazenamento. Facilita o armazenamento e a recuperação do inventário, frequentemente com tecnologia de coleta por luz ou por voz para ajudar os funcionários do armazém.",
+            "Separação e embalagem de mercadorias. Inclui métodos como separação por zonas, por ondas e em lotes. Os trabalhadores também podem usar funções de zoneamento de lotes e intercalamento de tarefas para guiar as tarefas de coleta e embalagem de forma eficiente.",
+            "Envio. Permite ao WMS enviar conhecimento de embarque antes da remessa, gerar listas de embalagem e faturas e enviar notificações de remessa antecipada aos destinatários."
+          ]
+        }
+      ],
+      "buttonText": "Explorar agora"
+    },
+    {
+      "title": "Distribuição",
+      "description": "Com um sistema ERP de distribuição feito especificamente para distribuidores, você pode otimizar a gestão de inventário, evitando erros na compra e no atendimento de pedidos. Ao agilizar seus processos desde a entrada do pedido até a entrega, seus clientes receberão exatamente o que pediram, com rapidez e sem complicações.",
+      "list": [
+        "Isso envolve entregar o pacote ao transportador e rastreá-lo enquanto está a caminho do destino, com comunicação constante com o transportador.",
+        "Envolve o monitoramento do movimento do pacote em direção ao destino. O transportador fornece informações como localização atual, status de entrega e data estimada, que são repassadas ao cliente final.",
+        "Em um armazém, o processo de envio envolve as etapas finais de preparação da remessa para o cliente. Abaixo estão os estágios principais do envio."
+      ],
+      "buttonText": "Explorar agora"
+    }
+  ],
+
+  "nextSteps": {
+    "sectionTitle": "Próximos passos",
+    "learnMore": "Saiba mais",
+    "exploreNow": "Explorar agora",
+    "servicesTitle": "Nossos Serviços",
+    "cards": [
+      {
+        "title": "Atualizações de Inventário em Tempo Real: Melhorias nos Processos",
+        "description": "Implemente o rastreamento em tempo real das alterações no inventário conforme os itens são escaneados, o que é essencial para manter registros atualizados e precisos. Os processos detalhados incluem:",
+        "services": [
+          "Escanear para Receber",
+          "Pedido de Compra Recebido",
+          "Inserção Manual das Informações do Produto",
+          "Sistema Gera Códigos de Barras",
+          "Imprimir Códigos de Barras",
+          "Colagem dos Códigos nos Itens"
+        ]
+      },
+      {
+        "title": "Sistema de Recebimento com Código de Barras",
+        "description": "Nosso sistema de códigos de barras facilita operações logísticas sem falhas, garantindo visibilidade e rastreabilidade de ponta a ponta. Maior precisão nos pedidos, redução no tempo de entrega e maior satisfação dos clientes são resultados diretos das nossas capacidades abrangentes de rastreamento.",
+        "subsections": [
+          {
+            "subTitle": "Entendendo os Códigos de Barras",
+            "content": "Um código de barras é a representação visual de dados usando linhas e espaçamentos, legível por leitores digitais. É amplamente utilizado na gestão de inventário para garantir precisão no controle e na cobrança. Em um sistema de inventário com código de barras, o usuário deve escanear e afixar os códigos nos produtos através de sistemas de ponto de venda (POS) e garantir a entrega. O sistema também é útil para itens devolvidos e para atualizar os níveis de inventário.",
+            "type": "text"
+          },
+          {
+            "subTitle": "Processo de Recebimento com Código de Barras",
+            "content": [
+              "Produto chega ao armazém",
+              "Pedido de compra recebido",
+              "Inserção manual das informações do produto",
+              "Sistema gera códigos de barras",
+              "Impressão dos códigos de barras",
+              "Colagem dos códigos nos itens",
+              "Escaneamento dos códigos de barras",
+              "Recebimento do pedido de venda",
+              "Separação do item com base nas informações do código de barras",
+              "O sistema remove automaticamente o item vendido do estoque",
+              "Finalmente, envio do item"
+            ],
+            "type": "list"
+          }
+        ]
+      },
+      {
+        "title": "Gestão de Armazéns",
+        "description": "Um sistema de gerenciamento de armazéns (WMS) consiste em software e processos que permitem às organizações controlar e administrar operações desde a entrada de mercadorias até a sua saída. Os armazéns estão no centro das operações de manufatura e cadeia de suprimentos, pois armazenam todos os materiais utilizados ou produzidos nesses processos, desde matérias-primas até produtos acabados.",
+        "subsections": [
+          {
+            "subTitle": "Funcionalidades dos sistemas de gestão de armazéns",
+            "content": [
+              "Rastreamento de inventário com sistemas avançados como RFID e leitores de código de barras",
+              "Recebimento e armazenamento com tecnologia pick-to-light ou pick-to-voice",
+              "Separação e embalagem de mercadorias incluindo separação por zona, onda e lote",
+              "Envio com listas de embalagem, faturas e notificações de envio"
+            ],
+            "type": "list"
+          }
+        ]
+      },
+      {
+        "title": "Distribuição",
+        "description": "Com um sistema ERP de distribuição feito especificamente para distribuidores, você pode otimizar sua gestão de inventário, evitando erros em compras e no cumprimento de pedidos. Ao simplificar seus processos desde a entrada do pedido até a entrega, seus clientes receberão exatamente o que pediram, de forma rápida e sem complicações.",
+        "subsections": [
+          {
+            "subTitle": "",
+            "content": [
+              "[1] Envolve a entrega do pacote ao transportador e o rastreamento da encomenda.",
+              "[2] Monitoramento do movimento do pacote e compartilhamento de atualizações com os clientes.",
+              "[3] Etapas finais no armazém para preparar a remessa da encomenda."
+            ],
+            "type": "list"
+          }
+        ]
+      }
+    ]
+  },
+
+  "details": {
+    "items": [
+      "A disponibilidade do app varia por dispositivo/idioma. Recursos variam por plataforma. Limites de idade mínima podem se aplicar ao uso de recursos de IA. Detalhes.",
+      "[1] Os documentos devem ser salvos e compartilhados a partir do Pharmascan.",
+      "[2] O Pharmascan no Excel requer que o AutoSave esteja ativado, ou seja, o arquivo deve estar salvo no Pharmascan; não funciona com arquivos não salvos.",
+      "[3] Os recursos do Pharmascan no Thunderbees aplicam-se a contas com emails @Thunderbees.com, @hotmail.com, @live.com ou @msn.com e estão disponíveis no Thunderbees.com, Thunderbees integrado ao Pharmascans, Thunderbees no Mac e nos apps iOS e Android.",
+      "[4] É necessária uma assinatura Thunderbees Pessoal ou Familiar; recursos de IA disponíveis apenas para o assinante; limites de uso se aplicam. Saiba mais.",
+      "[5] Após iniciar sua assinatura paga, as políticas de cancelamento variam conforme seu status como novo cliente, produto e domínio selecionado no Thunderbees. Saiba mais. Você pode cancelar a assinatura a qualquer momento no centro de administração do Thunderbees. Ao cancelar, todos os dados associados serão excluídos. Saiba mais sobre retenção, exclusão e destruição de dados no Thunderbees."
+    ],
+    "learnMore": "Saiba mais"
+  },
+
+  "sections": [
+    {
+      "tagline": "BAIXE O APLICATIVO",
+      "title": "Comece com o Thunderbees PharmaScan gratuito",
+      "description": "Use as versões gratuitas do PharmaScan diretamente no seu desktop",
+      "platform": "Windows",
+      "platformText": "Leia e imprima gratuitamente",
+      "buttonText": "Baixar para Windows"
+    }
+  ],
+  "mobileDownload": {
+    "title": "Baixe o aplicativo móvel Thunderbees",
+    "description": "Crie, leia e colabore em qualquer lugar com o aplicativo móvel Thunderbees.",
+    "fallbackText": "Se você estiver com problemas com o código QR, usando seu dispositivo móvel, acesse",
+    "linkText": "/thunderbeesmobiledownload",
+    "getAppText": "para obter o aplicativo móvel PharmaScan."
   }
 }
