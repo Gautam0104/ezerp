@@ -6,7 +6,7 @@ const PalletManagement = () => {
     <div className="flex-grow px-4">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
-        <div>
+        <div className="hader-title">
           <Link
             to="shipment.html"
             className="btn btn-outline-primary fs-4 fw-semibold"
@@ -14,7 +14,7 @@ const PalletManagement = () => {
             <i className="bi bi-box-arrow-in-up me-2"></i>Pallet
           </Link>
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
@@ -48,7 +48,6 @@ const PalletManagement = () => {
                 <p className="fw-bold fs-4">36.5 kg</p>
               </div>
               <i className="bi bi-speedometer text-blue-600 fs-3 ms-auto"></i>{" "}
-    
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -61,7 +60,6 @@ const PalletManagement = () => {
                 <p className="fw-bold fs-4">3</p>
               </div>
               <i className="bi bi-box-seam-fill text-warning fs-3 ms-auto"></i>{" "}
-
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -74,7 +72,6 @@ const PalletManagement = () => {
                 <p className="fw-bold fs-4">Warehouse B</p>
               </div>
               <i className="bi bi-geo-alt-fill text-success fs-3 ms-auto"></i>{" "}
-  
             </div>
           </div>
         </div>
@@ -125,7 +122,10 @@ const PalletManagement = () => {
                 <td>12.5 kg</td>
                 <td>24" x 18" x 12"</td>
                 <td>
-                  <span className="" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
+                  <span
+                    className=""
+                    style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
+                  >
                     Verified
                   </span>
                 </td>
@@ -141,7 +141,10 @@ const PalletManagement = () => {
                 <td>8.3 kg</td>
                 <td>18" x 12" x 10"</td>
                 <td>
-                  <span className="" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
+                  <span
+                    className=""
+                    style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
+                  >
                     Verified
                   </span>
                 </td>
@@ -157,7 +160,10 @@ const PalletManagement = () => {
                 <td>15.7 kg</td>
                 <td>30" x 20" x 15"</td>
                 <td>
-                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
+                  <span
+                    className=""
+                    style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
+                  >
                     Pending
                   </span>
                 </td>

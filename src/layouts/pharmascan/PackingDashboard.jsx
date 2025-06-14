@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const PackingDashboard = () => {
   return (
     <div className="flex-grow px-4 ">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
-        <div>
+        <div className="hader-title">
           <Link
             to="shipment.html"
             className="btn btn-outline-primary fs-4 fw-semibold"
@@ -14,7 +14,7 @@ const PackingDashboard = () => {
             <i className="bi bi-box-arrow-in-up me-2"></i>Packing
           </Link>
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>

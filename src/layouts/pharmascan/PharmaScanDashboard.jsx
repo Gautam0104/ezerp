@@ -11,14 +11,13 @@ export default function PharmaScanDashboard() {
         >
           <i className="bi bi-upc-scan me-2"></i>PharmaScan
         </Link>
-        <div className="d-flex align-items-center gap-2">
-          
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <div className="d-flex align-items-center gap-2">
-          <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
+            <i className="bi bi-bell-fill"></i>
+            <span className="text-secondary">
+              John Doe <span className="text-muted">Warehouse Manager</span>
+            </span>
+          </div>
         </div>
       </div>
 

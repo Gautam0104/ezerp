@@ -11,7 +11,7 @@ function ProductForm() {
         >
           <i className="bi bi-upc-scan me-2"></i>Product
         </Link>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
@@ -127,13 +127,19 @@ function ProductForm() {
               </div>
 
               <div class="flex justify-end my-2">
-            <button class=" px-4 py-2 rounded m-2" style={{ backgroundColor: "#EF4444", color: "#fdffff" }}>
-             Cancel
-            </button>
-            <button class=" px-4 py-2 rounded" style={{ backgroundColor: "#22c55e", color: "#fdffff" }}>
-             Save
-            </button>
-           </div>
+                <button
+                  class=" px-4 py-2 rounded m-2"
+                  style={{ backgroundColor: "#EF4444", color: "#fdffff" }}
+                >
+                  Cancel
+                </button>
+                <button
+                  class=" px-4 py-2 rounded"
+                  style={{ backgroundColor: "#22c55e", color: "#fdffff" }}
+                >
+                  Save
+                </button>
+              </div>
             </div>
           </div>
         </div>
