@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ezerp/static/css/main.d38df5d6.css",
-    "main.js": "/ezerp/static/js/main.be8cb93d.js",
+    "main.css": "/ezerp/static/css/main.41c732e7.css",
+    "main.js": "/ezerp/static/js/main.364b307e.js",
     "static/js/845.85e3297b.chunk.js": "/ezerp/static/js/845.85e3297b.chunk.js",
     "static/media/key-features-10-351314.avif": "/ezerp/static/media/key-features-10-351314.6620f33b60b6c8bbedb7.avif",
     "static/media/hero-background-351314-1.avif": "/ezerp/static/media/hero-background-351314-1.c63980c134fe35aa8b60.avif",
@@ -29,12 +29,12 @@
     "index.html": "/ezerp/index.html",
     "static/media/Blog-1.avif": "/ezerp/static/media/Blog-1.45221fb7ed3bcb8592a2.avif",
     "static/media/LinkedIn-29.avif": "/ezerp/static/media/LinkedIn-29.1ff7dafe628cfbd09eae.avif",
-    "main.d38df5d6.css.map": "/ezerp/static/css/main.d38df5d6.css.map",
-    "main.be8cb93d.js.map": "/ezerp/static/js/main.be8cb93d.js.map",
+    "main.41c732e7.css.map": "/ezerp/static/css/main.41c732e7.css.map",
+    "main.364b307e.js.map": "/ezerp/static/js/main.364b307e.js.map",
     "845.85e3297b.chunk.js.map": "/ezerp/static/js/845.85e3297b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d38df5d6.css",
-    "static/js/main.be8cb93d.js"
+    "static/css/main.41c732e7.css",
+    "static/js/main.364b307e.js"
   ]
 }
