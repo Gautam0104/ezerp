@@ -44,74 +44,75 @@ const PickingPage = () => {
           <div className="p-2 border">
             <h2 className="h5 fw-semibold">Orders Ready for Picking</h2>
           </div>
-
-          <table className="table table-bordered">
-            <thead className="table-light">
-              <tr>
-                <th>Order ID</th>
-                <th>Customer</th>
-                <th>Date</th>
-                <th>Items</th>
-                <th>Priority</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                {
-                  id: "ORD-12345",
-                  customer: "Acme Corp",
-                  date: "2024-06-10",
-                  items: 5,
-                  priority: "High",
-                  color: "danger"
-                },
-                {
-                  id: "ORD-12346",
-                  customer: "TechSolutions Inc",
-                  date: "2024-06-11",
-                  items: 3,
-                  priority: "Medium",
-                  color: "warning"
-                },
-                {
-                  id: "ORD-12347",
-                  customer: "Global Enterprises",
-                  date: "2024-06-12",
-                  items: 7,
-                  priority: "Low",
-                  color: "success"
-                },
-                {
-                  id: "ORD-12348",
-                  customer: "Local Business LLC",
-                  date: "2024-06-13",
-                  items: 2,
-                  priority: "High",
-                  color: "danger"
-                }
-              ].map((order, idx) => (
-                <tr key={idx}>
-                  <td>{order.id}</td>
-                  <td>{order.customer}</td>
-                  <td>{order.date}</td>
-                  <td>{order.items}</td>
-                  <td>
-                    <span
-                      className={`bg-${order.color}-subtle text-${order.color} px-2 py-1 rounded d-inline-block`}
-                    >
-                      {order.priority}
-                    </span>
-                  </td>
-                  <td>
-                    <button className="btn btn-primary">
-                      Process <i className="bi bi-arrow-right ms-2"></i>
-                    </button>
-                  </td>
+          <div className="table-responsive">
+            <table className="table table-bordered">
+              <thead className="table-light">
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer</th>
+                  <th>Date</th>
+                  <th>Items</th>
+                  <th>Priority</th>
+                  <th>Actions</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    id: "ORD-12345",
+                    customer: "Acme Corp",
+                    date: "2024-06-10",
+                    items: 5,
+                    priority: "High",
+                    color: "danger"
+                  },
+                  {
+                    id: "ORD-12346",
+                    customer: "TechSolutions Inc",
+                    date: "2024-06-11",
+                    items: 3,
+                    priority: "Medium",
+                    color: "warning"
+                  },
+                  {
+                    id: "ORD-12347",
+                    customer: "Global Enterprises",
+                    date: "2024-06-12",
+                    items: 7,
+                    priority: "Low",
+                    color: "success"
+                  },
+                  {
+                    id: "ORD-12348",
+                    customer: "Local Business LLC",
+                    date: "2024-06-13",
+                    items: 2,
+                    priority: "High",
+                    color: "danger"
+                  }
+                ].map((order, idx) => (
+                  <tr key={idx}>
+                    <td>{order.id}</td>
+                    <td>{order.customer}</td>
+                    <td>{order.date}</td>
+                    <td>{order.items}</td>
+                    <td>
+                      <span
+                        className={`bg-${order.color}-subtle text-${order.color} px-2 py-1 rounded d-inline-block`}
+                      >
+                        {order.priority}
+                      </span>
+                    </td>
+                    <td>
+                      <button className="btn btn-primary">
+                        Process <i className="bi bi-arrow-right ms-2"></i>
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <div className="bg-white rounded">
