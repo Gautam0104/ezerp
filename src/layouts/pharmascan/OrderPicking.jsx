@@ -6,7 +6,7 @@ const OrderPicking = () => {
     <div className="flex-grow px-4 ">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
-        <div>
+        <div className="header-title">
           <Link
             to="/order"
             className="btn btn-outline-primary fw-semibold fs-4"
@@ -14,7 +14,7 @@ const OrderPicking = () => {
             <i className="bi bi-0-circle me-2"></i>Order
           </Link>
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>

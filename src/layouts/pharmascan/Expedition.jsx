@@ -6,7 +6,7 @@ const Expedition = () => {
     <div className="flex-grow px-4">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary">
-        <div>
+        <div className="header-title">
           <Link
             to="location.html"
             className="btn btn-outline-primary fw-semibold fs-4"
@@ -14,9 +14,9 @@ const Expedition = () => {
             <i className="bi bi-geo-alt me-2"></i>Expedition
           </Link>
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary">
+          <span className="text-secondary ">
             John Doe <span className="text-muted">Warehouse Manager</span>
           </span>
         </div>
@@ -26,7 +26,10 @@ const Expedition = () => {
       <div className="bg-white p-4 rounded shadow mt-4">
         {/* Item Header */}
         <div className="mb-4">
-          <span className="" style={{backgroundColor:"#E5E7EB", color:"#000000"}}>
+          <span
+            className=""
+            style={{ backgroundColor: "#E5E7EB", color: "#000000" }}
+          >
             <i className="bi bi-box-fill me-1"></i>Item #12345
           </span>
         </div>

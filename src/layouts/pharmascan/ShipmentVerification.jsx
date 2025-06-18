@@ -6,7 +6,7 @@ const ShipmentVerification = () => {
     <div className="flex-grow px-4">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary">
-        <div>
+        <div className="hader-title">
           <Link
             to="shipment.html"
             className="btn btn-outline-primary fw-semibold fs-4"
@@ -14,7 +14,7 @@ const ShipmentVerification = () => {
             <i className="bi bi-cart-check me-2"></i>Shipment
           </Link>
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
@@ -30,42 +30,55 @@ const ShipmentVerification = () => {
             <i className="bi bi-list me-2"></i>Shipment Details
           </button>
           <button className="btn btn-primary text-white">
-            <i className="bi bi-person-check-fill me-2"></i>Complete Verification
+            <i className="bi bi-person-check-fill me-2"></i>Complete
+            Verification
           </button>
         </div>
 
         <p className="text-muted mb-4">Shipment ID: SHP-2024-0042</p>
 
         {/* Stats Cards */}
-<div className="row g-3 mb-4">
-  <div className="col-md-4">
-    <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
-      <div>
-        <p className=" fw-semibold fs-5 mb-1">Matched Items</p>
-        <p className=" fw-bold fs-4">1</p>
-      </div>
-      <i className="bi bi-check-circle-fill text-success fs-3 ms-auto"></i> {/* Matched Items */}
-    </div>
-  </div>
-  <div className="col-md-4">
-    <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
-      <div>
-        <p className="fw-semibold fs-5 mb-1">Shortages</p>
-        <p className="fw-bold fs-4">2</p>
-      </div>
-      <i className="bi bi-exclamation-triangle-fill text-warning fs-3 ms-auto"></i> {/* Shortages */}
-    </div>
-  </div>
-  <div className="col-md-4">
-    <div className="d-flex align-items-center  p-3 rounded" style={{backgroundColor:"#FEE2E2", color:"#B91C1C"}}>
-      <div>
-        <p className="fw-semibold fs-5 mb-1">Unexpected Items</p>
-        <p className="fw-bold fs-4">1</p>
-      </div>
-      <i className="bi bi-question-circle-fill text-danger fs-3 ms-auto"></i> {/* Unexpected Items */}
-    </div>
-  </div>
-</div>
+        <div className="row g-3 mb-4">
+          <div className="col-md-4">
+            <div
+              className="d-flex align-items-center  p-3 rounded"
+              style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
+            >
+              <div>
+                <p className=" fw-semibold fs-5 mb-1">Matched Items</p>
+                <p className=" fw-bold fs-4">1</p>
+              </div>
+              <i className="bi bi-check-circle-fill text-success fs-3 ms-auto"></i>{" "}
+              {/* Matched Items */}
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div
+              className="d-flex align-items-center  p-3 rounded"
+              style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
+            >
+              <div>
+                <p className="fw-semibold fs-5 mb-1">Shortages</p>
+                <p className="fw-bold fs-4">2</p>
+              </div>
+              <i className="bi bi-exclamation-triangle-fill text-warning fs-3 ms-auto"></i>{" "}
+              {/* Shortages */}
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div
+              className="d-flex align-items-center  p-3 rounded"
+              style={{ backgroundColor: "#FEE2E2", color: "#B91C1C" }}
+            >
+              <div>
+                <p className="fw-semibold fs-5 mb-1">Unexpected Items</p>
+                <p className="fw-bold fs-4">1</p>
+              </div>
+              <i className="bi bi-question-circle-fill text-danger fs-3 ms-auto"></i>{" "}
+              {/* Unexpected Items */}
+            </div>
+          </div>
+        </div>
         {/* Search */}
         <div className="mb-4">
           <input
@@ -158,7 +171,8 @@ const ShipmentVerification = () => {
         {/* Info Box */}
         <div className="mt-4 bg-primary bg-opacity-10 p-3 rounded">
           <p className="text-primary mb-1">
-            <i className="bi bi-exclamation-triangle-fill me-2"></i>Reconciliation Required
+            <i className="bi bi-exclamation-triangle-fill me-2"></i>
+            Reconciliation Required
           </p>
           <p className="text-muted mb-0">
             There are 2 shortages and 1 unexpected item that need reconciliation

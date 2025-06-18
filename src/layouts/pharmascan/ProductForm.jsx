@@ -11,7 +11,7 @@ function ProductForm() {
         >
           <i className="bi bi-upc-scan me-2"></i>Product
         </Link>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>

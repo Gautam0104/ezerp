@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function PalletBuilder() {
   return (
     <div className="flex-grow px-4">
       {/* Header */}
       <div className="d-flex justify-content-between align-items-center shadow p-4 text-primary bg-white">
-        <div>
+        <div className="hader-title">
           <Link
             to="pallet_builder.html"
             className="btn btn-outline-primary fw-semibold fs-4"
@@ -14,7 +14,7 @@ function PalletBuilder() {
             <i className="bi bi-box-arrow-in-up me-2"></i>Pallet Builder
           </Link>
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 header-sub-title">
           <i className="bi bi-bell-fill"></i>
           <span className="text-secondary">
             John Doe <span className="text-muted">Warehouse Manager</span>
@@ -34,7 +34,10 @@ function PalletBuilder() {
         {/* Stats Cards */}
         <div className="row g-3 mb-4">
           <div className="col-lg-4">
-            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DBEAFE", color:"#1D4ED8"}}>
+            <div
+              className="p-3 rounded d-flex align-items-center"
+              style={{ backgroundColor: "#DBEAFE", color: "#1D4ED8" }}
+            >
               <div>
                 <p className="fs-4 fw-semibold mb-1">Total Pallets</p>
                 <p className="fs-3 fw-bold mb-0">3</p>
@@ -48,16 +51,21 @@ function PalletBuilder() {
                 <p className="fs-4 fw-semibold mb-1">In Progress</p>
                 <p className="fs-3 fw-bold mb-0">2</p>
               </div>
-              <i className="bi bi-exclamation-triangle-fill fs-2 ms-auto"></i> {/* In Progress */}
+              <i className="bi bi-exclamation-triangle-fill fs-2 ms-auto"></i>{" "}
+              {/* In Progress */}
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
+            <div
+              className="p-3 rounded d-flex align-items-center"
+              style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
+            >
               <div>
                 <p className="fw-semibold fs-4 mb-1">Completed</p>
                 <p className="fw-bold fs-3 mb-0">1</p>
               </div>
-              <i className="bi bi-check-circle-fill fs-2 ms-auto"></i> {/* Completed */}
+              <i className="bi bi-check-circle-fill fs-2 ms-auto"></i>{" "}
+              {/* Completed */}
             </div>
           </div>
         </div>
@@ -96,7 +104,12 @@ function PalletBuilder() {
                   <span className="px-2 py-1 rounded d-inline-block text-primary bg-primary bg-opacity-25">In Progress</span>
                 </td>
                 <td>
-                  <Link to="#" className="text-primary text-decoration-underline">View</Link>
+                  <Link
+                    to="#"
+                    className="text-primary text-decoration-underline"
+                  >
+                    View
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -109,8 +122,15 @@ function PalletBuilder() {
                   <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>Completed</span>
                 </td>
                 <td>
-                  <Link to="#" className="text-primary text-decoration-underline">View</Link>
-                  <Link to="#" className="text-muted ms-2"><i className="bi bi-print"></i></Link>
+                  <Link
+                    to="#"
+                    className="text-primary text-decoration-underline"
+                  >
+                    View
+                  </Link>
+                  <Link to="#" className="text-muted ms-2">
+                    <i className="bi bi-print"></i>
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -123,7 +143,12 @@ function PalletBuilder() {
                   <span className="px-2 py-1 rounded d-inline-block text-primary bg-primary bg-opacity-25">In Progress</span>
                 </td>
                 <td>
-                  <Link to="#" className="text-primary text-decoration-underline">View</Link>
+                  <Link
+                    to="#"
+                    className="text-primary text-decoration-underline"
+                  >
+                    View
+                  </Link>
                 </td>
               </tr>
             </tbody>
@@ -134,7 +159,8 @@ function PalletBuilder() {
         <div className="alert alert-primary d-flex align-items-center mt-4">
           <i className="bi bi-info-circle-fill me-2"></i>
           <div>
-            You have pallets in progress. Complete them before shipping to ensure proper inventory tracking.
+            You have pallets in progress. Complete them before shipping to
+            ensure proper inventory tracking.
           </div>
         </div>
       </div>
