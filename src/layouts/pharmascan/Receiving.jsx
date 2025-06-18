@@ -1,29 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "../../components/wms/Header";
 
 const Receiving = () => {
   return (
     <div className="flex-grow-1 px-4">
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
-        <div className="hader-title">
-          <Link
-            to="shipment.html"
-            className="btn btn-outline-primary fs-4 fw-semibold"
-          >
-            <i className="bi bi-box-arrow-in-up me-2"></i>Receiving
-          </Link>
-        </div>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
-      </div>
+      <Header title="Receiving" />
       {/* Content Area */}
       <div
-        className="bg-white p-4 rounded shadow my-4"
+        className="bg-white p-4 rounded shadow mt-4"
         style={{ height: "calc(100vh - 100px)", overflowY: "auto" }}
       >
         <div className="d-flex justify-content-between align-items-center mb-3">

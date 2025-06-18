@@ -1,29 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "../../components/wms/Header";
 
 export default function PharmaScanDashboard() {
   return (
     <div className="container-fluid px-4">
-      <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary">
-        <Link
-          to="pharmaScan.html"
-          className="btn btn-outline-primary fw-semibold fs-4"
-        >
-          <i className="bi bi-upc-scan me-2"></i>PharmaScan
-        </Link>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <div className="d-flex align-items-center gap-2">
-            <i className="bi bi-bell-fill"></i>
-            <span className="text-secondary">
-              John Doe <span className="text-muted">Warehouse Manager</span>
-            </span>
-          </div>
-        </div>
-      </div>
+      <Header title="PharmaScan" />
 
       {/* Main Content */}
       <div
-        className="bg-white p-3 p-md-4 rounded shadow my-4"
+        className="bg-white p-3 p-md-4 rounded shadow mt-4"
         style={{ minHeight: "calc(100vh - 120px)", overflowY: "auto" }}
       >
         {/* Summary Cards */}

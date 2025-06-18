@@ -25,7 +25,7 @@ const PharmaScan = () => {
       <Sidebar collapsed={collapsed} toggleSidebar={toggleSidebar} />
 
       <div
-        className="main-content"
+        className="main-content py-2"
         onClick={() =>
           window.innerWidth <= 768 && !collapsed && toggleSidebar()
         }

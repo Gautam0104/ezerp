@@ -1,29 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "../../components/wms/Header";
 
 function PalletBuilder() {
   return (
     <div className="flex-grow px-4">
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center shadow p-4 text-primary bg-white">
-        <div className="hader-title">
-          <Link
-            to="pallet_builder.html"
-            className="btn btn-outline-primary fw-semibold fs-4"
-          >
-            <i className="bi bi-box-arrow-in-up me-2"></i>Pallet Builder
-          </Link>
-        </div>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
-      </div>
+      <Header title="Pallet Builder" />
 
       {/* Main Section */}
-      <div className="bg-white shadow p-4 my-4 rounded">
+      <div className="bg-white shadow p-4 mt-4 rounded">
         {/* Create Button */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <button className="btn btn-primary shadow">

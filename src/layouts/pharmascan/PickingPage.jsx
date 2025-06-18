@@ -1,28 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import Header from "../../components/wms/Header";
 
 const PickingPage = () => {
   return (
     <div className="flex-grow px-4 ">
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
-        <div className="hader-title">
-          <Link
-            to="shipment.html"
-            className="btn btn-outline-primary fs-4 fw-semibold"
-          >
-            <i className="bi bi-box-arrow-in-up me-2"></i>Picking
-          </Link>
-        </div>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <i className="bi bi-bell-fill "></i>
-          <span className="text-secondary">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
-      </div>
+      <Header title="Picking" />
 
-      <div className="bg-white p-4 rounded shadow my-5">
+      <div className="bg-white p-4 rounded shadow mt-4">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <p className="text-muted mb-0">
             Manage order fulfillment and picking

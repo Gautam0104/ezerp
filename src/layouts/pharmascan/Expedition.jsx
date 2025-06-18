@@ -1,26 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import Header from "../../components/wms/Header";
 
 const Expedition = () => {
   return (
     <div className="flex-grow px-4">
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary">
-        <div className="header-title">
-          <Link
-            to="location.html"
-            className="btn btn-outline-primary fw-semibold fs-4"
-          >
-            <i className="bi bi-geo-alt me-2"></i>Expedition
-          </Link>
-        </div>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary ">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
-      </div>
+      <Header title="Expedition" />
 
       {/* Main Card */}
       <div className="bg-white p-4 rounded shadow mt-4">

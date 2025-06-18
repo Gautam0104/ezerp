@@ -1,23 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import Header from "../../components/wms/Header";
 
 function ProductForm() {
   return (
     <div className="container-fluid px-4">
-      <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary">
-        <Link
-          to="pharmaScan.html"
-          className="btn btn-outline-primary fw-semibold fs-4"
-        >
-          <i className="bi bi-upc-scan me-2"></i>Product
-        </Link>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
-      </div>
+      <Header title="Product" />
       <div
         className="bg-white rounded shadow mt-4 p-4"
         style={{ height: "calc(100vh - 100px)", overflowY: "auto" }}

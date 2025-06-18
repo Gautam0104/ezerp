@@ -1,29 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "../../components/wms/Header";
 
 const OrderPicking = () => {
   return (
     <div className="flex-grow px-4 ">
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center shadow p-4 bg-white text-primary mb-4">
-        <div className="header-title">
-          <Link
-            to="/order"
-            className="btn btn-outline-primary fw-semibold fs-4"
-          >
-            <i className="bi bi-0-circle me-2"></i>Order
-          </Link>
-        </div>
-        <div className="d-flex align-items-center gap-2 header-sub-title">
-          <i className="bi bi-bell-fill"></i>
-          <span className="text-secondary">
-            John Doe <span className="text-muted">Warehouse Manager</span>
-          </span>
-        </div>
-      </div>
+      <Header title="Order" />
 
       {/* Main Card */}
-      <div className="bg-white shadow-sm p-4 rounded">
+      <div className="bg-white shadow-sm p-4 rounded mt-4">
         {/* Order ID */}
         <p className="mb-4">
           Order ID: <strong>ORD-12345</strong>
