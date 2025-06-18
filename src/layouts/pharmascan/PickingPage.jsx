@@ -13,7 +13,7 @@ const PickingPage = () => {
           <p className="text-muted mb-0">
             Manage order fulfillment and picking
           </p>
-          <button className="btn btn-primary d-flex align-items-center">
+          <button className="btn btn-outline-primary d-flex align-items-center">
             <i className="bi bi-barcode me-2"></i> Scan Order Barcode
           </button>
         </div>

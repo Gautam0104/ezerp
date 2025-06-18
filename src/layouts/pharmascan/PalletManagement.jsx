@@ -13,7 +13,7 @@ const PalletManagement = () => {
         {/* Actions */}
         <div className="d-flex justify-content-between mb-4">
           <div>
-            <button className="btn btn-secondary me-2">
+            <button className="btn btn-outline-secondary me-2">
               <i className="bi bi-x me-2"></i>Close
             </button>
             <button className="btn btn-primary">
@@ -108,16 +108,13 @@ const PalletManagement = () => {
                 <td>12.5 kg</td>
                 <td>24" x 18" x 12"</td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
                     Verified
                   </span>
                 </td>
                 <td>
                   <button className="btn btn-sm text-danger">
-                    <i className="bi bi-x"></i>
+                    <i className="bi bi-x" style={{ fontSize: "1.8rem" }}></i>
                   </button>
                 </td>
               </tr>
@@ -127,16 +124,13 @@ const PalletManagement = () => {
                 <td>8.3 kg</td>
                 <td>18" x 12" x 10"</td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>
                     Verified
                   </span>
                 </td>
                 <td>
                   <button className="btn btn-sm text-danger">
-                    <i className="bi bi-x"></i>
+                    <i className="bi bi-x" style={{ fontSize: "1.8rem" }}></i>
                   </button>
                 </td>
               </tr>
@@ -146,16 +140,13 @@ const PalletManagement = () => {
                 <td>15.7 kg</td>
                 <td>30" x 20" x 15"</td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
                     Pending
                   </span>
                 </td>
                 <td>
                   <button className="btn btn-sm text-success">
-                    <i className="bi bi-check"></i>
+                    <i className="bi bi-check" style={{ fontSize: "1.8rem" }}></i>
                   </button>
                 </td>
               </tr>

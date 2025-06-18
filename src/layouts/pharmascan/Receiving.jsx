@@ -55,8 +55,8 @@ const Receiving = () => {
           </div>
           <div className="col-sm-6 col-lg-3">
             <div
-              className=" p-3 rounded d-flex justify-content-between align-items-center"
-              style={{ backgroundColor: "#DBEAFE", color: "#1D4EDA" }}
+              className=" p-3 rounded d-flex justify-content-between align-items-center text-primary bg-primary bg-opacity-25"
+              s
             >
               <div>
                 <p className=" fs-5 fw-semibold">In Progress</p>
@@ -154,7 +154,7 @@ const Receiving = () => {
                   <td>{row.items}</td>
                   <td>
                     <button
-                      className={`btn btn-sm text-${row.statusColor} bg-${row.statusColor} bg-opacity-25 rounded-pill`}
+                      className={`btn btn-sm text-${row.statusColor} bg-${row.statusColor} bg-opacity-25 rounded- px-3 py-1`}
                     >
                       {row.status}
                     </button>

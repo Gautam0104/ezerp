@@ -114,20 +114,14 @@ function ProductForm() {
                 <input type="date" className="form-control" />
               </div>
 
-              <div class="flex justify-end my-2">
-                <button
-                  class=" px-4 py-2 rounded m-2"
-                  style={{ backgroundColor: "#EF4444", color: "#fdffff" }}
-                >
-                  Cancel
-                </button>
-                <button
-                  class=" px-4 py-2 rounded"
-                  style={{ backgroundColor: "#22c55e", color: "#fdffff" }}
-                >
-                  Save
-                </button>
-              </div>
+              <div className="flex justify-end my-2">
+            <button className=" px-4 py-2 rounded m-2 btn btn-outline-danger" >
+             Cancel
+            </button>
+            <button className=" px-4 py-2 rounded btn btn-outline-success" >
+             Save
+            </button>
+           </div>
             </div>
           </div>
         </div>

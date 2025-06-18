@@ -109,11 +109,8 @@ const ShipmentVerification = () => {
                 <td>LOT-A123</td>
                 <td>10</td>
                 <td>10</td>
-                <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#dcfce7", color: "#15805d" }}
-                  >
+                <td className="">
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#dcfce7", color:"#15805d"}}>
                     Matched
                   </span>
                 </td>
@@ -126,18 +123,12 @@ const ShipmentVerification = () => {
                 <td>8</td>
                 <td>5</td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
                     Shortage
                   </span>
                 </td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#F3F4F6", color: "#7A7FC1" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#F3F4F6", color:"#7A7FC1"}}>
                     Reconcile
                   </span>
                 </td>
@@ -149,18 +140,12 @@ const ShipmentVerification = () => {
                 <td>5</td>
                 <td>0</td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
                     Shortage
                   </span>
                 </td>
                 <td>
-                  <span
-                    className=""
-                    style={{ backgroundColor: "#F3F4F6", color: "#7A7FC1" }}
-                  >
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#F3F4F6", color:"#7A7FC1"}}>
                     Reconcile
                   </span>
                 </td>
@@ -170,7 +155,7 @@ const ShipmentVerification = () => {
         </div>
 
         {/* Info Box */}
-        <div className="mt-4 bg-info bg-opacity-10 p-3 rounded">
+        <div className="mt-4 bg-primary bg-opacity-10 p-3 rounded">
           <p className="text-primary mb-1">
             <i className="bi bi-exclamation-triangle-fill me-2"></i>
             Reconciliation Required
