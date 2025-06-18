@@ -52,7 +52,7 @@ const OrderPicking = () => {
               className="form-control"
               placeholder="Scan item barcode"
             />
-            <button className="btn btn-primary">Verify Scan</button>
+            <button className="btn btn-outline-primary">Verify Scan</button>
           </div>
         </div>
 
@@ -77,7 +77,7 @@ const OrderPicking = () => {
                   <td>5</td>
                   <td>LOT-A123</td>
                   <td>
-                    <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
+                    <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
                   </td>
                 </tr>
                 <tr>
@@ -86,7 +86,7 @@ const OrderPicking = () => {
                   <td>3</td>
                   <td>LOT-B456</td>
                   <td>
-                    <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
+                    <span className="px-2 py-1 rounded d-inline-block " style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
                   </td>
                 </tr>
                 <tr>
@@ -95,13 +95,13 @@ const OrderPicking = () => {
                   <td>2</td>
                   <td>LOT-C789</td>
                   <td>
-                    <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
+                    <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>Pending</span>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <button className="btn btn-success mt-3">Complete Picking</button>
+          <button className="btn btn-outline-success mt-3">Complete Picking</button>
         </div>
       </div>
     </div>

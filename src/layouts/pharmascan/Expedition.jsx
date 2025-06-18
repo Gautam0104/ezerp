@@ -67,7 +67,7 @@ const Expedition = () => {
               className="form-control"
               placeholder="Scan location barcode"
             />
-            <button className="btn btn-primary">Verify</button>
+            <button className="btn btn-outline-primary">Verify</button>
           </div>
         </div>
 
@@ -95,8 +95,8 @@ const Expedition = () => {
 
         {/* Buttons */}
         <div className="d-flex justify-content-between">
-          <button className="btn btn-light">Cancel</button>
-          <button className="btn btn-primary">
+          <button className="btn btn-outline-secondary">Cancel</button>
+          <button className="btn btn-outline-primary">
             Confirm Location <i className="bi bi-arrow-right ms-2"></i>
           </button>
         </div>

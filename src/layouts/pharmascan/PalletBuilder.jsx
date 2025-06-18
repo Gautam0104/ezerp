@@ -26,7 +26,7 @@ function PalletBuilder() {
       <div className="bg-white shadow p-4 my-4 rounded">
         {/* Create Button */}
         <div className="d-flex justify-content-between align-items-center mb-4">
-          <button className="btn btn-primary shadow">
+          <button className="btn btn-outline-primary shadow">
             <i className="bi bi-plus me-2"></i> Create New Pallet
           </button>
         </div>
@@ -43,7 +43,7 @@ function PalletBuilder() {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="p-3 rounded d-flex align-items-center" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
+            <div className="p-3 rounded d-flex align-items-center text-primary bg-primary bg-opacity-25" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>
               <div>
                 <p className="fs-4 fw-semibold mb-1">In Progress</p>
                 <p className="fs-3 fw-bold mb-0">2</p>
@@ -93,7 +93,7 @@ function PalletBuilder() {
                 <td>Warehouse A</td>
                 <td>2024-06-10</td>
                 <td>
-                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>In Progress</span>
+                  <span className="px-2 py-1 rounded d-inline-block text-primary bg-primary bg-opacity-25">In Progress</span>
                 </td>
                 <td>
                   <Link to="#" className="text-primary text-decoration-underline">View</Link>
@@ -106,7 +106,7 @@ function PalletBuilder() {
                 <td>Distribution Center B</td>
                 <td>2024-06-09</td>
                 <td>
-                  <span className="" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>Completed</span>
+                  <span className="px-2 py-1 rounded d-inline-block" style={{backgroundColor:"#DCFCE7", color:"#15803D"}}>Completed</span>
                 </td>
                 <td>
                   <Link to="#" className="text-primary text-decoration-underline">View</Link>
@@ -120,7 +120,7 @@ function PalletBuilder() {
                 <td>Retail Store C</td>
                 <td>2024-06-08</td>
                 <td>
-                  <span className="" style={{backgroundColor:"#FEF9C3", color:"#A16207"}}>In Progress</span>
+                  <span className="px-2 py-1 rounded d-inline-block text-primary bg-primary bg-opacity-25">In Progress</span>
                 </td>
                 <td>
                   <Link to="#" className="text-primary text-decoration-underline">View</Link>

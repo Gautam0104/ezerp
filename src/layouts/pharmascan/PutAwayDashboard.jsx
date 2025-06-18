@@ -27,7 +27,7 @@ const PutAwayDashboard = () => {
           <p className="text-muted mb-0">
             Assign storage locations to received inventory items
           </p>
-          <button className="btn btn-primary d-flex align-items-center">
+          <button className="btn btn-outline-primary d-flex align-items-center">
             <i className="bi bi-file-alt me-2"></i> Generate Put-away Report
           </button>
         </div>
@@ -36,7 +36,7 @@ const PutAwayDashboard = () => {
           <div className="col-lg-4">
             <div
               className=" p-3 rounded d-flex align-items-center justify-content-between"
-              style={{ backgroundColor: "#DBEAFE", color: "#1D4ED8" }}
+              style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
             >
               <div>
                 <p className="fs-5 fw-semibold">Pending Items</p>
@@ -47,8 +47,8 @@ const PutAwayDashboard = () => {
           </div>
           <div className="col-lg-4">
             <div
-              className="p-3 rounded d-flex align-items-center justify-content-between"
-              style={{ backgroundColor: "#DCFCE7", color: "#15803D" }}
+              className="p-3 rounded d-flex align-items-center justify-content-between text-success bg-success bg-opacity-25"
+              
             >
               <div>
                 <p className="fs-5 fw-semibold">Stored Items</p>
@@ -59,14 +59,14 @@ const PutAwayDashboard = () => {
           </div>
           <div className="col-lg-4">
             <div
-              className="p-3 rounded d-flex align-items-center justify-content-between"
-              style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
+              className="p-3 rounded d-flex align-items-center justify-content-between text-danger bg-danger bg-opacity-25"
+              
             >
               <div>
                 <p className="fs-5 fw-semibold">Quarantined Items</p>
                 <h2 className="fw-bold">1</h2>
               </div>
-              <i className="bi bi-exclamation-circle-fill text-warning fs-2 ms-5"></i>
+              <i className="bi bi-exclamation-circle-fill text-danger fs-2 ms-5"></i>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ const PutAwayDashboard = () => {
                 <td>BATCH-2024-001</td>
                 <td>
                   <span
-                    className=""
+                    className="px-2 py-1 rounded d-inline-block"
                     style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
                   >
                     Pending
@@ -154,7 +154,7 @@ const PutAwayDashboard = () => {
                 <td>BATCH-2024-002</td>
                 <td>
                   <span
-                    className=""
+                    className="px-2 py-1 rounded d-inline-block"
                     style={{ backgroundColor: "#FEF9C3", color: "#A16207" }}
                   >
                     Pending
