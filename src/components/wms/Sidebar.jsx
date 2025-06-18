@@ -68,8 +68,13 @@ const Sidebar = ({ collapsed, toggleSidebar }) => {
         >
           <button
             onClick={toggleSidebar}
-            className="btn btn-sm btn-light rounded-circle shadow"
-            style={{ width: "30px", height: "30px", marginRight: "30px" }}
+            className="btn btn-sm  rounded-circle shadow"
+            style={{
+              width: "30px",
+              height: "30px",
+              marginRight: "30px",
+              backgroundColor: "lightgray"
+            }}
             title={collapsed ? "Expand" : "Collapse"}
           >
             <BsChevronLeft
@@ -95,7 +100,7 @@ const Sidebar = ({ collapsed, toggleSidebar }) => {
           className="flex-grow-1 overflow-auto"
           style={{ marginTop: collapsed ? "50px" : "10px" }}
         >
-          <nav className="nav flex-column">
+          <nav className="nav flex-column px-2">
             <SidebarLink
               icon={<BsUpcScan />}
               label="PharmaScan"
