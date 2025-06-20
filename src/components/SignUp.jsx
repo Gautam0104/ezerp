@@ -1,6 +1,6 @@
 // src/pages/SignUp.js
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -99,7 +99,7 @@ const SignUp = () => {
             </div>
           </form>
           <p className="mt-3 text-muted">
-            Already have an account? <a href="/signin">Sign in here</a>
+            Already have an account? <Link to="/signin">Sign in here</Link>
           </p>
         </div>
       </div>

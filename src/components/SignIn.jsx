@@ -8,7 +8,7 @@ import {
   signInWithPopup
 } from "firebase/auth";
 import { auth } from "../firebase";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
@@ -127,7 +127,7 @@ const SignIn = () => {
           </div>
 
           <p className="mt-3 text-muted">
-            Don't have an account? <a href="/signup">Sign up here</a>
+            Don't have an account? <Link to="/signup">Sign up here</Link>
           </p>
         </div>
       </div>
