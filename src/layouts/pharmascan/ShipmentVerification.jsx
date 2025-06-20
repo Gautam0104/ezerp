@@ -155,7 +155,7 @@ const ShipmentVerification = () => {
         </div>
 
         {/* Info Box */}
-        <div className="mt-4 bg-primary bg-opacity-10 p-3 rounded">
+        <div className="mt-4 bg-primary bg-opacity-10 p-4 rounded">
           <p className="text-primary mb-1">
             <i className="bi bi-exclamation-triangle-fill me-2"></i>
             Reconciliation Required

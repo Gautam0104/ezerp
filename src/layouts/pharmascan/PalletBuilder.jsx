@@ -142,7 +142,7 @@ function PalletBuilder() {
         </div>
 
         {/* Info Alert */}
-        <div className="alert alert-primary d-flex align-items-center mt-4">
+        <div className="mt-4 bg-primary bg-opacity-10 p-4 rounded">
           <i className="bi bi-info-circle-fill me-2"></i>
           <div>
             You have pallets in progress. Complete them before shipping to
