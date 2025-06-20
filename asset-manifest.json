@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ezerp/static/css/main.62ad456a.css",
-    "main.js": "/ezerp/static/js/main.832021c1.js",
+    "main.js": "/ezerp/static/js/main.318ccb33.js",
     "static/js/845.85e3297b.chunk.js": "/ezerp/static/js/845.85e3297b.chunk.js",
     "static/media/key-features-10-351314.avif": "/ezerp/static/media/key-features-10-351314.6620f33b60b6c8bbedb7.avif",
     "static/media/hero-background-351314-1.avif": "/ezerp/static/media/hero-background-351314-1.c63980c134fe35aa8b60.avif",
@@ -30,11 +30,11 @@
     "static/media/Blog-1.avif": "/ezerp/static/media/Blog-1.45221fb7ed3bcb8592a2.avif",
     "static/media/LinkedIn-29.avif": "/ezerp/static/media/LinkedIn-29.1ff7dafe628cfbd09eae.avif",
     "main.62ad456a.css.map": "/ezerp/static/css/main.62ad456a.css.map",
-    "main.832021c1.js.map": "/ezerp/static/js/main.832021c1.js.map",
+    "main.318ccb33.js.map": "/ezerp/static/js/main.318ccb33.js.map",
     "845.85e3297b.chunk.js.map": "/ezerp/static/js/845.85e3297b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.62ad456a.css",
-    "static/js/main.832021c1.js"
+    "static/js/main.318ccb33.js"
   ]
 }
